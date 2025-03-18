@@ -16,35 +16,54 @@
 #include "get_rc.h"
 #include "bsp_can.h"
 #include "CAN_receive.h"
+#include "error_detection.h"
+#include "can_sent.h"
 
 void can_sent()
 {
     while (1)
     {
+        if(rc_receive_state == RC_OFFLINE)//遥控器离线，全车断电
+        {
+            can_cmd_all(0,0,0,0,0,0,0,0,0);
+        }
+        else//遥控器在线，正常进行开关控制
+        {
+            if(rc_s0 == 2)
+            {
+                can_cmd_all(0,0,0,0,0,0,0,0,0);
+            }
+            else if(rc_s0 == 3)
+            {
+                can_cmd_all(0,0,0,0,0,0,500,-500,600);
+            }
+            else if(rc_s0 == 1)
+            {
+                can_cmd_all(0,0,0,0,0,0,0,0,0);
+            }
+            else//遥控器数据初始化中或错误，全车断电
+            {
+                can_cmd_all(0,0,0,0,0,0,0,0,0);
+            }
 
-        if(rc_s0 == 2)
-        {
-            CAN2_cmd_gimbal(0, 0, 0, 0);
-            CAN1_cmd_chassis(0, 0, 0, 0);
-            CAN2_cmd_friction_wheels(0,0,0,0);
         }
-        if(rc_s0 == 1)
-        {
-            CAN2_cmd_gimbal(0, 0, 0, 0);
-            CAN1_cmd_chassis(0, 0, 0, 0);
-            CAN2_cmd_friction_wheels(0,0,0,0);
-        }
-        else if(rc_s0 == 3)
-        {
-            CAN2_cmd_gimbal(0, 0, 500, 0);
-            CAN2_cmd_friction_wheels(500,-500,0,0);
-            CAN1_cmd_chassis(0, 0, 0, 0);
-        }
+
         osDelay(1);
     }
 
-
-
-
 }
+
+
+void can_cmd_all(int16_t chassis_id1 ,       int16_t chassis_id2 ,
+                 int16_t chassis_id3 ,       int16_t chassis_id4 ,
+                 int16_t yaw_id1 ,           int16_t pitch_id2 ,
+                 int16_t friction_wheel_id1, int16_t friction_wheel_id2 ,
+                 int16_t shoot_id7 )
+{
+    CAN2_cmd_gimbal(pitch_id2, 0, shoot_id7, 0);
+    CAN2_cmd_friction_wheels(friction_wheel_id1,friction_wheel_id2,0,0);
+    CAN1_cmd_chassis(chassis_id1, chassis_id2, chassis_id3, chassis_id4);
+}
+
+
 

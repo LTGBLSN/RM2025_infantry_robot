@@ -52,6 +52,7 @@ osThreadId board_LED_taskHandle;
 osThreadId uart_sent_testHandle;
 osThreadId get_rc_taskHandle;
 osThreadId can_sent_taskHandle;
+osThreadId err_dec_taskHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -63,6 +64,7 @@ void board_LED(void const * argument);
 void uart_sent(void const * argument);
 void get_rc(void const * argument);
 void can_sent(void const * argument);
+void error_detection(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -128,6 +130,10 @@ void MX_FREERTOS_Init(void) {
   /* definition and creation of can_sent_task */
   osThreadDef(can_sent_task, can_sent, osPriorityIdle, 0, 128);
   can_sent_taskHandle = osThreadCreate(osThread(can_sent_task), NULL);
+
+  /* definition and creation of err_dec_task */
+  osThreadDef(err_dec_task, error_detection, osPriorityIdle, 0, 128);
+  err_dec_taskHandle = osThreadCreate(osThread(err_dec_task), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -223,6 +229,24 @@ __weak void can_sent(void const * argument)
     osDelay(1);
   }
   /* USER CODE END can_sent */
+}
+
+/* USER CODE BEGIN Header_error_detection */
+/**
+* @brief Function implementing the err_dec_task thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_error_detection */
+__weak void error_detection(void const * argument)
+{
+  /* USER CODE BEGIN error_detection */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END error_detection */
 }
 
 /* Private application code --------------------------------------------------*/
