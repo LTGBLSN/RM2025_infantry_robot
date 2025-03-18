@@ -51,6 +51,7 @@ typedef struct
     int16_t last_ecd;
 } motor_measure_t;
 extern motor_measure_t motor_can1_data[7];
+extern motor_measure_t motor_can2_data[7];
 
 extern void CAN2_cmd_gimbal(int16_t pitch, int16_t none0, int16_t shoot, int16_t none1);
 

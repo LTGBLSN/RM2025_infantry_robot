@@ -21,7 +21,7 @@ void uart_sent()
     {
 
         usart6_printf("%d,%d \r\n",
-                      motor_can1_data[6].speed_rpm,
+                      motor_can2_data[5].speed_rpm,
                       rc_receive_time);
 
         osDelay(10);
