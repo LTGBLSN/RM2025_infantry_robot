@@ -35,7 +35,7 @@ void can_sent()
             }
             else if(rc_s0 == 3)
             {
-                can_cmd_all(0,0,0,0,0,0,500,-500,600);
+                can_cmd_all(0,0,0,0,1000,0,500,-500,600);
             }
             else if(rc_s0 == 1)
             {
@@ -63,6 +63,7 @@ void can_cmd_all(int16_t chassis_id1 ,       int16_t chassis_id2 ,
     CAN2_cmd_gimbal(pitch_id2, 0, shoot_id7, 0);
     CAN2_cmd_friction_wheels(friction_wheel_id1,friction_wheel_id2,0,0);
     CAN1_cmd_chassis(chassis_id1, chassis_id2, chassis_id3, chassis_id4);
+    CAN1_cmd_yaw(yaw_id1,0,0,0);
 }
 
 

@@ -44,6 +44,8 @@ static CAN_TxHeaderTypeDef  gimbal_tx_message;
 static uint8_t              gimbal_can_send_data[8];
 static CAN_TxHeaderTypeDef  chassis_tx_message;
 static uint8_t              chassis_can_send_data[8];
+static CAN_TxHeaderTypeDef  yaw_tx_message;
+static uint8_t              yaw_can_send_data[8];
 
 /**
   * @brief          hal CAN fifo call back, receive motor data
@@ -86,24 +88,6 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
     }
 }
 
-
-
-/**
-  * @brief          send control current of motor (0x205, 0x206, 0x207, 0x208)
-  * @param[in]      none0: (0x205) 6020 motor control current, range [-30000,30000]
-  * @param[in]      pitch: (0x206) 6020 motor control current, range [-30000,30000]
-  * @param[in]      shoot: (0x207) 2006 motor control current, range [-10000,10000]
-  * @param[in]      none1: (0x208) reserve motor control current
-  * @retval         none0
-  */
-/**
-  * @brief          发送电机控制电流(0x205,0x206,0x207,0x208)
-  * @param[in]      pitch: (0x205) 6020电机控制电流, 范围 [-30000,30000]
-  * @param[in]      none0: (0x206) 6020电机控制电流, 范围 [-30000,30000]
-  * @param[in]      shoot: (0x207) 2006电机控制电流, 范围 [-10000,10000]
-  * @param[in]      none1: (0x208) 保留，电机控制电流
-  * @retval         none0
-  */
 void CAN2_cmd_gimbal(int16_t pitch, int16_t none0, int16_t shoot, int16_t none1)
 {
     uint32_t send_mail_box;
@@ -121,8 +105,6 @@ void CAN2_cmd_gimbal(int16_t pitch, int16_t none0, int16_t shoot, int16_t none1)
     gimbal_can_send_data[7] = none1;
     HAL_CAN_AddTxMessage(&hcan2, &gimbal_tx_message, gimbal_can_send_data, &send_mail_box);
 }
-
-
 
 //friction_wheels
 void CAN2_cmd_friction_wheels(int16_t friction_wheel0, int16_t friction_wheel1, int16_t none0, int16_t none1)
@@ -144,22 +126,7 @@ void CAN2_cmd_friction_wheels(int16_t friction_wheel0, int16_t friction_wheel1, 
     HAL_CAN_AddTxMessage(&hcan2, &chassis_tx_message, chassis_can_send_data, &send_mail_box);
 }
 
-/**
-  * @brief          send control current of motor (0x201, 0x202, 0x203, 0x204)
-  * @param[in]      motor1: (0x201) 3508 motor control current, range [-16384,16384] 
-  * @param[in]      motor2: (0x202) 3508 motor control current, range [-16384,16384] 
-  * @param[in]      motor3: (0x203) 3508 motor control current, range [-16384,16384] 
-  * @param[in]      motor4: (0x204) 3508 motor control current, range [-16384,16384] 
-  * @retval         none
-  */
-/**
-  * @brief          发送电机控制电流(0x201,0x202,0x203,0x204)
-  * @param[in]      motor1: (0x201) 3508电机控制电流, 范围 [-16384,16384]
-  * @param[in]      motor2: (0x202) 3508电机控制电流, 范围 [-16384,16384]
-  * @param[in]      motor3: (0x203) 3508电机控制电流, 范围 [-16384,16384]
-  * @param[in]      motor4: (0x204) 3508电机控制电流, 范围 [-16384,16384]
-  * @retval         none
-  */
+
 void CAN1_cmd_chassis(int16_t motor1, int16_t motor2, int16_t motor3, int16_t motor4)
 {
     uint32_t send_mail_box;
@@ -178,5 +145,27 @@ void CAN1_cmd_chassis(int16_t motor1, int16_t motor2, int16_t motor3, int16_t mo
 
     HAL_CAN_AddTxMessage(&hcan1, &chassis_tx_message, chassis_can_send_data, &send_mail_box);
 }
+
+//yaw电机电流发送函数
+void CAN1_cmd_yaw(int16_t yaw, int16_t motor2, int16_t motor3, int16_t motor4)
+{
+    uint32_t send_mail_box;
+    yaw_tx_message.StdId = CAN_GIMBAL_ALL_ID;
+    yaw_tx_message.IDE = CAN_ID_STD;
+    yaw_tx_message.RTR = CAN_RTR_DATA;
+    yaw_tx_message.DLC = 0x08;
+    yaw_can_send_data[0] = yaw >> 8;
+    yaw_can_send_data[1] = yaw;
+    yaw_can_send_data[2] = motor2 >> 8;
+    yaw_can_send_data[3] = motor2;
+    yaw_can_send_data[4] = motor3 >> 8;
+    yaw_can_send_data[5] = motor3;
+    yaw_can_send_data[6] = motor4 >> 8;
+    yaw_can_send_data[7] = motor4;
+
+    HAL_CAN_AddTxMessage(&hcan1, &yaw_tx_message, yaw_can_send_data, &send_mail_box);
+}
+
+
 
 
