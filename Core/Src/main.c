@@ -70,6 +70,11 @@ int16_t key_B ;
 
 int16_t motor_shoot_id7_speed;//电机速度值
 
+int16_t rc_receive_state ;//遥控器状态//0为离线，1为在线
+
+uint32_t rc_receive_time ;//遥控器接收到数据的时间戳
+
+uint32_t current_time ;//系统当前时间
 
 
 

@@ -21,13 +21,20 @@ void can_sent()
 {
     while (1)
     {
+
         if(rc_s0 == 2)
         {
             CAN2_cmd_gimbal(0, 0, 0, 0);
             CAN1_cmd_chassis(0, 0, 0, 0);
             CAN2_cmd_friction_wheels(0,0,0,0);
         }
-        else
+        if(rc_s0 == 1)
+        {
+            CAN2_cmd_gimbal(0, 0, 0, 0);
+            CAN1_cmd_chassis(0, 0, 0, 0);
+            CAN2_cmd_friction_wheels(0,0,0,0);
+        }
+        else if(rc_s0 == 3)
         {
             CAN2_cmd_gimbal(0, 0, 500, 0);
             CAN2_cmd_friction_wheels(500,-500,0,0);

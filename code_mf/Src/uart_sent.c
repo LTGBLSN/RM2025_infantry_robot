@@ -20,14 +20,9 @@ void uart_sent()
     while (1)
     {
 
-        usart6_printf("%d,%d,%d,%d,%d,%d,%d \r\n",
-                      motor_can1_data[0].speed_rpm,
-                      motor_can1_data[1].speed_rpm,
-                      motor_can1_data[2].speed_rpm,
-                      motor_can1_data[3].speed_rpm,
-                      motor_can1_data[4].speed_rpm,
-                      motor_can1_data[5].speed_rpm,
-                      motor_can1_data[6].speed_rpm);
+        usart6_printf("%d,%d \r\n",
+                      motor_can1_data[6].speed_rpm,
+                      rc_receive_time);
 
         osDelay(10);
 

@@ -146,6 +146,8 @@ void USART3_IRQHandler(void)
             {
                 //处理遥控器数据
                 sbus_to_rc(sbus_rx_buf[1], &rc_ctrl);
+                //时间戳
+                rc_receive_time = HAL_GetTick();
             }
         }
     }

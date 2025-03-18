@@ -72,6 +72,12 @@ extern int16_t key_B ;
 
 extern int16_t motor_shoot_id7_speed ;
 
+extern int16_t rc_receive_state ;
+
+extern uint32_t rc_receive_time ;
+
+extern uint32_t current_time ;
+
 
 /* USER CODE END EC */
 
