@@ -27,6 +27,7 @@ void error_detection()
 
         rc_connection_status();//遥控器离线判断
         imu_connection_status();//imu离线判断
+        yaw_6020_status();//yaw电机过温判断
 
 
 
@@ -60,6 +61,23 @@ void imu_connection_status()
     {
         imu_receive_state = IMU_ONLINE ;//IMU在线
     }
+}
+
+
+
+
+
+void yaw_6020_status()
+{
+    if(GM6020_TEMP_MAX > motor_can1_data[4].temperate)
+    {
+        yaw_6020_state = GM6020_SAFE ;//安全
+    }
+    else
+    {
+        yaw_6020_state = GM6020_DIE ;//过温
+    }
+
 }
 
 

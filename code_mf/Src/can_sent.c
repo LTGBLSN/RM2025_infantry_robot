@@ -23,7 +23,7 @@ void can_sent()
 {
     while (1)
     {
-        if(rc_receive_state == RC_OFFLINE)//遥控器离线，全车断电
+        if( rc_receive_state == RC_OFFLINE | imu_receive_state == IMU_OFFLINE | yaw_6020_state == GM6020_DIE )//遥控器离线，全车断电
         {
             can_cmd_all(0,0,0,0,0,0,0,0,0);
         }
@@ -33,11 +33,19 @@ void can_sent()
             {
                 can_cmd_all(0,0,0,0,0,0,0,0,0);
             }
-            else if(rc_s0 == 3)
+            else if(rc_s0 == 3)//编码器闭环
             {
-                can_cmd_all(0,0,0,0,6000,0,0,0,0);
+                can_cmd_all(CHASSIS_3508_ID1_GIVEN_CURRENT,
+                            CHASSIS_3508_ID2_GIVEN_CURRENT,
+                            CHASSIS_3508_ID3_GIVEN_CURRENT,
+                            CHASSIS_3508_ID4_GIVEN_CURRENT,
+                            YAW_6020_ID2_GIVEN_CURRENT,
+                            0,
+                            0,
+                            0,
+                            0);
             }
-            else if(rc_s0 == 1)
+            else if(rc_s0 == 1)//陀螺仪闭环
             {
                 can_cmd_all(0,0,0,0,0,0,0,0,0);
             }

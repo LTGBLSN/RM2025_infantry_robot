@@ -36,6 +36,10 @@
 #include "bsp_can.h"
 #include "CAN_receive.h"
 #include "jy61p.h"
+#include "pid.h"
+#include "chassis_motor_control.h"
+#include "gimbal_motor_control.h"
+#include <math.h>
 
 
 
@@ -78,6 +82,30 @@ int16_t imu_receive_state ;//IMU状态 0为离线，1为在线
 uint32_t imu_receive_time ;//IMU接收到数据的时间戳
 
 uint8_t uart1_receive_data ;//串口当前接收字节
+
+int16_t yaw_6020_state ;//6020状态 0为错误，1为正常
+
+
+
+
+//chassis
+int16_t CHASSIS_3508_ID1_GIVEN_SPEED ;
+int16_t CHASSIS_3508_ID1_GIVEN_CURRENT ;
+
+int16_t CHASSIS_3508_ID2_GIVEN_SPEED ;
+int16_t CHASSIS_3508_ID2_GIVEN_CURRENT ;
+
+int16_t CHASSIS_3508_ID3_GIVEN_SPEED ;
+int16_t CHASSIS_3508_ID3_GIVEN_CURRENT ;
+
+int16_t CHASSIS_3508_ID4_GIVEN_SPEED ;
+int16_t CHASSIS_3508_ID4_GIVEN_CURRENT ;
+
+
+//gimbal
+int16_t YAW_6020_ID2_GIVEN_SPEED ;
+int16_t YAW_6020_ID2_GIVEN_CURRENT ;
+
 
 
 
@@ -149,10 +177,23 @@ int main(void)
   MX_CAN2_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+
     HAL_UART_Receive_DMA(&huart1, &uart1_receive_data, 1);  //串口2接收数据中断
-  remote_control_init();
-  local_rc_ctrl = get_remote_control_point();
-  can_filter_init();
+
+    remote_control_init();//遥控器初始化
+
+    local_rc_ctrl = get_remote_control_point();//遥控器初始化
+
+    can_filter_init();//can通讯初始化
+
+    //底盘电机初始化
+    chassis_3508_id1_speed_pid_init();
+    chassis_3508_id2_speed_pid_init();
+    chassis_3508_id3_speed_pid_init();
+    chassis_3508_id4_speed_pid_init();
+
+    //云台电机初始化
+    yaw_speed_pid_init();
 
 
   /* USER CODE END 2 */
