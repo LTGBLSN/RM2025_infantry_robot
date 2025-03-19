@@ -712,7 +712,7 @@ HAL_StatusTypeDef HAL_UART_DeInit(UART_HandleTypeDef *huart)
   *                the configuration information for the specified UART module.
   * @retval None
   */
-__weak void HAL_UART_MspInit(UART_HandleTypeDef *huart)
+__weak void HAL_UART_MspInit(UART_HandleTypeDef *huart)//
 {
   /* Prevent unused argument(s) compilation warning */
   UNUSED(huart);
@@ -1283,7 +1283,7 @@ HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, ui
       huart->RxXferCount--;
     }
 
-    /* At end of Rx process, restore huart->RxState to Ready */
+    /* At end of Rx process, restore huart->AngleRxState to Ready */
     huart->RxState = HAL_UART_STATE_READY;
 
     return HAL_OK;
@@ -1686,7 +1686,7 @@ HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle(UART_HandleTypeDef *huart, uint8_t *p
 
     /* Set number of received elements in output parameter : RxLen */
     *RxLen = huart->RxXferSize - huart->RxXferCount;
-    /* At end of Rx process, restore huart->RxState to Ready */
+    /* At end of Rx process, restore huart->AngleRxState to Ready */
     huart->RxState = HAL_UART_STATE_READY;
 
     return HAL_OK;
@@ -1925,7 +1925,7 @@ HAL_StatusTypeDef HAL_UART_Abort(UART_HandleTypeDef *huart)
   /* Reset ErrorCode */
   huart->ErrorCode = HAL_UART_ERROR_NONE;
 
-  /* Restore huart->RxState and huart->gState to Ready */
+  /* Restore huart->AngleRxState and huart->gState to Ready */
   huart->RxState = HAL_UART_STATE_READY;
   huart->gState = HAL_UART_STATE_READY;
   huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
@@ -2036,7 +2036,7 @@ HAL_StatusTypeDef HAL_UART_AbortReceive(UART_HandleTypeDef *huart)
   /* Reset Rx transfer counter */
   huart->RxXferCount = 0x00U;
 
-  /* Restore huart->RxState to Ready */
+  /* Restore huart->AngleRxState to Ready */
   huart->RxState = HAL_UART_STATE_READY;
   huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
 
@@ -2160,7 +2160,7 @@ HAL_StatusTypeDef HAL_UART_Abort_IT(UART_HandleTypeDef *huart)
     /* Reset ErrorCode */
     huart->ErrorCode = HAL_UART_ERROR_NONE;
 
-    /* Restore huart->gState and huart->RxState to Ready */
+    /* Restore huart->gState and huart->AngleRxState to Ready */
     huart->gState  = HAL_UART_STATE_READY;
     huart->RxState = HAL_UART_STATE_READY;
     huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
@@ -2305,7 +2305,7 @@ HAL_StatusTypeDef HAL_UART_AbortReceive_IT(UART_HandleTypeDef *huart)
       /* Reset Rx transfer counter */
       huart->RxXferCount = 0x00U;
 
-      /* Restore huart->RxState to Ready */
+      /* Restore huart->AngleRxState to Ready */
       huart->RxState = HAL_UART_STATE_READY;
       huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
 
@@ -2324,7 +2324,7 @@ HAL_StatusTypeDef HAL_UART_AbortReceive_IT(UART_HandleTypeDef *huart)
     /* Reset Rx transfer counter */
     huart->RxXferCount = 0x00U;
 
-    /* Restore huart->RxState to Ready */
+    /* Restore huart->AngleRxState to Ready */
     huart->RxState = HAL_UART_STATE_READY;
     huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
 
@@ -2507,7 +2507,7 @@ void HAL_UART_IRQHandler(UART_HandleTypeDef *huart)
              in the UART CR3 register */
           ATOMIC_CLEAR_BIT(huart->Instance->CR3, USART_CR3_DMAR);
 
-          /* At end of Rx process, restore huart->RxState to Ready */
+          /* At end of Rx process, restore huart->AngleRxState to Ready */
           huart->RxState = HAL_UART_STATE_READY;
           huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
 
@@ -2546,7 +2546,7 @@ void HAL_UART_IRQHandler(UART_HandleTypeDef *huart)
         /* Disable the UART Error Interrupt: (Frame error, noise error, overrun error) */
         ATOMIC_CLEAR_BIT(huart->Instance->CR3, USART_CR3_EIE);
 
-        /* Rx process is completed, restore huart->RxState to Ready */
+        /* Rx process is completed, restore huart->AngleRxState to Ready */
         huart->RxState = HAL_UART_STATE_READY;
         huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
 
@@ -3056,7 +3056,7 @@ static void UART_DMAReceiveCplt(DMA_HandleTypeDef *hdma)
        in the UART CR3 register */
     ATOMIC_CLEAR_BIT(huart->Instance->CR3, USART_CR3_DMAR);
 
-    /* At end of Rx process, restore huart->RxState to Ready */
+    /* At end of Rx process, restore huart->AngleRxState to Ready */
     huart->RxState = HAL_UART_STATE_READY;
 
     /* If Reception till IDLE event has been selected, Disable IDLE Interrupt */
@@ -3344,7 +3344,7 @@ static void UART_EndRxTransfer(UART_HandleTypeDef *huart)
     ATOMIC_CLEAR_BIT(huart->Instance->CR1, USART_CR1_IDLEIE);
   }
 
-  /* At end of Rx process, restore huart->RxState to Ready */
+  /* At end of Rx process, restore huart->AngleRxState to Ready */
   huart->RxState = HAL_UART_STATE_READY;
   huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
 }
@@ -3402,7 +3402,7 @@ static void UART_DMATxAbortCallback(DMA_HandleTypeDef *hdma)
   /* Reset ErrorCode */
   huart->ErrorCode = HAL_UART_ERROR_NONE;
 
-  /* Restore huart->gState and huart->RxState to Ready */
+  /* Restore huart->gState and huart->AngleRxState to Ready */
   huart->gState  = HAL_UART_STATE_READY;
   huart->RxState = HAL_UART_STATE_READY;
   huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
@@ -3448,7 +3448,7 @@ static void UART_DMARxAbortCallback(DMA_HandleTypeDef *hdma)
   /* Reset ErrorCode */
   huart->ErrorCode = HAL_UART_ERROR_NONE;
 
-  /* Restore huart->gState and huart->RxState to Ready */
+  /* Restore huart->gState and huart->AngleRxState to Ready */
   huart->gState  = HAL_UART_STATE_READY;
   huart->RxState = HAL_UART_STATE_READY;
   huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
@@ -3506,7 +3506,7 @@ static void UART_DMARxOnlyAbortCallback(DMA_HandleTypeDef *hdma)
 
   huart->RxXferCount = 0x00U;
 
-  /* Restore huart->RxState to Ready */
+  /* Restore huart->AngleRxState to Ready */
   huart->RxState = HAL_UART_STATE_READY;
   huart->ReceptionType = HAL_UART_RECEPTION_STANDARD;
 
@@ -3633,7 +3633,7 @@ static HAL_StatusTypeDef UART_Receive_IT(UART_HandleTypeDef *huart)
       /* Disable the UART Error Interrupt: (Frame error, noise error, overrun error) */
       __HAL_UART_DISABLE_IT(huart, UART_IT_ERR);
 
-      /* Rx process is completed, restore huart->RxState to Ready */
+      /* Rx process is completed, restore huart->AngleRxState to Ready */
       huart->RxState = HAL_UART_STATE_READY;
 
       /* Initialize type of RxEvent to Transfer Complete */

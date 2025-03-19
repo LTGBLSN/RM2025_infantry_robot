@@ -14,15 +14,17 @@
 #include "bsp_rc.h"
 #include "remote_control.h"
 #include "CAN_receive.h"
+#include "jy61p.h"
 
 void uart_sent()
 {
     while (1)
     {
+        usart6_printf("%6.2f,%6.2f,%6.2f \r\n", ROLL_ANGLE, YAW_ANGLE, PITCH_ANGLE);
 
-        usart6_printf("%d,%d \r\n",
-                      motor_can2_data[5].speed_rpm,
-                      rc_receive_time);
+//        usart6_printf("%d,%d \r\n",
+//                      motor_can2_data[5].speed_rpm,
+//                      rc_receive_time);
 
         osDelay(10);
 

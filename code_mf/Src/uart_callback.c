@@ -17,11 +17,23 @@
 #include "get_rc.h"
 #include "bsp_can.h"
 #include "CAN_receive.h"
+#include "jy61p.h"
 
 
-void HAL_DMA_IdleCpltCallback(DMA_HandleTypeDef *hdma)
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-    /* 这里编写用户代码，处理DMA空闲中断 */
+    if (huart == &huart1)
+    {
+        jy61p_Receive_Angle_Data(g_usart2_receivedata);//调用数据包处理函数
+        HAL_UART_Receive_IT(&huart1,&g_usart2_receivedata,1);//继续进行中断接收
+
+
+
+    }
 }
+
+
+
+
 
 

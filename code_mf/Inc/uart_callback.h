@@ -26,7 +26,8 @@
 
 
 
-void HAL_DMA_IdleCpltCallback(DMA_HandleTypeDef *hdma);
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);
 
 
 #endif //BUBING_RM2025_UART_CALLBACK_H
