@@ -24,8 +24,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     if (huart == &huart1)
     {
-        jy61p_Receive_Angle_Data(g_usart1_receivedata);//调用数据包处理函数
-        HAL_UART_Receive_IT(&huart1, &g_usart1_receivedata, 1);//继续进行中断接收
+        jy61p_Receive_Angle_Data(uart1_receive_data);//调用数据包处理函数,得到陀螺仪角度
+        jy61p_Receive_Speed_Data(uart1_receive_data);//调用数据包处理函数，得到陀螺仪角速度
+        HAL_UART_Receive_DMA(&huart1, &uart1_receive_data, 1);//继续进行中断接收
 
 
 

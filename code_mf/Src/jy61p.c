@@ -1,13 +1,13 @@
 #include "jy61p.h"
 
 //angle
-//static uint8_t Rx_Angle_Buffer[11];/*接收数据数组*/
-//static volatile uint8_t AngleRxState = 0;/*接收状态标志位*/
-//static uint8_t RxAngleIndex = 0;/*接受数组索引*/
-//
-//float PITCH_ANGLE;
-//float YAW_ANGLE;
-//float ROLL_ANGLE;
+static uint8_t Rx_Angle_Buffer[11];/*接收数据数组*/
+static volatile uint8_t AngleRxState = 0;/*接收状态标志位*/
+static uint8_t RxAngleIndex = 0;/*接受数组索引*/
+
+float PITCH_IMU_ANGLE;
+float YAW_IMU_ANGLE;
+float ROLL_IMU_ANGLE;
 
 
 //speed
@@ -22,14 +22,14 @@ float ROLL_SPEED;
 
 
 /**
- * @brief       数据包处理函数
+ * @brief       数据包处理函数，解角度
  * @param       串口接收的数据RxData
  * @retval      无
  */
 void jy61p_Receive_Angle_Data(uint8_t RxData)
 {
 	uint8_t i,sum=0;
-	
+
 	if (AngleRxState == 0)	//等待包头
 	{
 		if (RxData == 0x55)	//收到包头
@@ -39,7 +39,7 @@ void jy61p_Receive_Angle_Data(uint8_t RxData)
             RxAngleIndex = 1; //进入下一状态
 		}
 	}
-	
+
 	else if (AngleRxState == 1)
 	{
 		if (RxData == 0x53)	/*判断数据内容，修改这里可以改变要读的数据内容，0x53为角度输出*/
@@ -49,7 +49,7 @@ void jy61p_Receive_Angle_Data(uint8_t RxData)
             RxAngleIndex = 2; //进入下一状态
 		}
 	}
-	
+
 	else if (AngleRxState == 2)	//接收数据
 	{
         Rx_Angle_Buffer[RxAngleIndex++] = RxData;
@@ -62,13 +62,15 @@ void jy61p_Receive_Angle_Data(uint8_t RxData)
 			if(sum == Rx_Angle_Buffer[10])		//校验成功
 			{
 //				/*计算数据，根据数据内容选择对应的计算公式360度*/
-//				PITCH_ANGLE = ((uint16_t) ((uint16_t) Rx_Angle_Buffer[3] << 8 | (uint16_t) Rx_Angle_Buffer[2])) / 32768.0f * 180.0f;
-//                ROLL_ANGLE = ((uint16_t) ((uint16_t) Rx_Angle_Buffer[5] << 8 | (uint16_t) Rx_Angle_Buffer[4])) / 32768.0f * 180.0f;
-//                YAW_ANGLE = ((uint16_t) ((uint16_t) Rx_Angle_Buffer[7] << 8 | (uint16_t) Rx_Angle_Buffer[6])) / 32768.0f * 180.0f;
+//				PITCH_IMU_ANGLE = ((uint16_t) ((uint16_t) Rx_Angle_Buffer[3] << 8 | (uint16_t) Rx_Angle_Buffer[2])) / 32768.0f * 180.0f;
+//                ROLL_IMU_ANGLE = ((uint16_t) ((uint16_t) Rx_Angle_Buffer[5] << 8 | (uint16_t) Rx_Angle_Buffer[4])) / 32768.0f * 180.0f;
+//                YAW_IMU_ANGLE = ((uint16_t) ((uint16_t) Rx_Angle_Buffer[7] << 8 | (uint16_t) Rx_Angle_Buffer[6])) / 32768.0f * 180.0f;
                 /*计算数据，根据数据内容选择对应的计算公式180度*/
-                PITCH_ANGLE = ((short)((short)Rx_Angle_Buffer[3] << 8 | Rx_Angle_Buffer[2])) / 32768.0f * 180.0f;
-                ROLL_ANGLE = ((short)((short)Rx_Angle_Buffer[5] << 8 | Rx_Angle_Buffer[4])) / 32768.0f * 180.0f;
-                YAW_ANGLE = ((short)((short)Rx_Angle_Buffer[7] << 8 | Rx_Angle_Buffer[6])) / 32768.0f * 180.0f;
+                PITCH_IMU_ANGLE = ((short)((short)Rx_Angle_Buffer[3] << 8 | Rx_Angle_Buffer[2])) / 32768.0f * 180.0f;
+                ROLL_IMU_ANGLE = ((short)((short)Rx_Angle_Buffer[5] << 8 | Rx_Angle_Buffer[4])) / 32768.0f * 180.0f;
+                YAW_IMU_ANGLE = ((short)((short)Rx_Angle_Buffer[7] << 8 | Rx_Angle_Buffer[6])) / 32768.0f * 180.0f;
+
+                imu_receive_time = HAL_GetTick() ;//更新时间戳
 
             }
             AngleRxState = 0;
@@ -79,7 +81,7 @@ void jy61p_Receive_Angle_Data(uint8_t RxData)
 
 
 /**
- * @brief       数据包处理函数
+ * @brief       数据包处理函数,解速度
  * @param       串口接收的数据RxData
  * @retval      无
  */
@@ -118,14 +120,14 @@ void jy61p_Receive_Speed_Data(uint8_t RxData)
             }
             if(sum == Rx_Speed_Buffer[10])		//校验成功
             {
-//				/*计算数据，根据数据内容选择对应的计算公式360度*/
-//				PITCH_ANGLE = ((uint16_t) ((uint16_t) Rx_Angle_Buffer[3] << 8 | (uint16_t) Rx_Angle_Buffer[2])) / 32768.0f * 180.0f;
-//                ROLL_ANGLE = ((uint16_t) ((uint16_t) Rx_Angle_Buffer[5] << 8 | (uint16_t) Rx_Angle_Buffer[4])) / 32768.0f * 180.0f;
-//                YAW_ANGLE = ((uint16_t) ((uint16_t) Rx_Angle_Buffer[7] << 8 | (uint16_t) Rx_Angle_Buffer[6])) / 32768.0f * 180.0f;
+
                 /*计算数据，根据数据内容选择对应的计算公式*/
-                PITCH_SPEED = ((short)((short)Rx_Speed_Buffer[3] << 8 | Rx_Speed_Buffer[2])) / 32768.0f * 180.0f;
-                ROLL_SPEED = ((short)((short)Rx_Speed_Buffer[5] << 8 | Rx_Speed_Buffer[4])) / 32768.0f * 180.0f;
-                YAW_SPEED = ((short)((short)Rx_Speed_Buffer[7] << 8 | Rx_Speed_Buffer[6])) / 32768.0f * 180.0f;
+                PITCH_SPEED = ((short)((short)Rx_Speed_Buffer[3] << 8 | Rx_Speed_Buffer[2])) / 32768.0f * 2000.0f;
+                ROLL_SPEED = ((short)((short)Rx_Speed_Buffer[5] << 8 | Rx_Speed_Buffer[4])) / 32768.0f * 2000.0f;
+                YAW_SPEED = ((short)((short)Rx_Speed_Buffer[7] << 8 | Rx_Speed_Buffer[6])) / 32768.0f * 2000.0f;
+
+                imu_receive_time = HAL_GetTick() ;//更新时间戳
+
 
             }
             SpeedRxState = 0;

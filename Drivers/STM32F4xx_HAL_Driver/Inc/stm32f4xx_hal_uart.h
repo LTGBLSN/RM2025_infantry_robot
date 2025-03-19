@@ -76,7 +76,7 @@ typedef struct
 
 /**
   * @brief HAL UART State structures definition
-  * @note  HAL UART State value is a combination of 2 different substates: gState and AngleRxState.
+  * @note  HAL UART State value is a combination of 2 different substates: gState and RxState.
   *        - gState contains UART state information related to global Handle management
   *          and also information related to Tx operations.
   *          gState value coding follow below described bitmap :
@@ -98,8 +98,8 @@ typedef struct
   *          b0     Tx state
   *             0  : Ready (no Tx operation ongoing)
   *             1  : Busy (Tx operation ongoing)
-  *        - AngleRxState contains information related to Rx operations.
-  *          AngleRxState value coding follow below described bitmap :
+  *        - RxState contains information related to Rx operations.
+  *          RxState value coding follow below described bitmap :
   *          b7-b6  (not used)
   *             xx : Should be set to 00
   *          b5     Peripheral initialization status
@@ -116,18 +116,18 @@ typedef struct
 typedef enum
 {
   HAL_UART_STATE_RESET             = 0x00U,    /*!< Peripheral is not yet Initialized
-                                                   Value is allowed for gState and AngleRxState */
+                                                   Value is allowed for gState and RxState */
   HAL_UART_STATE_READY             = 0x20U,    /*!< Peripheral Initialized and ready for use
-                                                   Value is allowed for gState and AngleRxState */
+                                                   Value is allowed for gState and RxState */
   HAL_UART_STATE_BUSY              = 0x24U,    /*!< an internal process is ongoing
                                                    Value is allowed for gState only */
   HAL_UART_STATE_BUSY_TX           = 0x21U,    /*!< Data Transmission process is ongoing
                                                    Value is allowed for gState only */
   HAL_UART_STATE_BUSY_RX           = 0x22U,    /*!< Data Reception process is ongoing
-                                                   Value is allowed for AngleRxState only */
+                                                   Value is allowed for RxState only */
   HAL_UART_STATE_BUSY_TX_RX        = 0x23U,    /*!< Data Transmission and Reception process is ongoing
-                                                   Not to be used for neither gState nor AngleRxState.
-                                                   Value is result of combination (Or) between gState and AngleRxState values */
+                                                   Not to be used for neither gState nor RxState.
+                                                   Value is result of combination (Or) between gState and RxState values */
   HAL_UART_STATE_TIMEOUT           = 0xA0U,    /*!< Timeout state
                                                    Value is allowed for gState only */
   HAL_UART_STATE_ERROR             = 0xE0U     /*!< Error
@@ -422,7 +422,7 @@ typedef  void (*pUART_RxEventCallbackTypeDef)(struct __UART_HandleTypeDef *huart
   * @{
   */
 
-/** @brief Reset UART handle gstate & AngleRxState
+/** @brief Reset UART handle gstate & RxState
   * @param  __HANDLE__ specifies the UART Handle.
   *         UART Handle selects the USARTx or UARTy peripheral
   *         (USART,UART availability and x,y values depending on device).
@@ -431,7 +431,7 @@ typedef  void (*pUART_RxEventCallbackTypeDef)(struct __UART_HandleTypeDef *huart
 #if (USE_HAL_UART_REGISTER_CALLBACKS == 1)
 #define __HAL_UART_RESET_HANDLE_STATE(__HANDLE__)  do{                                                   \
                                                        (__HANDLE__)->gState = HAL_UART_STATE_RESET;      \
-                                                       (__HANDLE__)->AngleRxState = HAL_UART_STATE_RESET;     \
+                                                       (__HANDLE__)->RxState = HAL_UART_STATE_RESET;     \
                                                        (__HANDLE__)->MspInitCallback = NULL;             \
                                                        (__HANDLE__)->MspDeInitCallback = NULL;           \
                                                      } while(0U)
