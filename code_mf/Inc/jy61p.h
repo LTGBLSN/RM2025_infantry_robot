@@ -5,9 +5,15 @@
 
 void jy61p_Receive_Angle_Data(uint8_t RxData);
 
-extern float PITCH_ANGLE;
-extern float YAW_ANGLE;
-extern float ROLL_ANGLE;
+void jy61p_Receive_Speed_Data(uint8_t RxData);
+
+//extern float PITCH_ANGLE;
+//extern float YAW_ANGLE;
+//extern float ROLL_ANGLE;
+
+extern float PITCH_SPEED;
+extern float YAW_SPEED;
+extern float ROLL_SPEED;
 
 
 #endif

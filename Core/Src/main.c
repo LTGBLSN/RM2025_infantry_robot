@@ -77,7 +77,7 @@ uint32_t rc_receive_time ;//遥控器接收到数据的时间戳
 
 uint16_t rx_data[55] ;//串口接收存储空间//暂时没用
 
-uint8_t g_usart2_receivedata ;//串口当前接收字节
+uint8_t g_usart1_receivedata ;//串口当前接收字节
 
 
 
@@ -149,7 +149,7 @@ int main(void)
   MX_CAN2_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-    HAL_UART_Receive_IT(&huart1,&g_usart2_receivedata,1);  //串口2接收数据中断
+    HAL_UART_Receive_IT(&huart1, &g_usart1_receivedata, 1);  //串口2接收数据中断
   remote_control_init();
   local_rc_ctrl = get_remote_control_point();
   can_filter_init();

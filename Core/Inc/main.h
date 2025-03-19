@@ -78,7 +78,7 @@ extern uint32_t rc_receive_time ;//遥控器接收到数据的时间戳
 
 extern uint16_t rx_data[55] ;//串口接收存储空间
 
-extern uint8_t g_usart2_receivedata ;//串口当前接收字节
+extern uint8_t g_usart1_receivedata ;//串口当前接收字节
 
 
 
