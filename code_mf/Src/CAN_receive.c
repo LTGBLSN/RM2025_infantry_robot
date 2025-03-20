@@ -41,12 +41,14 @@ motor data,  0:chassis motor1 3508;1:chassis motor3 3508;2:chassis motor3 3508;3
 motor_measure_t motor_can1_data[7];
 motor_measure_t motor_can2_data[7];
 
-static CAN_TxHeaderTypeDef  gimbal_tx_message;
-static uint8_t              gimbal_can_send_data[8];
+static CAN_TxHeaderTypeDef  shoot_tx_message;
+static uint8_t              shoot_can_send_data[8];
 static CAN_TxHeaderTypeDef  chassis_tx_message;
 static uint8_t              chassis_can_send_data[8];
 static CAN_TxHeaderTypeDef  yaw_tx_message;
 static uint8_t              yaw_can_send_data[8];
+static CAN_TxHeaderTypeDef  pitch_tx_message;
+static uint8_t              pitch_can_send_data[8];
 
 /**
   * @brief          hal CAN fifo call back, receive motor data
@@ -120,23 +122,45 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
         }
     }
 }
-
-void CAN2_cmd_gimbal(int16_t pitch, int16_t none0, int16_t shoot, int16_t none1)
+void CAN2_cmd_pitch(int16_t pitch, int16_t none0, int16_t none1, int16_t none2)
 {
     uint32_t send_mail_box;
-    gimbal_tx_message.StdId = CAN_GIMBAL_ALL_ID;
-    gimbal_tx_message.IDE = CAN_ID_STD;
-    gimbal_tx_message.RTR = CAN_RTR_DATA;
-    gimbal_tx_message.DLC = 0x08;
-    gimbal_can_send_data[0] = (none0 >> 8);
-    gimbal_can_send_data[1] = none0;
-    gimbal_can_send_data[2] = (pitch >> 8);
-    gimbal_can_send_data[3] = pitch;
-    gimbal_can_send_data[4] = (shoot >> 8);
-    gimbal_can_send_data[5] = shoot;
-    gimbal_can_send_data[6] = (none1 >> 8);
-    gimbal_can_send_data[7] = none1;
-    HAL_CAN_AddTxMessage(&hcan2, &gimbal_tx_message, gimbal_can_send_data, &send_mail_box);
+    pitch_tx_message.StdId = CAN_GIMBAL_ALL_ID;
+    pitch_tx_message.IDE = CAN_ID_STD;
+    pitch_tx_message.RTR = CAN_RTR_DATA;
+    pitch_tx_message.DLC = 0x08;
+    pitch_can_send_data[0] = (none0 >> 8);
+    pitch_can_send_data[1] = none0;
+    pitch_can_send_data[2] = (pitch >> 8);
+    pitch_can_send_data[3] = pitch;
+    pitch_can_send_data[4] = (none1 >> 8);
+    pitch_can_send_data[5] = none1;
+    pitch_can_send_data[6] = (none2 >> 8);
+    pitch_can_send_data[7] = none2;
+    HAL_CAN_AddTxMessage(&hcan2, &pitch_tx_message, pitch_can_send_data, &send_mail_box);
+}
+
+
+
+
+
+
+void CAN2_cmd_shoot(int16_t none0, int16_t none1, int16_t shoot, int16_t none2)
+{
+    uint32_t send_mail_box;
+    shoot_tx_message.StdId = CAN_CHASSIS_ALL_ID;
+    shoot_tx_message.IDE = CAN_ID_STD;
+    shoot_tx_message.RTR = CAN_RTR_DATA;
+    shoot_tx_message.DLC = 0x08;
+    shoot_can_send_data[0] = (none1 >> 8);
+    shoot_can_send_data[1] = none1;
+    shoot_can_send_data[2] = (none0 >> 8);
+    shoot_can_send_data[3] = none0;
+    shoot_can_send_data[4] = (shoot >> 8);
+    shoot_can_send_data[5] = shoot;
+    shoot_can_send_data[6] = (none2 >> 8);
+    shoot_can_send_data[7] = none2;
+    HAL_CAN_AddTxMessage(&hcan2, &shoot_tx_message, shoot_can_send_data, &send_mail_box);
 }
 
 //摩擦轮电机电流发送函数

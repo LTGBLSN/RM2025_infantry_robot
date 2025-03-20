@@ -33,26 +33,62 @@
 #define YAW_6020_ID2_SPEED_PID_KI        2.0f
 #define YAW_6020_ID2_SPEED_PID_KD        0.0f
 #define YAW_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
-#define YAW_6020_ID2_SPEED_PID_KI_MAX    25000.0f
+#define YAW_6020_ID2_SPEED_PID_KI_MAX    10000.0f
 
-#define PITCH_6020_ID2_SPEED_PID_KP        550.0f
-#define PITCH_6020_ID2_SPEED_PID_KI        2.0f
+
+
+
+
+#define PITCH_6020_ID2_SPEED_PID_KP        2900.0f
+#define PITCH_6020_ID2_SPEED_PID_KI        60.0f
 #define PITCH_6020_ID2_SPEED_PID_KD        0.0f
 #define PITCH_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
-#define PITCH_6020_ID2_SPEED_PID_KI_MAX    2000.0f
+#define PITCH_6020_ID2_SPEED_PID_KI_MAX    10000.0f
+
+#define PITCH_6020_ID2_ANGLE_PID_KP        15.0f
+#define PITCH_6020_ID2_ANGLE_PID_KI        0.0f
+#define PITCH_6020_ID2_ANGLE_PID_KD        0.0f
+#define PITCH_6020_ID2_ANGLE_PID_OUT_MAX   10.0f
+#define PITCH_6020_ID2_ANGLE_PID_KI_MAX    0.0f
+
+
+
+
 
 #define FRICTION_WHEEL_3510_ID1_SPEED_PID_KP        45.0f
-#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KI        0.0f
+#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KI        0.01f
 #define FRICTION_WHEEL_3510_ID1_SPEED_PID_KD        0.0f
-#define FRICTION_WHEEL_3510_ID1_SPEED_PID_OUT_MAX   16384.0f
+#define FRICTION_WHEEL_3510_ID1_SPEED_PID_OUT_MAX   16000.0f
 #define FRICTION_WHEEL_3510_ID1_SPEED_PID_KI_MAX    10000.0f
+
+#define FRICTION_WHEEL_3510_ID2_SPEED_PID_KP        45.0f
+#define FRICTION_WHEEL_3510_ID2_SPEED_PID_KI        0.01f
+#define FRICTION_WHEEL_3510_ID2_SPEED_PID_KD        0.0f
+#define FRICTION_WHEEL_3510_ID2_SPEED_PID_OUT_MAX   16000.0f
+#define FRICTION_WHEEL_3510_ID2_SPEED_PID_KI_MAX    10000.0f
+
+
+
+
+
+
+#define FRICTION_WHEEL_SHOOT_SPEED 1000
+
 
 #define GIMBAL_PID_COMPUTE_FREQUENCY 1000  // Hz
 
 
 extern pid_type_def yaw_6020_ID1_speed_pid;
+
+
 extern pid_type_def pitch_6020_ID2_speed_pid;
+extern pid_type_def pitch_6020_ID2_angle_pid;
+
+
+
+
 extern pid_type_def friction_wheel_3510_ID1_speed_pid;
+extern pid_type_def friction_wheel_3510_ID2_speed_pid;
 
 
 
@@ -60,17 +96,25 @@ extern pid_type_def friction_wheel_3510_ID1_speed_pid;
 
 void motor_gimbal_pid_compute();
 
+void friction_wheel_speed_control();
+
+
 
 void yaw_speed_pid_init(void);
-int16_t yaw_speed_pid_loop(int16_t YAW_6020_ID1_speed_set_loop);
+float yaw_speed_pid_loop(float YAW_6020_ID1_speed_set_loop);
 
 void pitch_speed_pid_init(void);
-int16_t pitch_speed_pid_loop(int16_t PITCH_6020_ID2_speed_set_loop);
+float pitch_speed_pid_loop(float PITCH_6020_ID2_speed_set_loop);
+void pitch_angle_pid_init(void);
+float pitch_angle_pid_loop(float PITCH_6020_ID2_angle_set_loop);
 
 
 
 void friction_wheel_3510_id1_speed_pid_init(void);
 int16_t friction_wheel_3510_id1_speed_pid_loop(int16_t friction_wheel_3510_id1_speed_set_loop);
+
+void friction_wheel_3510_id2_speed_pid_init(void);
+int16_t friction_wheel_3510_id2_speed_pid_loop(int16_t friction_wheel_3510_id2_speed_set_loop);
 
 
 

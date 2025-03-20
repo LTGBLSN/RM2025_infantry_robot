@@ -104,14 +104,26 @@ int16_t CHASSIS_3508_ID4_GIVEN_CURRENT ;
 
 
 //gimbal
-int16_t YAW_6020_ID1_GIVEN_SPEED ;
+float YAW_6020_ID1_GIVEN_SPEED ;
 int16_t YAW_6020_ID1_GIVEN_CURRENT ;
 
-int16_t PITCH_6020_ID2_GIVEN_SPEED ;
+float PITCH_6020_ID2_GIVEN_ANGLE ;
+float PITCH_6020_ID2_GIVEN_SPEED ;
 int16_t PITCH_6020_ID2_GIVEN_CURRENT ;
 
+
+
+//friction wheel
 int16_t FRICTION_WHEEL_3510_ID1_GIVEN_SPEED ;
 int16_t FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT ;
+
+int16_t FRICTION_WHEEL_3510_ID2_GIVEN_SPEED ;
+int16_t FRICTION_WHEEL_3510_ID2_GIVEN_CURRENT ;
+
+
+
+
+
 
 
 
@@ -202,9 +214,11 @@ int main(void)
     //云台电机初始化
     yaw_speed_pid_init();//yaw速度环pid初始化
     pitch_speed_pid_init();//pitch速度环pid初始化
+    pitch_angle_pid_init();//pitch角度环pid初始化
 
     //摩擦轮电机初始化
     friction_wheel_3510_id1_speed_pid_init();//摩擦轮id1速度环初始化
+    friction_wheel_3510_id2_speed_pid_init();//摩擦轮id2速度环初始化
 
 
   /* USER CODE END 2 */

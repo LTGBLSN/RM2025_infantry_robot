@@ -15,9 +15,9 @@ static uint8_t Rx_Speed_Buffer[11];/*接收数据数组*/
 static volatile uint8_t SpeedRxState = 0;/*接收状态标志位*/
 static uint8_t RxSpeedIndex = 0;/*接受数组索引*/
 
-float PITCH_SPEED;
-float YAW_SPEED;
-float ROLL_SPEED;
+float PITCH_IMU_SPEED;
+float YAW_IMU_SPEED;
+float ROLL_IMU_SPEED;
 
 
 
@@ -122,9 +122,9 @@ void jy61p_Receive_Speed_Data(uint8_t RxData)
             {
 
                 /*计算数据，根据数据内容选择对应的计算公式*/
-                PITCH_SPEED = ((short)((short)Rx_Speed_Buffer[3] << 8 | Rx_Speed_Buffer[2])) / 32768.0f * 2000.0f;
-                ROLL_SPEED = ((short)((short)Rx_Speed_Buffer[5] << 8 | Rx_Speed_Buffer[4])) / 32768.0f * 2000.0f;
-                YAW_SPEED = ((short)((short)Rx_Speed_Buffer[7] << 8 | Rx_Speed_Buffer[6])) / 32768.0f * 2000.0f;
+                PITCH_IMU_SPEED = ((short)((short)Rx_Speed_Buffer[3] << 8 | Rx_Speed_Buffer[2])) / 32768.0f * 2000.0f;
+                ROLL_IMU_SPEED = ((short)((short)Rx_Speed_Buffer[5] << 8 | Rx_Speed_Buffer[4])) / 32768.0f * 2000.0f;
+                YAW_IMU_SPEED = ((short)((short)Rx_Speed_Buffer[7] << 8 | Rx_Speed_Buffer[6])) / 32768.0f * 2000.0f;
 
                 imu_receive_time = HAL_GetTick() ;//更新时间戳
 

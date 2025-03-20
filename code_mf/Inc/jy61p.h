@@ -11,9 +11,9 @@ extern float PITCH_IMU_ANGLE;
 extern float YAW_IMU_ANGLE;
 extern float ROLL_IMU_ANGLE;
 
-extern float PITCH_SPEED;
-extern float YAW_SPEED;
-extern float ROLL_SPEED;
+extern float PITCH_IMU_SPEED;
+extern float YAW_IMU_SPEED;
+extern float ROLL_IMU_SPEED;
 
 
 #endif

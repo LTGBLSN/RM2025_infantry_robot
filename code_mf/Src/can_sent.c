@@ -40,9 +40,9 @@ void can_sent()
                             CHASSIS_3508_ID3_GIVEN_CURRENT,
                             CHASSIS_3508_ID4_GIVEN_CURRENT,
                             0,
-                            0,
+                            PITCH_6020_ID2_GIVEN_CURRENT,
                             FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT,
-                            0,
+                            FRICTION_WHEEL_3510_ID2_GIVEN_CURRENT,
                             0);
             }
             else if(rc_s0 == 1)//ÍÓÂÝÒÇ±Õ»·
@@ -68,10 +68,12 @@ void can_cmd_all(int16_t chassis_id1 ,       int16_t chassis_id2 ,
                  int16_t friction_wheel_id1, int16_t friction_wheel_id2 ,
                  int16_t shoot_id7 )
 {
-    CAN2_cmd_gimbal(pitch_id2, 0, shoot_id7, 0);
+    CAN2_cmd_pitch(pitch_id2,0,0,0);
+    CAN2_cmd_shoot(0, 0, shoot_id7, 0);
     CAN2_cmd_friction_wheels(friction_wheel_id1,friction_wheel_id2,0,0);
     CAN1_cmd_chassis(chassis_id1, chassis_id2, chassis_id3, chassis_id4);
     CAN1_cmd_yaw(yaw_id1,0,0,0);
+
 }
 
 
