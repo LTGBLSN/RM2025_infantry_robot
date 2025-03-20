@@ -16,7 +16,7 @@
 #define IMU_OFFLINE 0
 
 //IMU
-#define GM6020_TEMP_MAX 35
+#define GM6020_TEMP_MAX 60
 #define GM6020_SAFE 1
 #define GM6020_DIE 0
 
@@ -28,5 +28,6 @@ void rc_connection_status();
 void imu_connection_status();
 
 void yaw_6020_status();
+void pitch_6020_status();
 
 #endif //BUBING_RM2025_ERROR_DETECTION_H

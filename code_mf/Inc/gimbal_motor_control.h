@@ -29,22 +29,48 @@
 #include <math.h>
 
 
-#define YAW_6020_ID2_SPEED_PID_KP   300.0f
-#define YAW_6020_ID2_SPEED_PID_KI   0.0f
-#define YAW_6020_ID2_SPEED_PID_KD   0.0f
-#define YAW_6020_ID2_SPEED_PID_OUT_MAX   16000.0f
-#define YAW_6020_ID2_SPEED_PID_KI_MAX   0.0f
+#define YAW_6020_ID2_SPEED_PID_KP        200.0f
+#define YAW_6020_ID2_SPEED_PID_KI        2.0f
+#define YAW_6020_ID2_SPEED_PID_KD        0.0f
+#define YAW_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
+#define YAW_6020_ID2_SPEED_PID_KI_MAX    25000.0f
 
-extern pid_type_def yaw_6020_ID2_speed_pid;
+#define PITCH_6020_ID2_SPEED_PID_KP        550.0f
+#define PITCH_6020_ID2_SPEED_PID_KI        2.0f
+#define PITCH_6020_ID2_SPEED_PID_KD        0.0f
+#define PITCH_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
+#define PITCH_6020_ID2_SPEED_PID_KI_MAX    2000.0f
 
+#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KP        45.0f
+#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KI        0.0f
+#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KD        0.0f
+#define FRICTION_WHEEL_3510_ID1_SPEED_PID_OUT_MAX   16384.0f
+#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KI_MAX    10000.0f
 
 #define GIMBAL_PID_COMPUTE_FREQUENCY 1000  // Hz
 
 
-void motor_yaw_pid_compute();
+extern pid_type_def yaw_6020_ID1_speed_pid;
+extern pid_type_def pitch_6020_ID2_speed_pid;
+extern pid_type_def friction_wheel_3510_ID1_speed_pid;
 
-void yaw_speed_pid_init();
-int16_t yaw_speed_pid_loop(int16_t YAW_6020_ID2_speed_set_loop);
+
+
+
+
+void motor_gimbal_pid_compute();
+
+
+void yaw_speed_pid_init(void);
+int16_t yaw_speed_pid_loop(int16_t YAW_6020_ID1_speed_set_loop);
+
+void pitch_speed_pid_init(void);
+int16_t pitch_speed_pid_loop(int16_t PITCH_6020_ID2_speed_set_loop);
+
+
+
+void friction_wheel_3510_id1_speed_pid_init(void);
+int16_t friction_wheel_3510_id1_speed_pid_loop(int16_t friction_wheel_3510_id1_speed_set_loop);
 
 
 

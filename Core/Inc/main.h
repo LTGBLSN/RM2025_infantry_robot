@@ -81,7 +81,7 @@ extern uint32_t imu_receive_time ;//IMU接收到数据的时间戳
 extern uint8_t uart1_receive_data ;//串口当前接收字节
 
 extern int16_t yaw_6020_state ;//6020状态 0为错误，1为正常
-
+extern int16_t pitch_6020_state ;//6020电机状态 0为错误，1为正常
 
 //chassis
 extern int16_t CHASSIS_3508_ID1_GIVEN_SPEED ;
@@ -97,10 +97,16 @@ extern int16_t CHASSIS_3508_ID4_GIVEN_SPEED ;
 extern int16_t CHASSIS_3508_ID4_GIVEN_CURRENT;
 
 //gimbal
-extern int16_t YAW_6020_ID2_GIVEN_SPEED ;
-extern int16_t YAW_6020_ID2_GIVEN_CURRENT ;
+extern int16_t YAW_6020_ID1_GIVEN_SPEED ;
+extern int16_t YAW_6020_ID1_GIVEN_CURRENT ;
+
+extern int16_t PITCH_6020_ID2_GIVEN_SPEED ;
+extern int16_t PITCH_6020_ID2_GIVEN_CURRENT ;
 
 
+//friction wheel
+extern int16_t FRICTION_WHEEL_3510_ID1_GIVEN_SPEED ;
+extern int16_t FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT ;
 
 /* USER CODE END EC */
 

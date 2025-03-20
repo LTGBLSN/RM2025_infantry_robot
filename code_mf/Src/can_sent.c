@@ -23,7 +23,7 @@ void can_sent()
 {
     while (1)
     {
-        if( rc_receive_state == RC_OFFLINE | imu_receive_state == IMU_OFFLINE | yaw_6020_state == GM6020_DIE )//遥控器离线，全车断电
+        if( rc_receive_state == RC_OFFLINE | imu_receive_state == IMU_OFFLINE | yaw_6020_state == GM6020_DIE | pitch_6020_state == GM6020_DIE)//遥控器离线，全车断电
         {
             can_cmd_all(0,0,0,0,0,0,0,0,0);
         }
@@ -39,9 +39,9 @@ void can_sent()
                             CHASSIS_3508_ID2_GIVEN_CURRENT,
                             CHASSIS_3508_ID3_GIVEN_CURRENT,
                             CHASSIS_3508_ID4_GIVEN_CURRENT,
-                            YAW_6020_ID2_GIVEN_CURRENT,
                             0,
                             0,
+                            FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT,
                             0,
                             0);
             }

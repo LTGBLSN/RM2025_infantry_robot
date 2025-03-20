@@ -20,12 +20,10 @@ void uart_sent()
 {
     while (1)
     {
-        usart6_printf("%d,%d,%d,%d,%d \r\n",
-                      ( YAW_6020_ID2_GIVEN_SPEED - motor_can1_data[4].speed_rpm) ,
-                      YAW_6020_ID2_GIVEN_SPEED ,
-                      motor_can1_data[4].speed_rpm ,
-                      yaw_6020_state ,
-                      motor_can1_data[4].temperate);
+        usart6_printf("%d,%d,%d \r\n",
+                      FRICTION_WHEEL_3510_ID1_GIVEN_SPEED ,
+                      motor_can2_data[0].speed_rpm,
+                      FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT);
 
 //        usart6_printf("%d,%d \r\n",
 //                      motor_can2_data[5].speed_rpm,

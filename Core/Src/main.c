@@ -83,7 +83,8 @@ uint32_t imu_receive_time ;//IMU接收到数据的时间戳
 
 uint8_t uart1_receive_data ;//串口当前接收字节
 
-int16_t yaw_6020_state ;//6020状态 0为错误，1为正常
+int16_t yaw_6020_state ;//6020电机状态 0为错误，1为正常
+int16_t pitch_6020_state ;//6020电机状态 0为错误，1为正常
 
 
 
@@ -103,8 +104,14 @@ int16_t CHASSIS_3508_ID4_GIVEN_CURRENT ;
 
 
 //gimbal
-int16_t YAW_6020_ID2_GIVEN_SPEED ;
-int16_t YAW_6020_ID2_GIVEN_CURRENT ;
+int16_t YAW_6020_ID1_GIVEN_SPEED ;
+int16_t YAW_6020_ID1_GIVEN_CURRENT ;
+
+int16_t PITCH_6020_ID2_GIVEN_SPEED ;
+int16_t PITCH_6020_ID2_GIVEN_CURRENT ;
+
+int16_t FRICTION_WHEEL_3510_ID1_GIVEN_SPEED ;
+int16_t FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT ;
 
 
 
@@ -193,7 +200,11 @@ int main(void)
     chassis_3508_id4_speed_pid_init();
 
     //云台电机初始化
-    yaw_speed_pid_init();
+    yaw_speed_pid_init();//yaw速度环pid初始化
+    pitch_speed_pid_init();//pitch速度环pid初始化
+
+    //摩擦轮电机初始化
+    friction_wheel_3510_id1_speed_pid_init();//摩擦轮id1速度环初始化
 
 
   /* USER CODE END 2 */
