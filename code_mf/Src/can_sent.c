@@ -41,8 +41,8 @@ void can_sent()
                             CHASSIS_3508_ID4_GIVEN_CURRENT,
                             0,
                             PITCH_6020_ID2_GIVEN_CURRENT,
-                            FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT,
-                            FRICTION_WHEEL_3510_ID2_GIVEN_CURRENT,
+                            0,
+                            0,
                             0);
             }
             else if(rc_s0 == 1)//ÍÓÂÝÒÇ±Õ»·
