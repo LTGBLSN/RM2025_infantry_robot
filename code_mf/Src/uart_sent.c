@@ -20,8 +20,10 @@ void uart_sent()
 {
     while (1)
     {
-        usart6_printf("%6.2f,%d,0 \r\n",
-                      PITCH_IMU_ANGLE,
+        usart6_printf("%6.2f,%d,%d,0 \r\n",
+
+                      pitch_motor_mean_speed,
+                      motor_can2_data[5].speed_rpm,
                       PITCH_6020_ID2_GIVEN_CURRENT);
 
 //        usart6_printf("%d,%d \r\n",

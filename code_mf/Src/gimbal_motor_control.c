@@ -26,6 +26,8 @@ pid_type_def friction_wheel_3510_ID2_speed_pid;
 
 
         friction_wheel_speed_control();//Ä¦²ÁÂÖ¿ØÖÆ
+
+
         motor_gimbal_pid_compute();//ÔÆÌ¨¿ØÖÆ
 
 
@@ -92,6 +94,21 @@ void friction_wheel_speed_control()
 }
 
 
+void pitch_motor_mean_speed_compute()
+{
+     pitch_motor_mean_speed =
+             0.5f * (float)motor_can2_data[5].speed_rpm +
+             0.3f * (float)pitch_motor_speed_last_data[0]+
+             0.15f * (float)pitch_motor_speed_last_data[1]+
+             0.05f * (float)pitch_motor_speed_last_data[2] ;
+
+    pitch_motor_speed_last_data[2] = pitch_motor_speed_last_data[1] ;
+    pitch_motor_speed_last_data[1] = pitch_motor_speed_last_data[0] ;
+    pitch_motor_speed_last_data[0] = motor_can2_data[5].speed_rpm ;
+
+}
+
+
 
 
 
@@ -125,7 +142,7 @@ void pitch_speed_pid_init(void)
 
 float pitch_speed_pid_loop(float PITCH_6020_ID2_speed_set_loop)
 {
-    PID_calc(&pitch_6020_ID2_speed_pid, PITCH_IMU_ANGLE , PITCH_6020_ID2_speed_set_loop);
+    PID_calc(&pitch_6020_ID2_speed_pid, motor_can2_data[5].speed_rpm , PITCH_6020_ID2_speed_set_loop);
     int16_t pitch_6020_ID2_given_current_loop = (int16_t)(pitch_6020_ID2_speed_pid.out);
 
     return pitch_6020_ID2_given_current_loop ;

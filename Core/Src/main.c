@@ -110,7 +110,8 @@ int16_t YAW_6020_ID1_GIVEN_CURRENT ;
 float PITCH_6020_ID2_GIVEN_ANGLE ;
 float PITCH_6020_ID2_GIVEN_SPEED ;
 int16_t PITCH_6020_ID2_GIVEN_CURRENT ;
-
+float pitch_motor_mean_speed ;
+int16_t pitch_motor_speed_last_data [3] ;
 
 
 //friction wheel

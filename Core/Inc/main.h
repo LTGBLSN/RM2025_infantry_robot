@@ -103,7 +103,8 @@ extern int16_t YAW_6020_ID1_GIVEN_CURRENT ;
 extern float PITCH_6020_ID2_GIVEN_ANGLE ;
 extern float PITCH_6020_ID2_GIVEN_SPEED ;
 extern int16_t PITCH_6020_ID2_GIVEN_CURRENT ;
-
+extern float pitch_motor_mean_speed ;
+extern int16_t pitch_motor_speed_last_data [3] ;
 
 //friction wheel
 extern int16_t FRICTION_WHEEL_3510_ID1_GIVEN_SPEED ;
@@ -111,6 +112,8 @@ extern int16_t FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT ;
 
 extern int16_t FRICTION_WHEEL_3510_ID2_GIVEN_SPEED ;
 extern int16_t FRICTION_WHEEL_3510_ID2_GIVEN_CURRENT ;
+
+
 
 
 /* USER CODE END EC */
