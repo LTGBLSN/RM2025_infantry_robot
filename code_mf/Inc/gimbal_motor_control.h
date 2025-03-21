@@ -29,10 +29,16 @@
 #include <math.h>
 
 
-#define YAW_6020_ID2_SPEED_PID_KP        200.0f
-#define YAW_6020_ID2_SPEED_PID_KI        2.0f
+//#define YAW_6020_ID2_SPEED_PID_KP        200.0f
+//#define YAW_6020_ID2_SPEED_PID_KI        2.0f
+//#define YAW_6020_ID2_SPEED_PID_KD        0.0f
+//#define YAW_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
+//#define YAW_6020_ID2_SPEED_PID_KI_MAX    10000.0f
+
+#define YAW_6020_ID2_SPEED_PID_KP        1.0f
+#define YAW_6020_ID2_SPEED_PID_KI        1.0f
 #define YAW_6020_ID2_SPEED_PID_KD        0.0f
-#define YAW_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
+#define YAW_6020_ID2_SPEED_PID_OUT_MAX   20000.0f
 #define YAW_6020_ID2_SPEED_PID_KI_MAX    10000.0f
 
 
@@ -74,8 +80,9 @@
 
 #define FRICTION_WHEEL_SHOOT_SPEED 1000
 
-
 #define GIMBAL_PID_COMPUTE_FREQUENCY 1000  // Hz
+
+
 
 
 extern pid_type_def yaw_6020_ID1_speed_pid;
@@ -92,6 +99,10 @@ extern pid_type_def friction_wheel_3510_ID2_speed_pid;
 
 
 
+extern pid_type_def shoot_2006_ID3_speed_pid;
+
+
+
 
 void motor_gimbal_speed_compute();//目标赋值
 void motor_gimbal_pid_compute();//pid计算
@@ -99,7 +110,11 @@ void motor_gimbal_pid_compute();//pid计算
 void friction_wheel_speed_control();//目标赋值
 void friction_wheel_pid_control();//pid计算
 
-void pitch_motor_mean_speed_compute();//权重速度滤波 弃用，有一定滞后性
+
+
+
+
+//void pitch_motor_mean_speed_compute();//权重速度滤波 弃用，有一定滞后性
 
 
 
@@ -109,7 +124,7 @@ float yaw_speed_pid_loop(float YAW_6020_ID1_speed_set_loop);
 void pitch_speed_pid_init(void);
 float pitch_speed_pid_loop(float PITCH_6020_ID2_speed_set_loop);
 void pitch_angle_pid_init(void);
-float pitch_angle_pid_loop(float PITCH_6020_ID2_angle_set_loop);
+float pitch_angle_pid_loop(float PITCH_6020_ID2_angle_set_loop);//暂不用，pitch速控
 
 
 
@@ -118,6 +133,7 @@ int16_t friction_wheel_3510_id1_speed_pid_loop(int16_t friction_wheel_3510_id1_s
 
 void friction_wheel_3510_id2_speed_pid_init(void);
 int16_t friction_wheel_3510_id2_speed_pid_loop(int16_t friction_wheel_3510_id2_speed_set_loop);
+
 
 
 

@@ -55,6 +55,7 @@ osThreadId can_sent_taskHandle;
 osThreadId err_dec_taskHandle;
 osThreadId chassisMotorTasHandle;
 osThreadId gimbalTaskHandle;
+osThreadId shoot_con_taskHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -69,6 +70,7 @@ void can_sent(void const * argument);
 void error_detection(void const * argument);
 void chassis_motor_control(void const * argument);
 void gimbal_motor_control(void const * argument);
+void shoot_control(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -146,6 +148,10 @@ void MX_FREERTOS_Init(void) {
   /* definition and creation of gimbalTask */
   osThreadDef(gimbalTask, gimbal_motor_control, osPriorityIdle, 0, 128);
   gimbalTaskHandle = osThreadCreate(osThread(gimbalTask), NULL);
+
+  /* definition and creation of shoot_con_task */
+  osThreadDef(shoot_con_task, shoot_control, osPriorityIdle, 0, 128);
+  shoot_con_taskHandle = osThreadCreate(osThread(shoot_con_task), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -295,6 +301,24 @@ __weak void gimbal_motor_control(void const * argument)
     osDelay(1);
   }
   /* USER CODE END gimbal_motor_control */
+}
+
+/* USER CODE BEGIN Header_shoot_control */
+/**
+* @brief Function implementing the shoot_con_task thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_shoot_control */
+__weak void shoot_control(void const * argument)
+{
+  /* USER CODE BEGIN shoot_control */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END shoot_control */
 }
 
 /* Private application code --------------------------------------------------*/

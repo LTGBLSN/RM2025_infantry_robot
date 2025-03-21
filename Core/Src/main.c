@@ -39,6 +39,7 @@
 #include "pid.h"
 #include "chassis_motor_control.h"
 #include "gimbal_motor_control.h"
+#include "shoot_control.h"
 #include <math.h>
 
 
@@ -89,6 +90,8 @@ int16_t pitch_6020_state ;//6020电机状态 0为错误，1为正常
 
 
 
+
+
 //chassis
 int16_t CHASSIS_3508_ID1_GIVEN_SPEED ;
 int16_t CHASSIS_3508_ID1_GIVEN_CURRENT ;
@@ -120,6 +123,12 @@ int16_t FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT ;
 
 int16_t FRICTION_WHEEL_3510_ID2_GIVEN_SPEED ;
 int16_t FRICTION_WHEEL_3510_ID2_GIVEN_CURRENT ;
+
+
+
+//shoot
+float SHOOT_2006_ID3_GIVEN_SPEED ;
+int16_t SHOOT_2006_ID3_GIVEN_CURRENT ;
 
 
 
@@ -220,6 +229,9 @@ int main(void)
     //摩擦轮电机初始化
     friction_wheel_3510_id1_speed_pid_init();//摩擦轮id1速度环初始化
     friction_wheel_3510_id2_speed_pid_init();//摩擦轮id2速度环初始化
+
+    //拨弹盘电机初始化
+    shoot_2006_id3_speed_pid_init();//拨弹盘id3速度环初始化
 
 
   /* USER CODE END 2 */

@@ -7,6 +7,7 @@
 #include "CAN_receive.h"
 #include "pid.h"
 #include "gimbal_motor_control.h"
+#include "shoot_control.h"
 
 pid_type_def yaw_6020_ID1_speed_pid;
 
@@ -19,6 +20,11 @@ pid_type_def friction_wheel_3510_ID1_speed_pid;
 pid_type_def friction_wheel_3510_ID2_speed_pid;
 
 
+
+pid_type_def shoot_2006_ID3_speed_pid;
+
+
+
  void gimbal_motor_control()
 {
     while (1)
@@ -28,8 +34,13 @@ pid_type_def friction_wheel_3510_ID2_speed_pid;
         friction_wheel_speed_control();//摩擦轮目标速度控制
         friction_wheel_pid_control();//摩擦轮pid控制
 
-        motor_gimbal_speed_compute();
+        motor_gimbal_speed_compute();//pitch目标速度控制
         motor_gimbal_pid_compute();//云台pid控制
+
+
+        shoot_pid_control();//拨弹盘pid控制
+
+
 
 
 
@@ -49,7 +60,7 @@ pid_type_def friction_wheel_3510_ID2_speed_pid;
 
 void motor_gimbal_speed_compute()
 {
-    PITCH_6020_ID2_GIVEN_SPEED = 0.05f * (float)rc_ch1 ;
+    PITCH_6020_ID2_GIVEN_SPEED = 0.05f * (float)rc_ch3 ;
 }
 
 void motor_gimbal_pid_compute()
@@ -85,10 +96,14 @@ void friction_wheel_speed_control()
 }
 void friction_wheel_pid_control()
 {
-    //friction_wheel
-    FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT = (int16_t)friction_wheel_3510_id1_speed_pid_loop(FRICTION_WHEEL_3510_ID1_GIVEN_SPEED);//速度环id1
-    FRICTION_WHEEL_3510_ID2_GIVEN_CURRENT = (int16_t)friction_wheel_3510_id2_speed_pid_loop(FRICTION_WHEEL_3510_ID2_GIVEN_SPEED);//速度环id2
+    FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT = friction_wheel_3510_id1_speed_pid_loop(FRICTION_WHEEL_3510_ID1_GIVEN_SPEED);
+     FRICTION_WHEEL_3510_ID2_GIVEN_CURRENT = friction_wheel_3510_id2_speed_pid_loop(FRICTION_WHEEL_3510_ID2_GIVEN_SPEED);
 }
+
+
+
+
+
 
 
 
@@ -122,7 +137,7 @@ void yaw_speed_pid_init(void)
 
 float yaw_speed_pid_loop(float YAW_6020_ID1_speed_set_loop)
 {
-    PID_calc(&yaw_6020_ID1_speed_pid, motor_can1_data[4].speed_rpm , YAW_6020_ID1_speed_set_loop);
+    PID_calc(&yaw_6020_ID1_speed_pid, YAW_IMU_ANGLE , YAW_6020_ID1_speed_set_loop);
     int16_t yaw_6020_ID1_given_current_loop = (int16_t)(yaw_6020_ID1_speed_pid.out);
 
     return yaw_6020_ID1_given_current_loop ;
@@ -204,6 +219,11 @@ int16_t friction_wheel_3510_id2_speed_pid_loop(int16_t friction_wheel_3510_id2_s
     return friction_wheel_3510_id2_given_current_loop ;
 
 }
+
+
+
+
+
 
 
 
