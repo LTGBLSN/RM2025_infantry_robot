@@ -120,7 +120,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
                 break;
             }
         }
-        pitch_motor_mean_speed_compute();//pitch速度均值滤波
+//        pitch_motor_mean_speed_compute();//pitch速度均值滤波 弃用
     }
 }
 void CAN2_cmd_pitch(int16_t pitch, int16_t none0, int16_t none1, int16_t none2)

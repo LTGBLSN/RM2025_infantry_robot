@@ -93,12 +93,13 @@ extern pid_type_def friction_wheel_3510_ID2_speed_pid;
 
 
 
+void motor_gimbal_speed_compute();//目标赋值
+void motor_gimbal_pid_compute();//pid计算
 
-void motor_gimbal_pid_compute();
+void friction_wheel_speed_control();//目标赋值
+void friction_wheel_pid_control();//pid计算
 
-void friction_wheel_speed_control();
-
-void pitch_motor_mean_speed_compute();
+void pitch_motor_mean_speed_compute();//权重速度滤波 弃用，有一定滞后性
 
 
 

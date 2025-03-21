@@ -25,10 +25,11 @@ pid_type_def friction_wheel_3510_ID2_speed_pid;
     {
 
 
-        friction_wheel_speed_control();//摩擦轮控制
+        friction_wheel_speed_control();//摩擦轮目标速度控制
+        friction_wheel_pid_control();//摩擦轮pid控制
 
-
-        motor_gimbal_pid_compute();//云台控制
+        motor_gimbal_speed_compute();
+        motor_gimbal_pid_compute();//云台pid控制
 
 
 
@@ -46,17 +47,15 @@ pid_type_def friction_wheel_3510_ID2_speed_pid;
 
 
 
-
+void motor_gimbal_speed_compute()
+{
+    PITCH_6020_ID2_GIVEN_SPEED = 0.05f * (float)rc_ch1 ;
+}
 
 void motor_gimbal_pid_compute()
 {
-
-
     //yaw
-
     YAW_6020_ID1_GIVEN_CURRENT = (int16_t)yaw_speed_pid_loop(YAW_6020_ID1_GIVEN_SPEED);//速度环
-
-
 
 
 
@@ -64,12 +63,7 @@ void motor_gimbal_pid_compute()
 //    PITCH_6020_ID2_GIVEN_ANGLE = 850 ;
 //    PITCH_6020_ID2_GIVEN_SPEED = pitch_angle_pid_loop(PITCH_6020_ID2_GIVEN_ANGLE);//角度环
 
-
-    PITCH_6020_ID2_GIVEN_SPEED = 0 ;
     PITCH_6020_ID2_GIVEN_CURRENT = (int16_t)pitch_speed_pid_loop(PITCH_6020_ID2_GIVEN_SPEED); //速度环
-
-
-
 
 }
 
@@ -88,13 +82,19 @@ void friction_wheel_speed_control()
 
     }
 
+}
+void friction_wheel_pid_control()
+{
     //friction_wheel
     FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT = (int16_t)friction_wheel_3510_id1_speed_pid_loop(FRICTION_WHEEL_3510_ID1_GIVEN_SPEED);//速度环id1
     FRICTION_WHEEL_3510_ID2_GIVEN_CURRENT = (int16_t)friction_wheel_3510_id2_speed_pid_loop(FRICTION_WHEEL_3510_ID2_GIVEN_SPEED);//速度环id2
 }
 
 
-void pitch_motor_mean_speed_compute()
+
+
+
+void pitch_motor_mean_speed_compute()//弃用，滞后性有点大
 {
      pitch_motor_mean_speed =
              0.5f * (float)motor_can2_data[5].speed_rpm +

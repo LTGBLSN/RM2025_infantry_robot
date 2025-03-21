@@ -22,7 +22,7 @@ void uart_sent()
     {
         usart6_printf("%6.2f,%d,%d,0 \r\n",
 
-                      pitch_motor_mean_speed,
+                      PITCH_6020_ID2_GIVEN_SPEED,
                       motor_can2_data[5].speed_rpm,
                       PITCH_6020_ID2_GIVEN_CURRENT);
 
