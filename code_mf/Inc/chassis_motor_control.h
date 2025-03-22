@@ -56,6 +56,8 @@ extern pid_type_def chassis_3508_ID3_speed_pid;
 extern pid_type_def chassis_3508_ID4_speed_pid;
 
 
+void rc_to_chassis_speed_compute();
+
 void chassis_settlement();
 
 void motor_chassis_pid_compute();

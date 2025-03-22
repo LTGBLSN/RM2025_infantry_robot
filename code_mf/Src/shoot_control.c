@@ -14,7 +14,27 @@ void shoot_control()
     while (1)
     {
 
+        //此函数函数阻塞
+
+
         shoot_speed_compute();//拨弹盘目标速度控制
+
+        if(SHOOT_2006_ID3_GIVEN_SPEED == SHOOT_TURN_ON_SPEED)
+        {
+            //如果卡住了
+            if(motor_can2_data[2].speed_rpm == 0)
+            {
+                osDelay(SHOOT_SPEED_CHECK_TIME);
+                if(motor_can2_data[2].speed_rpm == 0)
+                {
+                    SHOOT_2006_ID3_GIVEN_SPEED = SHOOT_TURN_OFF_SPEED ;
+                    osDelay(SHOOT_TURN_OFF_TIME);
+                    SHOOT_2006_ID3_GIVEN_SPEED = SHOOT_TURN_ON_SPEED ;
+                }
+            }
+
+
+        }
 
         osDelay(1);
     }

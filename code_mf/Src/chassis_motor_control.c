@@ -33,7 +33,9 @@ void chassis_motor_control()
 {
     while (1)
     {
-        chassis_settlement();//底盘结算!!!!未完成！！！
+        rc_to_chassis_speed_compute();//遥控器转换为云台速度
+        //缺底盘速度解算
+        chassis_settlement();//轮系速度解算（暂时无云台）
         motor_chassis_pid_compute();//pid速度
 
         osDelay((1/CHASSIS_PID_COMPUTE_FREQUENCY)*1000);
@@ -49,17 +51,31 @@ void chassis_motor_control()
     }
 }
 
+void rc_to_chassis_speed_compute()
+{
+    chassis_vx = rc_ch0 ;
+//    chassis_vround = rc_ch0 ;
+        chassis_vy = rc_ch1 ;
+
+}
+
 //此处缺解算函数，先验证pid无问题
 void chassis_settlement()
 {
-//    CHASSIS_3508_ID1_GIVEN_SPEED = 1000 ;
-//    CHASSIS_3508_ID2_GIVEN_SPEED = 1000 ;
-//    CHASSIS_3508_ID3_GIVEN_SPEED = 1000 ;
-//    CHASSIS_3508_ID4_GIVEN_SPEED = 1000 ;
-    CHASSIS_3508_ID1_GIVEN_SPEED = 0 ;
-    CHASSIS_3508_ID2_GIVEN_SPEED = 0 ;
-    CHASSIS_3508_ID3_GIVEN_SPEED = 0 ;
-    CHASSIS_3508_ID4_GIVEN_SPEED = 0 ;
+    CHASSIS_3508_ID1_GIVEN_SPEED = -chassis_vy + chassis_vx ;
+    CHASSIS_3508_ID2_GIVEN_SPEED = chassis_vy  + chassis_vx ;
+    CHASSIS_3508_ID3_GIVEN_SPEED = chassis_vy  - chassis_vx ;
+    CHASSIS_3508_ID4_GIVEN_SPEED = -chassis_vy - chassis_vx ;
+
+
+//    CHASSIS_3508_ID1_GIVEN_SPEED = 0 ;
+//    CHASSIS_3508_ID2_GIVEN_SPEED = 0 ;
+//    CHASSIS_3508_ID3_GIVEN_SPEED = 0 ;
+//    CHASSIS_3508_ID4_GIVEN_SPEED = 0 ;
+
+
+
+
 }
 
 

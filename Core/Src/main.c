@@ -87,6 +87,10 @@ uint8_t uart1_receive_data ;//串口当前接收字节
 int16_t yaw_6020_state ;//6020电机状态 0为错误，1为正常
 int16_t pitch_6020_state ;//6020电机状态 0为错误，1为正常
 
+int16_t chassis_vx ;
+int16_t chassis_vy ;
+int16_t chassis_vround ;
+
 
 
 

@@ -83,10 +83,10 @@ extern uint8_t uart1_receive_data ;//串口当前接收字节
 extern int16_t yaw_6020_state ;//6020状态 0为错误，1为正常
 extern int16_t pitch_6020_state ;//6020电机状态 0为错误，1为正常
 
-extern int16_t shoot_motor_speed_state ;//拨弹盘电机转速状态
-extern int16_t shoot_motor_switch_state ;//拨弹盘电机转速状态
-extern int16_t shoot_motor_need_turn_off ;//拨弹盘需要反转标志位，0为不需要，1为需要
-extern uint32_t shoot_motor_stop_time ;//拨弹盘卡弹时间戳
+extern int16_t chassis_vx ;
+extern int16_t chassis_vy ;
+extern int16_t chassis_vround ;
+
 
 //chassis
 extern int16_t CHASSIS_3508_ID1_GIVEN_SPEED ;

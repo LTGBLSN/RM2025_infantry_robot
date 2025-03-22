@@ -61,6 +61,7 @@ pid_type_def shoot_2006_ID3_speed_pid;
 void motor_gimbal_speed_compute()
 {
     PITCH_6020_ID2_GIVEN_SPEED = 0.05f * (float)rc_ch3 ;
+    YAW_6020_ID1_GIVEN_SPEED = -(0.5f * (float)rc_ch2) ;
 }
 
 void motor_gimbal_pid_compute()
@@ -137,7 +138,7 @@ void yaw_speed_pid_init(void)
 
 float yaw_speed_pid_loop(float YAW_6020_ID1_speed_set_loop)
 {
-    PID_calc(&yaw_6020_ID1_speed_pid, YAW_IMU_ANGLE , YAW_6020_ID1_speed_set_loop);
+    PID_calc(&yaw_6020_ID1_speed_pid, YAW_IMU_SPEED , YAW_6020_ID1_speed_set_loop);
     int16_t yaw_6020_ID1_given_current_loop = (int16_t)(yaw_6020_ID1_speed_pid.out);
 
     return yaw_6020_ID1_given_current_loop ;

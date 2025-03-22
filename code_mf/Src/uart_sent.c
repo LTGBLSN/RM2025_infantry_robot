@@ -20,15 +20,13 @@ void uart_sent()
 {
     while (1)
     {
-        usart6_printf("%6.2f,%d,%d \r\n",
+        usart6_printf("%6.2f,%6.2f,%d \r\n",
 
-                      SHOOT_2006_ID3_GIVEN_SPEED,
-                      motor_can2_data[2].speed_rpm,
-                      SHOOT_2006_ID3_GIVEN_CURRENT);
+                      YAW_IMU_SPEED,
+                      YAW_6020_ID1_GIVEN_SPEED,
+                      motor_can1_data[4].ecd);
 
-//        usart6_printf("%d,%d \r\n",
-//                      motor_can2_data[5].speed_rpm,
-//                      rc_receive_time);
+
 
         osDelay(10);
 
