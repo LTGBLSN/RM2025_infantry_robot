@@ -22,9 +22,9 @@ void uart_sent()
     {
         usart6_printf("%6.2f,%6.2f,%d \r\n",
 
-                      YAW_IMU_SPEED,
-                      YAW_6020_ID1_GIVEN_SPEED,
-                      motor_can1_data[4].ecd);
+                      PITCH_IMU_SPEED,
+                      PITCH_6020_ID2_GIVEN_SPEED,
+                      PITCH_6020_ID2_GIVEN_CURRENT);
 
 
 

@@ -40,7 +40,7 @@ void can_sent()
                             CHASSIS_3508_ID3_GIVEN_CURRENT,
                             CHASSIS_3508_ID4_GIVEN_CURRENT,
                             YAW_6020_ID1_GIVEN_CURRENT,
-                            0,
+                            PITCH_6020_ID2_GIVEN_CURRENT,
                             FRICTION_WHEEL_3510_ID1_GIVEN_CURRENT,
                             FRICTION_WHEEL_3510_ID2_GIVEN_CURRENT,
                             SHOOT_2006_ID3_GIVEN_CURRENT);
