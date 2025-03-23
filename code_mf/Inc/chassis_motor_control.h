@@ -47,7 +47,12 @@
 #define CHASSIS_3508_ID4_SPEED_PID_KI   0.10f
 #define CHASSIS_3508_ID4_SPEED_PID_KD   0.0f
 
+#define YAW_MID_ECD 4760
+
 #define CHASSIS_PID_COMPUTE_FREQUENCY 1000  // Hz
+
+#define KEY_MOVE_VX_SPEED 2000
+#define KEY_MOVE_VY_SPEED 2000
 
 
 extern pid_type_def chassis_3508_ID1_speed_pid;
@@ -56,7 +61,11 @@ extern pid_type_def chassis_3508_ID3_speed_pid;
 extern pid_type_def chassis_3508_ID4_speed_pid;
 
 
-void rc_to_chassis_speed_compute();
+void rc_to_gimbal_speed_compute();
+
+void gimbal_to_chassis_speed_compute();
+
+void yaw_ecd_angle_to_radian();//±àÂëÆ÷»»Ëã»¡¶È²î
 
 void chassis_settlement();
 

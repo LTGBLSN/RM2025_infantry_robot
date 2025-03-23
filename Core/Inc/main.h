@@ -83,9 +83,18 @@ extern uint8_t uart1_receive_data ;//串口当前接收字节
 extern int16_t yaw_6020_state ;//6020状态 0为错误，1为正常
 extern int16_t pitch_6020_state ;//6020电机状态 0为错误，1为正常
 
-extern int16_t chassis_vx ;
-extern int16_t chassis_vy ;
-extern int16_t chassis_vround ;
+extern float gimbal_vx ;
+extern float gimbal_vy ;
+
+extern float chassis_vx ;
+extern float chassis_vy ;
+extern float chassis_vround ;
+
+
+extern float yaw_angle_difference ;
+extern float yaw_radian_difference ;
+
+extern uint32_t gyro_state ;
 
 
 //chassis
@@ -101,7 +110,7 @@ extern int16_t CHASSIS_3508_ID3_GIVEN_CURRENT;
 extern int16_t CHASSIS_3508_ID4_GIVEN_SPEED ;
 extern int16_t CHASSIS_3508_ID4_GIVEN_CURRENT;
 
-//gimbal
+//gimbal_vx
 extern float YAW_6020_ID1_GIVEN_SPEED ;
 extern int16_t YAW_6020_ID1_GIVEN_CURRENT ;
 

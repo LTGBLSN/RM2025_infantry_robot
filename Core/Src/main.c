@@ -87,9 +87,17 @@ uint8_t uart1_receive_data ;//串口当前接收字节
 int16_t yaw_6020_state ;//6020电机状态 0为错误，1为正常
 int16_t pitch_6020_state ;//6020电机状态 0为错误，1为正常
 
-int16_t chassis_vx ;
-int16_t chassis_vy ;
-int16_t chassis_vround ;
+float gimbal_vx ;
+float gimbal_vy ;
+
+float chassis_vx ;
+float chassis_vy ;
+float chassis_vround ;
+
+float yaw_angle_difference ;
+float yaw_radian_difference ;
+
+uint32_t gyro_state ;//通过取余数判定是否需要小陀螺
 
 
 
@@ -110,7 +118,7 @@ int16_t CHASSIS_3508_ID4_GIVEN_SPEED ;
 int16_t CHASSIS_3508_ID4_GIVEN_CURRENT ;
 
 
-//gimbal
+//gimbal_vx
 float YAW_6020_ID1_GIVEN_SPEED ;
 int16_t YAW_6020_ID1_GIVEN_CURRENT ;
 

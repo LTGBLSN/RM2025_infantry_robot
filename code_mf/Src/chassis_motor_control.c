@@ -21,6 +21,7 @@
 #include "jy61p.h"
 #include "pid.h"
 #include "chassis_motor_control.h"
+#include <math.h>
 
 pid_type_def chassis_3508_ID1_speed_pid;
 pid_type_def chassis_3508_ID2_speed_pid;
@@ -33,8 +34,9 @@ void chassis_motor_control()
 {
     while (1)
     {
-        rc_to_chassis_speed_compute();//遥控器转换为云台速度
-        //缺底盘速度解算
+        rc_to_gimbal_speed_compute();//遥控器转换为云台速度
+        yaw_ecd_angle_to_radian();
+        gimbal_to_chassis_speed_compute();//底盘速度解算
         chassis_settlement();//轮系速度解算（暂时无云台）
         motor_chassis_pid_compute();//pid速度
 
@@ -51,21 +53,94 @@ void chassis_motor_control()
     }
 }
 
-void rc_to_chassis_speed_compute()
+void rc_to_gimbal_speed_compute()
 {
-    chassis_vx = rc_ch0 ;
-//    chassis_vround = rc_ch0 ;
-        chassis_vy = rc_ch1 ;
+    if( key_W == 1 & key_S == 1 )
+    {
+        gimbal_vy = 0 ;
+    }
+    else if( key_W == 1 & key_S == 0 )
+    {
+        gimbal_vy = KEY_MOVE_VY_SPEED ;
+    }
+    else if( key_W == 0 & key_S == 1 )
+    {
+        gimbal_vy = -KEY_MOVE_VY_SPEED ;
+    }
+    else
+    {
+        gimbal_vy = (float)(2 * rc_ch1 ) ;
+    }
+
+
+    if( key_A == 1 & key_D == 1 )
+    {
+        gimbal_vx = 0 ;
+    }
+    else if( key_A == 1 & key_D == 0 )
+    {
+        gimbal_vx = KEY_MOVE_VX_SPEED ;
+    }
+    else if( key_A == 0 & key_D == 1 )
+    {
+        gimbal_vx = -KEY_MOVE_VX_SPEED ;
+    }
+    else
+    {
+        gimbal_vx = (float)(2 * rc_ch0 ) ;
+    }
+
+
+    //vround_compute
+    if(key_SHIFT == 1)
+    {
+        gyro_state++ ;
+    }
+
+
+    if (rc_s0 == 1)
+    {
+        chassis_vround = 3000 ;
+    } else
+    {
+        if( (gyro_state%2) == 1 )
+        {
+            chassis_vround = 3000 ;
+        }
+        else
+        {
+            chassis_vround = 0 ;
+        }
+    }
+
+
+
 
 }
 
-//此处缺解算函数，先验证pid无问题
+void gimbal_to_chassis_speed_compute()
+{
+    chassis_vx = gimbal_vx * (float)cos((double)yaw_radian_difference) - gimbal_vy * (float)sin((double)yaw_radian_difference);
+    chassis_vy = gimbal_vx * (float)sin((double)yaw_radian_difference) + gimbal_vy * (float)cos((double)yaw_radian_difference);
+
+
+
+}
+
+void yaw_ecd_angle_to_radian()
+{
+
+    yaw_angle_difference = (float)(motor_can1_data[4].ecd - YAW_MID_ECD) / (float)(8192 / 360.0f) ;
+    yaw_radian_difference = (float)yaw_angle_difference * (float)(M_PI / 180);
+}
+
+
 void chassis_settlement()
 {
-    CHASSIS_3508_ID1_GIVEN_SPEED = -chassis_vy + chassis_vx ;
-    CHASSIS_3508_ID2_GIVEN_SPEED = chassis_vy  + chassis_vx ;
-    CHASSIS_3508_ID3_GIVEN_SPEED = chassis_vy  - chassis_vx ;
-    CHASSIS_3508_ID4_GIVEN_SPEED = -chassis_vy - chassis_vx ;
+    CHASSIS_3508_ID1_GIVEN_SPEED = (int16_t)(-chassis_vy + chassis_vx + chassis_vround) ;
+    CHASSIS_3508_ID2_GIVEN_SPEED = (int16_t)( chassis_vy +  chassis_vx + chassis_vround) ;
+    CHASSIS_3508_ID3_GIVEN_SPEED = (int16_t)( chassis_vy -  chassis_vx + chassis_vround) ;
+    CHASSIS_3508_ID4_GIVEN_SPEED = (int16_t)(-chassis_vy - chassis_vx + chassis_vround) ;
 
 
 //    CHASSIS_3508_ID1_GIVEN_SPEED = 0 ;
