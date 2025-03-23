@@ -79,11 +79,11 @@ void rc_to_gimbal_speed_compute()
     }
     else if( key_A == 1 & key_D == 0 )
     {
-        gimbal_vx = KEY_MOVE_VX_SPEED ;
+        gimbal_vx = -KEY_MOVE_VX_SPEED ;
     }
     else if( key_A == 0 & key_D == 1 )
     {
-        gimbal_vx = -KEY_MOVE_VX_SPEED ;
+        gimbal_vx = KEY_MOVE_VX_SPEED ;
     }
     else
     {
@@ -92,9 +92,10 @@ void rc_to_gimbal_speed_compute()
 
 
     //vround_compute
-    if(key_SHIFT == 1)
+    if(key_Q == 1)
     {
-        gyro_state++ ;
+        gyro_time = HAL_GetTick() ;
+        
     }
 
 
@@ -103,7 +104,7 @@ void rc_to_gimbal_speed_compute()
         chassis_vround = 3000 ;
     } else
     {
-        if( (gyro_state%2) == 1 )
+        if((gyro_state % 2) == 1 )
         {
             chassis_vround = 3000 ;
         }

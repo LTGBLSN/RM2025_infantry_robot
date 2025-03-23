@@ -25,6 +25,8 @@ void get_rc()
         rc_ch4 = local_rc_ctrl->rc.ch[4];
         rc_s0  = local_rc_ctrl->rc.s[0];
         rc_s1  = local_rc_ctrl->rc.s[1];
+
+
         if(local_rc_ctrl->key.v & KEY_PRESSED_OFFSET_W)
         {
             key_W = 1 ;

@@ -71,6 +71,10 @@ extern int16_t key_V ;
 extern int16_t key_B ;
 
 
+extern int16_t mouse_vx ;
+extern int16_t mouse_vy ;
+
+
 
 extern int16_t rc_receive_state ;//遥控器状态 0为离线，1为在线
 extern uint32_t rc_receive_time ;//遥控器接收到数据的时间戳
@@ -94,7 +98,8 @@ extern float chassis_vround ;
 extern float yaw_angle_difference ;
 extern float yaw_radian_difference ;
 
-extern uint32_t gyro_state ;
+extern uint32_t gyro_time ;
+extern int16_t gyro_state ;
 
 
 //chassis

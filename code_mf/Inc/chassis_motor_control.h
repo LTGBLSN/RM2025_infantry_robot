@@ -51,8 +51,8 @@
 
 #define CHASSIS_PID_COMPUTE_FREQUENCY 1000  // Hz
 
-#define KEY_MOVE_VX_SPEED 2000
-#define KEY_MOVE_VY_SPEED 2000
+#define KEY_MOVE_VX_SPEED 1000
+#define KEY_MOVE_VY_SPEED 1000
 
 
 extern pid_type_def chassis_3508_ID1_speed_pid;
