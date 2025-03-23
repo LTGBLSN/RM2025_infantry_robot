@@ -91,12 +91,16 @@ void rc_to_gimbal_speed_compute()
     }
 
 
-    //vround_compute
-    if(key_Q == 1)
+    if( (HAL_GetTick() - gyro_time) > 1000 )
     {
-        gyro_time = HAL_GetTick() ;
-        
+        if(key_Q == 1)
+        {
+            gyro_time = HAL_GetTick() ;
+            gyro_state++ ;
+        }
     }
+    //vround_compute
+
 
 
     if (rc_s0 == 1)
