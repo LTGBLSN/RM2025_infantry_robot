@@ -91,7 +91,7 @@ void rc_to_gimbal_speed_compute()
     }
 
 
-    if( (HAL_GetTick() - gyro_time) > 1000 )
+    if( (HAL_GetTick() - gyro_time) > KEY_CHECK_MIN_TIME )
     {
         if(key_Q == 1)
         {
@@ -100,7 +100,6 @@ void rc_to_gimbal_speed_compute()
         }
     }
     //vround_compute
-
 
 
     if (rc_s0 == 1)
@@ -122,6 +121,8 @@ void rc_to_gimbal_speed_compute()
 
 
 }
+
+
 
 void gimbal_to_chassis_speed_compute()
 {

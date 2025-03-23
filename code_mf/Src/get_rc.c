@@ -26,6 +26,11 @@ void get_rc()
         rc_s0  = local_rc_ctrl->rc.s[0];
         rc_s1  = local_rc_ctrl->rc.s[1];
 
+        mouse_vx = local_rc_ctrl->mouse.x;
+        mouse_vy = local_rc_ctrl->mouse.y;
+        mouse_press_l = local_rc_ctrl->mouse.press_l ;
+        mouse_press_r = local_rc_ctrl->mouse.press_r ;
+
 
         if(local_rc_ctrl->key.v & KEY_PRESSED_OFFSET_W)
         {

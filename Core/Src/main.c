@@ -77,7 +77,8 @@ int16_t key_B ;
 
 int16_t mouse_vx ;
 int16_t mouse_vy ;
-
+int16_t mouse_press_l ;
+int16_t mouse_press_r ;
 
 
 int16_t rc_receive_state ;//遥控器状态 0为离线，1为在线

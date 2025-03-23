@@ -73,6 +73,8 @@ extern int16_t key_B ;
 
 extern int16_t mouse_vx ;
 extern int16_t mouse_vy ;
+extern int16_t mouse_press_l ;
+extern int16_t mouse_press_r ;
 
 
 

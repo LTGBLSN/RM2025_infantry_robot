@@ -20,11 +20,11 @@ void uart_sent()
 {
     while (1)
     {
-        usart6_printf("%6.2f,%6.2f,%d \r\n",
+        usart6_printf("%6.2f,%d,%d \r\n",
 
                       PITCH_IMU_SPEED,
-                      PITCH_6020_ID2_GIVEN_SPEED,
-                      PITCH_6020_ID2_GIVEN_CURRENT);
+                      mouse_press_l,
+                      mouse_vy);
 
 
 

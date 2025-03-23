@@ -60,8 +60,17 @@ pid_type_def shoot_2006_ID3_speed_pid;
 
 void motor_gimbal_speed_compute()
 {
-    PITCH_6020_ID2_GIVEN_SPEED = 0.05f * (float)rc_ch3 ;
-    YAW_6020_ID1_GIVEN_SPEED = -(0.5f * (float)rc_ch2) ;
+     if(mouse_vy == 0 & mouse_vx == 0)
+     {
+         PITCH_6020_ID2_GIVEN_SPEED = 0.05f * (float)rc_ch3 ;
+         YAW_6020_ID1_GIVEN_SPEED = -(0.5f * (float)rc_ch2) ;
+     } else
+     {
+         YAW_6020_ID1_GIVEN_SPEED = MOUSE_VX_SPEED_SCALING_FACTOR * (float)-mouse_vx ;
+         PITCH_6020_ID2_GIVEN_SPEED = MOUSE_VY_SPEED_SCALING_FACTOR * (float)-mouse_vy ;
+
+     }
+
 }
 
 void motor_gimbal_pid_compute()
