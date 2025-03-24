@@ -72,7 +72,7 @@ void rc_to_gimbal_speed_compute()
     }
     else
     {
-        gimbal_vy = 2*(float)(2 * rc_ch1 ) ;
+        gimbal_vy = (float)(2 * rc_ch1 ) ;
     }
 
 
@@ -90,7 +90,7 @@ void rc_to_gimbal_speed_compute()
     }
     else
     {
-        gimbal_vx = 2*(float)(2 * rc_ch0 ) ;
+        gimbal_vx = (float)(2 * rc_ch0 ) ;
     }
 
 
@@ -102,25 +102,7 @@ void rc_to_gimbal_speed_compute()
             gyro_state++ ;
         }
     }
-    //vround_compute
 
-
-    if (rc_s0 == 1)
-    {
-        chassis_vround = -1000 ;
-    } else if(rc_s0 == 3)
-    {
-        if((gyro_state % 2) == 1 )
-        {
-            chassis_vround = -1000 ;
-        }
-        else
-        {
-
-            chassis_vround = CHASSIS_FOLLOW_GIMBAL_GIVEN_SPEED ;
-        }
-
-    }
 
 
 
@@ -153,37 +135,63 @@ void chassis_settlement()
 
 
     //先进行普通目标速度计算
-    CHASSIS_3508_ID1_COMPUTE_SPEED = (int16_t)(-chassis_vy + chassis_vx + chassis_vround) ;
-    CHASSIS_3508_ID2_COMPUTE_SPEED = (int16_t)( chassis_vy +  chassis_vx + chassis_vround) ;
-    CHASSIS_3508_ID3_COMPUTE_SPEED = (int16_t)( chassis_vy -  chassis_vx + chassis_vround) ;
-    CHASSIS_3508_ID4_COMPUTE_SPEED = (int16_t)(-chassis_vy - chassis_vx + chassis_vround) ;
+    CHASSIS_3508_ID1_VXY_COMPUTE_SPEED = (int16_t)(-chassis_vy + chassis_vx ) ;
+    CHASSIS_3508_ID2_VXY_COMPUTE_SPEED = (int16_t)(chassis_vy + chassis_vx ) ;
+    CHASSIS_3508_ID3_VXY_COMPUTE_SPEED = (int16_t)(chassis_vy - chassis_vx ) ;
+    CHASSIS_3508_ID4_VXY_COMPUTE_SPEED = (int16_t)(-chassis_vy - chassis_vx ) ;
 
     //计算总功率
     CHASSIS_3508_ALL_COMPUTE_SPEED =
-            fabsf((float)CHASSIS_3508_ID1_COMPUTE_SPEED) +
-            fabsf((float)CHASSIS_3508_ID2_COMPUTE_SPEED) +
-            fabsf((float)CHASSIS_3508_ID3_COMPUTE_SPEED) +
-            fabsf((float)CHASSIS_3508_ID4_COMPUTE_SPEED) ;
+            fabsf((float)CHASSIS_3508_ID1_VXY_COMPUTE_SPEED) +
+            fabsf((float)CHASSIS_3508_ID2_VXY_COMPUTE_SPEED) +
+            fabsf((float)CHASSIS_3508_ID3_VXY_COMPUTE_SPEED) +
+            fabsf((float)CHASSIS_3508_ID4_VXY_COMPUTE_SPEED) ;
 
     beyond_power = ( CHASSIS_3508_ALL_COMPUTE_SPEED - (float)robot_max_power ) ;//计算超出总功率,大于0为超功率
 
-    if( beyond_power > 0 )
+    if(beyond_power < 0 )
     {
-        chassis_power_state = 1 ;
-        CHASSIS_3508_ID1_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID1_COMPUTE_SPEED - (0.25f * beyond_power)) ;//速度赋值
-        CHASSIS_3508_ID2_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID2_COMPUTE_SPEED - (0.25f * beyond_power)) ;
-        CHASSIS_3508_ID3_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID3_COMPUTE_SPEED - (0.25f * beyond_power)) ;
-        CHASSIS_3508_ID4_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID4_COMPUTE_SPEED - (0.25f * beyond_power)) ;
+        chassis_power_state = 0 ;
+        //说明有剩余功率可用
+        //将剩余功率赋值给小陀螺
+        //vround_compute
+
+        if (rc_s0 == 1)
+        {
+            chassis_vround = 0.25f * beyond_power ;
+        } else if(rc_s0 == 3)
+        {
+            if((gyro_state % 2) == 1 )
+            {
+                chassis_vround = 0.25f * beyond_power ;
+            }
+            else
+            {
+
+                chassis_vround = CHASSIS_FOLLOW_GIMBAL_GIVEN_SPEED ;
+                chassis_vround = 0 ;
+            }
+
+        }
+
 
     }
     else
     {
-        chassis_power_state = 0 ;
-        CHASSIS_3508_ID1_GIVEN_SPEED = CHASSIS_3508_ID1_COMPUTE_SPEED ;
-        CHASSIS_3508_ID2_GIVEN_SPEED = CHASSIS_3508_ID2_COMPUTE_SPEED ;
-        CHASSIS_3508_ID3_GIVEN_SPEED = CHASSIS_3508_ID3_COMPUTE_SPEED ;
-        CHASSIS_3508_ID4_GIVEN_SPEED = CHASSIS_3508_ID4_COMPUTE_SPEED ;
+        chassis_vround = 0 ;
+        chassis_power_state = 1 ;
     }
+
+    CHASSIS_3508_ID1_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID1_VXY_COMPUTE_SPEED + chassis_vround ) ;
+    CHASSIS_3508_ID2_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID2_VXY_COMPUTE_SPEED + chassis_vround ) ;
+    CHASSIS_3508_ID3_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID3_VXY_COMPUTE_SPEED + chassis_vround ) ;
+    CHASSIS_3508_ID4_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID4_VXY_COMPUTE_SPEED + chassis_vround ) ;
+
+
+
+
+
+
 
 
     send_out_all_speed =

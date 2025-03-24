@@ -21,11 +21,13 @@ void uart_sent()
 {
     while (1)
     {
-        usart6_printf("%d,%6.2f,%6.2f,%6.2f,%6.2f \r\n",
+        usart6_printf("%d,%6.2f,%6.2f,%6.2f,%6.2f,%6.2f \r\n",
+
                       chassis_power_state,
                       robot_max_power,
                       CHASSIS_3508_ALL_COMPUTE_SPEED,
                       beyond_power,
+                      chassis_vround,
                       send_out_all_speed);
 
 
