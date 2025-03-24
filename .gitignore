@@ -6,8 +6,6 @@
 !/**/MDK-ARM/*.uvoptx
 !/**/MDK-ARM/*.uvprojx
 !/**/MDK-ARM/startup_*.s
-# armgcc-cmake工程忽略项
-/**/cmake-build-debug
 # VsCode编辑器忽略项
 /**/.vscode
 /**/workspace.code-workspace

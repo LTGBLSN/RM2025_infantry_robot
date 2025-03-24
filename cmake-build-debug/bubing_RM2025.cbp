@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="bubing_RM2025"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bubing_RM2025.elf">
+				<Option output="D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/bubing_RM2025.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/arm-none-eabi"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/backward"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/include"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/include-fixed"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 bubing_RM2025.elf"/>
+					<CompileFile command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bubing_RM2025.elf/fast">
+				<Option output="D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/bubing_RM2025.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc"/>
+					<Add directory="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/arm-none-eabi"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/backward"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/include"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/include-fixed"/>
+					<Add directory="C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 bubing_RM2025.elf/fast"/>
+					<CompileFile command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/CLionToolchains/mingw64/bin/mingw32-make.exe -f &quot;D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/FreeRTOSConfig.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/can.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/dma.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/gpio.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/main.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_hal_conf.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_it.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/usart.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/can.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/dma.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/freertos.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/gpio.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/main.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/stm32f4xx_hal_msp.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/stm32f4xx_hal_timebase_tim.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/stm32f4xx_it.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/syscalls.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/sysmem.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/system_stm32f4xx.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/usart.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Startup/startup_stm32f407ighx.s">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/LICENSE.txt">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cachel1_armv7.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_armclang_ltm.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_armv81mml.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm35p.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm55.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm85.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_starmc1.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/pac_armv81.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/pmu_armv8.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/LICENSE.txt">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/LICENSE.txt">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/croutine.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/atomic.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/list.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/message_buffer.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_prototypes.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/task.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/list.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/queue.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/tasks.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/timers.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/STM32F407IGHX_FLASH.ld">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/CAN_receive.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/board_LED.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/bsp_can.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/bsp_rc.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/can_sent.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/chassis_motor_control.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/error_detection.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/get_rc.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/gimbal_motor_control.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/jy61p.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/odometer.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/pid.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/refree_task.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/remote_control.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/shoot_control.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/struct_typedef.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_callback.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_printf.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_sent.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/CAN_receive.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/board_LED.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/bsp_can.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/bsp_rc.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/can_sent.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/chassis_motor_control.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/error_detection.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/get_rc.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/gimbal_motor_control.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/jy61p.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/odometer.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/pid.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/refree_task.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/remote_control.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/shoot_control.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/uart_callback.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/uart_printf.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/uart_sent.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
