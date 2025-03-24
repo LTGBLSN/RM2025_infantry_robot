@@ -30,6 +30,34 @@ void refree_task()
 {
     while (1)
     {
+
+
+
+
+        if( (HAL_GetTick() - robot_level_time ) > KEY_CHECK_MIN_TIME )
+        {
+            if(key_B == 1)
+            {
+                robot_level_time = HAL_GetTick() ;
+                if( robot_level < 10 )
+                {
+                    robot_level++ ;
+                }
+
+            }
+            if(key_V == 1)
+            {
+                robot_level_time = HAL_GetTick() ;
+
+                if( 1 < robot_level )
+                {
+                    robot_level-- ;
+                }
+
+            }
+        }
+
+
         max_power_compute();//更新最新的最大功率
 
 
@@ -44,44 +72,44 @@ void max_power_compute()
 {
     if(robot_level == 1)
     {
-        robot_max_power = 60 ;
+        robot_max_power = LEVEL_1_MAX_POWER ;
 
     }
     else if(robot_level == 2)
     {
-        robot_max_power = 65 ;
+        robot_max_power = LEVEL_2_MAX_POWER ;
     }
     else if(robot_level == 3)
     {
-        robot_max_power = 70 ;
+        robot_max_power = LEVEL_3_MAX_POWER ;
     }
     else if(robot_level == 4)
     {
-        robot_max_power = 75 ;
+        robot_max_power = LEVEL_4_MAX_POWER ;
     }
     else if(robot_level == 5)
     {
-        robot_max_power = 80 ;
+        robot_max_power = LEVEL_5_MAX_POWER ;
     }
     else if(robot_level == 6)
     {
-        robot_max_power = 85 ;
+        robot_max_power = LEVEL_6_MAX_POWER ;
     }
     else if(robot_level == 7)
     {
-        robot_max_power = 90 ;
+        robot_max_power = LEVEL_7_MAX_POWER ;
     }
     else if(robot_level == 8)
     {
-        robot_max_power = 95 ;
+        robot_max_power = LEVEL_8_MAX_POWER ;
     }
     else if(robot_level == 9)
     {
-        robot_max_power = 100 ;
+        robot_max_power = LEVEL_9_MAX_POWER ;
     }
     else if(robot_level == 10)
     {
-        robot_max_power = 100 ;
+        robot_max_power = LEVEL_10_MAX_POWER ;
     }
 }
 

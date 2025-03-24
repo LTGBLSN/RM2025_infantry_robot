@@ -107,17 +107,27 @@ extern int16_t gyro_state ;
 //chassis
 extern int16_t CHASSIS_3508_ID1_GIVEN_SPEED ;
 extern int16_t CHASSIS_3508_ID1_GIVEN_CURRENT;
+extern int16_t CHASSIS_3508_ID1_COMPUTE_SPEED ;
 
 extern int16_t CHASSIS_3508_ID2_GIVEN_SPEED ;
 extern int16_t CHASSIS_3508_ID2_GIVEN_CURRENT;
+extern int16_t CHASSIS_3508_ID2_COMPUTE_SPEED ;
 
 extern int16_t CHASSIS_3508_ID3_GIVEN_SPEED ;
 extern int16_t CHASSIS_3508_ID3_GIVEN_CURRENT;
+extern int16_t CHASSIS_3508_ID3_COMPUTE_SPEED ;
 
 extern int16_t CHASSIS_3508_ID4_GIVEN_SPEED ;
 extern int16_t CHASSIS_3508_ID4_GIVEN_CURRENT;
+extern int16_t CHASSIS_3508_ID4_COMPUTE_SPEED ;
+
+extern float CHASSIS_3508_ALL_COMPUTE_SPEED ;
 
 extern float CHASSIS_FOLLOW_GIMBAL_GIVEN_SPEED ;
+
+extern float beyond_power ;
+
+extern int16_t chassis_power_state ;
 
 //gimbal_vx
 extern float YAW_6020_ID1_GIVEN_SPEED ;
@@ -143,8 +153,11 @@ extern float SHOOT_2006_ID3_GIVEN_SPEED ;
 extern int16_t SHOOT_2006_ID3_GIVEN_CURRENT ;
 
 extern int16_t robot_level ;
+extern uint32_t robot_level_time ;
 
-extern uint32_t robot_max_power ;
+extern float robot_max_power ;
+
+extern float send_out_all_speed ;
 
 
 /* USER CODE END EC */

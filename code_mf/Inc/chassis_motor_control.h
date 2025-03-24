@@ -63,6 +63,8 @@
 #define KEY_MOVE_VX_SPEED 1000
 #define KEY_MOVE_VY_SPEED 1000
 
+#define MIN_CHASSIS_VROUND_SPEED 1000
+
 
 extern pid_type_def chassis_3508_ID1_speed_pid;
 extern pid_type_def chassis_3508_ID2_speed_pid;

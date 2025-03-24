@@ -113,17 +113,27 @@ int16_t gyro_state ;
 //chassis
 int16_t CHASSIS_3508_ID1_GIVEN_SPEED ;
 int16_t CHASSIS_3508_ID1_GIVEN_CURRENT ;
+int16_t CHASSIS_3508_ID1_COMPUTE_SPEED ;
 
 int16_t CHASSIS_3508_ID2_GIVEN_SPEED ;
 int16_t CHASSIS_3508_ID2_GIVEN_CURRENT ;
+int16_t CHASSIS_3508_ID2_COMPUTE_SPEED ;
 
 int16_t CHASSIS_3508_ID3_GIVEN_SPEED ;
 int16_t CHASSIS_3508_ID3_GIVEN_CURRENT ;
+int16_t CHASSIS_3508_ID3_COMPUTE_SPEED ;
 
 int16_t CHASSIS_3508_ID4_GIVEN_SPEED ;
 int16_t CHASSIS_3508_ID4_GIVEN_CURRENT ;
+int16_t CHASSIS_3508_ID4_COMPUTE_SPEED ;
+
+float CHASSIS_3508_ALL_COMPUTE_SPEED ;
 
 float CHASSIS_FOLLOW_GIMBAL_GIVEN_SPEED ;
+
+float beyond_power ;
+
+int16_t chassis_power_state ;//0为正常，1为超功率限制状态
 
 
 //gimbal_vx
@@ -152,14 +162,12 @@ int16_t SHOOT_2006_ID3_GIVEN_CURRENT ;
 
 
 //robot_information
-int16_t robot_level ;
+int16_t robot_level = 1;
+uint32_t robot_level_time ;
 
-uint32_t robot_max_power ;
+float robot_max_power ;
 
-
-
-
-
+float send_out_all_speed ;
 
 
 

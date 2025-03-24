@@ -40,7 +40,7 @@ void chassis_motor_control()
         rc_to_gimbal_speed_compute();//遥控器转换为云台速度
         yaw_ecd_angle_to_radian();
         gimbal_to_chassis_speed_compute();//底盘速度解算
-        chassis_settlement();//轮系速度解算（暂时无云台）
+        chassis_settlement();//轮系速度解算
         motor_chassis_pid_compute();//pid速度
 
         osDelay((1/CHASSIS_PID_COMPUTE_FREQUENCY)*1000);
@@ -72,7 +72,7 @@ void rc_to_gimbal_speed_compute()
     }
     else
     {
-        gimbal_vy = (float)(2 * rc_ch1 ) ;
+        gimbal_vy = 2*(float)(2 * rc_ch1 ) ;
     }
 
 
@@ -90,7 +90,7 @@ void rc_to_gimbal_speed_compute()
     }
     else
     {
-        gimbal_vx = (float)(2 * rc_ch0 ) ;
+        gimbal_vx = 2*(float)(2 * rc_ch0 ) ;
     }
 
 
@@ -107,12 +107,12 @@ void rc_to_gimbal_speed_compute()
 
     if (rc_s0 == 1)
     {
-        chassis_vround = 3000 ;
+        chassis_vround = -1000 ;
     } else if(rc_s0 == 3)
     {
         if((gyro_state % 2) == 1 )
         {
-            chassis_vround = 3000 ;
+            chassis_vround = -1000 ;
         }
         else
         {
@@ -127,6 +127,13 @@ void rc_to_gimbal_speed_compute()
 
 }
 
+void yaw_ecd_angle_to_radian()
+{
+
+    yaw_angle_difference = (float)(motor_can1_data[4].ecd - YAW_MID_ECD) / (float)(8192 / 360.0f) ;
+    yaw_radian_difference = (float)yaw_angle_difference * (float)(M_PI / 180);
+}
+
 
 
 void gimbal_to_chassis_speed_compute()
@@ -138,28 +145,52 @@ void gimbal_to_chassis_speed_compute()
 
 }
 
-void yaw_ecd_angle_to_radian()
-{
 
-    yaw_angle_difference = (float)(motor_can1_data[4].ecd - YAW_MID_ECD) / (float)(8192 / 360.0f) ;
-    yaw_radian_difference = (float)yaw_angle_difference * (float)(M_PI / 180);
-}
 
 
 void chassis_settlement()
 {
-    CHASSIS_3508_ID1_GIVEN_SPEED = (int16_t)(-chassis_vy + chassis_vx + chassis_vround) ;
-    CHASSIS_3508_ID2_GIVEN_SPEED = (int16_t)( chassis_vy +  chassis_vx + chassis_vround) ;
-    CHASSIS_3508_ID3_GIVEN_SPEED = (int16_t)( chassis_vy -  chassis_vx + chassis_vround) ;
-    CHASSIS_3508_ID4_GIVEN_SPEED = (int16_t)(-chassis_vy - chassis_vx + chassis_vround) ;
 
 
-//    CHASSIS_3508_ID1_GIVEN_SPEED = 0 ;
-//    CHASSIS_3508_ID2_GIVEN_SPEED = 0 ;
-//    CHASSIS_3508_ID3_GIVEN_SPEED = 0 ;
-//    CHASSIS_3508_ID4_GIVEN_SPEED = 0 ;
+    //先进行普通目标速度计算
+    CHASSIS_3508_ID1_COMPUTE_SPEED = (int16_t)(-chassis_vy + chassis_vx + chassis_vround) ;
+    CHASSIS_3508_ID2_COMPUTE_SPEED = (int16_t)( chassis_vy +  chassis_vx + chassis_vround) ;
+    CHASSIS_3508_ID3_COMPUTE_SPEED = (int16_t)( chassis_vy -  chassis_vx + chassis_vround) ;
+    CHASSIS_3508_ID4_COMPUTE_SPEED = (int16_t)(-chassis_vy - chassis_vx + chassis_vround) ;
+
+    //计算总功率
+    CHASSIS_3508_ALL_COMPUTE_SPEED =
+            fabsf((float)CHASSIS_3508_ID1_COMPUTE_SPEED) +
+            fabsf((float)CHASSIS_3508_ID2_COMPUTE_SPEED) +
+            fabsf((float)CHASSIS_3508_ID3_COMPUTE_SPEED) +
+            fabsf((float)CHASSIS_3508_ID4_COMPUTE_SPEED) ;
+
+    beyond_power = ( CHASSIS_3508_ALL_COMPUTE_SPEED - (float)robot_max_power ) ;//计算超出总功率,大于0为超功率
+
+    if( beyond_power > 0 )
+    {
+        chassis_power_state = 1 ;
+        CHASSIS_3508_ID1_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID1_COMPUTE_SPEED - (0.25f * beyond_power)) ;//速度赋值
+        CHASSIS_3508_ID2_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID2_COMPUTE_SPEED - (0.25f * beyond_power)) ;
+        CHASSIS_3508_ID3_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID3_COMPUTE_SPEED - (0.25f * beyond_power)) ;
+        CHASSIS_3508_ID4_GIVEN_SPEED = (int16_t)((float)CHASSIS_3508_ID4_COMPUTE_SPEED - (0.25f * beyond_power)) ;
+
+    }
+    else
+    {
+        chassis_power_state = 0 ;
+        CHASSIS_3508_ID1_GIVEN_SPEED = CHASSIS_3508_ID1_COMPUTE_SPEED ;
+        CHASSIS_3508_ID2_GIVEN_SPEED = CHASSIS_3508_ID2_COMPUTE_SPEED ;
+        CHASSIS_3508_ID3_GIVEN_SPEED = CHASSIS_3508_ID3_COMPUTE_SPEED ;
+        CHASSIS_3508_ID4_GIVEN_SPEED = CHASSIS_3508_ID4_COMPUTE_SPEED ;
+    }
 
 
+    send_out_all_speed =
+            fabsf((float)CHASSIS_3508_ID1_GIVEN_SPEED) +
+            fabsf((float)CHASSIS_3508_ID2_GIVEN_SPEED) +
+            fabsf((float)CHASSIS_3508_ID3_GIVEN_SPEED) +
+            fabsf((float)CHASSIS_3508_ID4_GIVEN_SPEED) ;
 
 
 }

@@ -21,10 +21,12 @@ void uart_sent()
 {
     while (1)
     {
-        usart6_printf("%d,%6.2f,%d \r\n",
-                      motor_can1_data[4].ecd,
-                      CHASSIS_FOLLOW_GIMBAL_GIVEN_SPEED,
-                      YAW_MID_ECD);
+        usart6_printf("%d,%6.2f,%6.2f,%6.2f,%6.2f \r\n",
+                      chassis_power_state,
+                      robot_max_power,
+                      CHASSIS_3508_ALL_COMPUTE_SPEED,
+                      beyond_power,
+                      send_out_all_speed);
 
 
 
