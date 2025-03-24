@@ -56,6 +56,7 @@ osThreadId err_dec_taskHandle;
 osThreadId chassisMotorTasHandle;
 osThreadId gimbalTaskHandle;
 osThreadId shoot_con_taskHandle;
+osThreadId refereeHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -71,6 +72,7 @@ void error_detection(void const * argument);
 void chassis_motor_control(void const * argument);
 void gimbal_motor_control(void const * argument);
 void shoot_control(void const * argument);
+void refree_task(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -152,6 +154,10 @@ void MX_FREERTOS_Init(void) {
   /* definition and creation of shoot_con_task */
   osThreadDef(shoot_con_task, shoot_control, osPriorityIdle, 0, 128);
   shoot_con_taskHandle = osThreadCreate(osThread(shoot_con_task), NULL);
+
+  /* definition and creation of referee */
+  osThreadDef(referee, refree_task, osPriorityIdle, 0, 128);
+  refereeHandle = osThreadCreate(osThread(referee), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -319,6 +325,24 @@ __weak void shoot_control(void const * argument)
     osDelay(1);
   }
   /* USER CODE END shoot_control */
+}
+
+/* USER CODE BEGIN Header_refree_task */
+/**
+* @brief Function implementing the referee thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_refree_task */
+__weak void refree_task(void const * argument)
+{
+  /* USER CODE BEGIN refree_task */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END refree_task */
 }
 
 /* Private application code --------------------------------------------------*/

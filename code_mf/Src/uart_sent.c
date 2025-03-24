@@ -15,16 +15,16 @@
 #include "remote_control.h"
 #include "CAN_receive.h"
 #include "jy61p.h"
+#include "chassis_motor_control.h"
 
 void uart_sent()
 {
     while (1)
     {
-        usart6_printf("%6.2f,%d,%d \r\n",
-
-                      PITCH_IMU_SPEED,
-                      mouse_press_l,
-                      mouse_vy);
+        usart6_printf("%d,%6.2f,%d \r\n",
+                      motor_can1_data[4].ecd,
+                      CHASSIS_FOLLOW_GIMBAL_GIVEN_SPEED,
+                      YAW_MID_ECD);
 
 
 

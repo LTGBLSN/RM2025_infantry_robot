@@ -123,6 +123,8 @@ int16_t CHASSIS_3508_ID3_GIVEN_CURRENT ;
 int16_t CHASSIS_3508_ID4_GIVEN_SPEED ;
 int16_t CHASSIS_3508_ID4_GIVEN_CURRENT ;
 
+float CHASSIS_FOLLOW_GIMBAL_GIVEN_SPEED ;
+
 
 //gimbal_vx
 float YAW_6020_ID1_GIVEN_SPEED ;
@@ -148,6 +150,11 @@ int16_t FRICTION_WHEEL_3510_ID2_GIVEN_CURRENT ;
 float SHOOT_2006_ID3_GIVEN_SPEED ;
 int16_t SHOOT_2006_ID3_GIVEN_CURRENT ;
 
+
+//robot_information
+int16_t robot_level ;
+
+uint32_t robot_max_power ;
 
 
 
@@ -238,6 +245,8 @@ int main(void)
     chassis_3508_id2_speed_pid_init();
     chassis_3508_id3_speed_pid_init();
     chassis_3508_id4_speed_pid_init();
+
+    chassis_follow_gimbal_angle_pid_init();//底盘跟随初始化
 
     //云台电机初始化
     yaw_speed_pid_init();//yaw速度环pid初始化

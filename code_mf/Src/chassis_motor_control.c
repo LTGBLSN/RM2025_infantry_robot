@@ -28,12 +28,15 @@ pid_type_def chassis_3508_ID2_speed_pid;
 pid_type_def chassis_3508_ID3_speed_pid;
 pid_type_def chassis_3508_ID4_speed_pid;
 
+pid_type_def chassis_follow_gimbal_pid;
+
 
 
 void chassis_motor_control()
 {
     while (1)
     {
+//        CHASSIS_FOLLOW_GIMBAL_GIVEN_SPEED = chassis_follow_gimbal_pid_loop(YAW_MID_ECD);//底盘跟随
         rc_to_gimbal_speed_compute();//遥控器转换为云台速度
         yaw_ecd_angle_to_radian();
         gimbal_to_chassis_speed_compute();//底盘速度解算
@@ -105,7 +108,7 @@ void rc_to_gimbal_speed_compute()
     if (rc_s0 == 1)
     {
         chassis_vround = 3000 ;
-    } else
+    } else if(rc_s0 == 3)
     {
         if((gyro_state % 2) == 1 )
         {
@@ -113,8 +116,10 @@ void rc_to_gimbal_speed_compute()
         }
         else
         {
-            chassis_vround = 0 ;
+
+            chassis_vround = CHASSIS_FOLLOW_GIMBAL_GIVEN_SPEED ;
         }
+
     }
 
 
@@ -247,3 +252,23 @@ int16_t chassis_3508_id4_speed_pid_loop(int16_t chassis_3508_ID4_speed_set_loop)
     return chassis_3508_ID4_given_current_loop ;
 
 }
+
+
+//CHASSIS_FOLLOW_GIMBAL_ANGLE_PID
+void chassis_follow_gimbal_angle_pid_init(void)
+{
+    static fp32 chassis_follow_gimbal_angle_kpkikd[3] = {CHASSIS_FOLLOW_GIMBAL_ANGLE_PID_KP,CHASSIS_FOLLOW_GIMBAL_ANGLE_PID_KI,CHASSIS_FOLLOW_GIMBAL_ANGLE_PID_KD};
+    PID_init(&chassis_follow_gimbal_pid, PID_POSITION, chassis_follow_gimbal_angle_kpkikd, CHASSIS_FOLLOW_GIMBAL_ANGLE_PID_OUT_MAX, CHASSIS_FOLLOW_GIMBAL_ANGLE_PID_KI_MAX);
+
+}
+
+float chassis_follow_gimbal_pid_loop(float PITCH_6020_ID2_angle_set_loop)
+{
+    PID_calc(&chassis_follow_gimbal_pid, motor_can1_data[4].ecd , PITCH_6020_ID2_angle_set_loop);
+    float chassis_follow_gimbal_angle_loop = (float)(chassis_follow_gimbal_pid.out);
+
+    return chassis_follow_gimbal_angle_loop ;
+
+}
+
+

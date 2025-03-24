@@ -47,6 +47,13 @@
 #define CHASSIS_3508_ID4_SPEED_PID_KI   0.10f
 #define CHASSIS_3508_ID4_SPEED_PID_KD   0.0f
 
+
+#define CHASSIS_FOLLOW_GIMBAL_ANGLE_PID_KP        2.0f
+#define CHASSIS_FOLLOW_GIMBAL_ANGLE_PID_KI        0.0f
+#define CHASSIS_FOLLOW_GIMBAL_ANGLE_PID_KD        0.0f
+#define CHASSIS_FOLLOW_GIMBAL_ANGLE_PID_OUT_MAX   3000.0f
+#define CHASSIS_FOLLOW_GIMBAL_ANGLE_PID_KI_MAX    0.0f
+
 #define YAW_MID_ECD 4760
 
 #define CHASSIS_PID_COMPUTE_FREQUENCY 1000  // Hz
@@ -61,6 +68,8 @@ extern pid_type_def chassis_3508_ID1_speed_pid;
 extern pid_type_def chassis_3508_ID2_speed_pid;
 extern pid_type_def chassis_3508_ID3_speed_pid;
 extern pid_type_def chassis_3508_ID4_speed_pid;
+
+extern pid_type_def chassis_follow_gimbal_pid;
 
 
 void rc_to_gimbal_speed_compute();
@@ -81,6 +90,9 @@ void chassis_3508_id3_speed_pid_init(void);
 int16_t chassis_3508_id3_speed_pid_loop(int16_t chassis_3508_ID3_speed_set_loop);
 void chassis_3508_id4_speed_pid_init(void);
 int16_t chassis_3508_id4_speed_pid_loop(int16_t chassis_3508_ID4_speed_set_loop);
+
+void chassis_follow_gimbal_angle_pid_init(void);
+float chassis_follow_gimbal_pid_loop(float PITCH_6020_ID2_angle_set_loop);
 
 
 
