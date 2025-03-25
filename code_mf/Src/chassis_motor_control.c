@@ -64,11 +64,11 @@ void rc_to_gimbal_speed_compute()
     }
     else if( key_W == 1 & key_S == 0 )
     {
-        gimbal_vy = KEY_MOVE_VY_SPEED ;
+        gimbal_vy = ( 0.25f * ( robot_max_power - TOP_GIVE_MIN_SPEED ) ) ;
     }
     else if( key_W == 0 & key_S == 1 )
     {
-        gimbal_vy = -KEY_MOVE_VY_SPEED ;
+        gimbal_vy = -( 0.25f * ( robot_max_power - TOP_GIVE_MIN_SPEED ) ) ;
     }
     else
     {
@@ -82,11 +82,11 @@ void rc_to_gimbal_speed_compute()
     }
     else if( key_A == 1 & key_D == 0 )
     {
-        gimbal_vx = -KEY_MOVE_VX_SPEED ;
+        gimbal_vx = -( 0.25f * ( robot_max_power - TOP_GIVE_MIN_SPEED ) ) ;
     }
     else if( key_A == 0 & key_D == 1 )
     {
-        gimbal_vx = KEY_MOVE_VX_SPEED ;
+        gimbal_vx = ( 0.25f * ( robot_max_power - TOP_GIVE_MIN_SPEED ) ) ;
     }
     else
     {
