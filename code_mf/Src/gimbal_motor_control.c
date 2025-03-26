@@ -10,7 +10,7 @@
 #include "shoot_control.h"
 
 pid_type_def yaw_6020_ID1_speed_pid;
-
+pid_type_def yaw_6020_ID1_angle_pid;
 
 pid_type_def pitch_6020_ID2_speed_pid;
 pid_type_def pitch_6020_ID2_angle_pid;
@@ -92,6 +92,8 @@ void motor_gimbal_speed_compute()
 
 void motor_gimbal_pid_compute()
 {
+//     YAW_6020_ID1_GIVEN_ANGLE = 0 ;
+//    YAW_6020_ID1_GIVEN_SPEED = yaw_angle_pid_loop(YAW_6020_ID1_GIVEN_ANGLE) ;
     //yaw
     YAW_6020_ID1_GIVEN_CURRENT = (int16_t)yaw_speed_pid_loop(YAW_6020_ID1_GIVEN_SPEED);//速度环
 
@@ -150,7 +152,21 @@ void pitch_motor_mean_speed_compute()//弃用，滞后性有点大
 
 
 
+void yaw_angle_pid_init(void)
+{
+    static fp32 yaw_6020_id1_angle_kpkikd[3] = {YAW_6020_ID2_ANGLE_PID_KP, YAW_6020_ID2_ANGLE_PID_KI, YAW_6020_ID2_ANGLE_PID_KD};
+    PID_init(&yaw_6020_ID1_angle_pid, PID_POSITION, yaw_6020_id1_angle_kpkikd, YAW_6020_ID2_ANGLE_PID_OUT_MAX, YAW_6020_ID2_ANGLE_PID_KI_MAX);
 
+}
+
+float yaw_angle_pid_loop(float YAW_6020_ID1_angle_set_loop)
+{
+    PID_calc(&yaw_6020_ID1_angle_pid, YAW_IMU_ANGLE , YAW_6020_ID1_angle_set_loop);
+    float yaw_6020_ID1_given_speed_loop = (float)(yaw_6020_ID1_angle_pid.out);
+
+    return yaw_6020_ID1_given_speed_loop ;
+
+}
 
 
 void yaw_speed_pid_init(void)

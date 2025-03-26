@@ -29,11 +29,11 @@
 #include <math.h>
 
 
-//#define YAW_6020_ID2_SPEED_PID_KP        200.0f
-//#define YAW_6020_ID2_SPEED_PID_KI        2.0f
-//#define YAW_6020_ID2_SPEED_PID_KD        0.0f
-//#define YAW_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
-//#define YAW_6020_ID2_SPEED_PID_KI_MAX    10000.0f
+#define YAW_6020_ID2_ANGLE_PID_KP        3.0f
+#define YAW_6020_ID2_ANGLE_PID_KI        0.0f
+#define YAW_6020_ID2_ANGLE_PID_KD        2.0f
+#define YAW_6020_ID2_ANGLE_PID_OUT_MAX   20000.0f
+#define YAW_6020_ID2_ANGLE_PID_KI_MAX    10000.0f
 
 #define YAW_6020_ID2_SPEED_PID_KP        30.0f
 #define YAW_6020_ID2_SPEED_PID_KI        0.1f
@@ -46,10 +46,8 @@
 
 
 
-
-
-#define PITCH_6020_ID2_SPEED_PID_KP        300.0f
-#define PITCH_6020_ID2_SPEED_PID_KI        30.0f
+#define PITCH_6020_ID2_SPEED_PID_KP        400.0f
+#define PITCH_6020_ID2_SPEED_PID_KI        10.0f
 #define PITCH_6020_ID2_SPEED_PID_KD        0.0f
 #define PITCH_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
 #define PITCH_6020_ID2_SPEED_PID_KI_MAX    20000.0f
@@ -124,6 +122,8 @@ void friction_wheel_pid_control();//pidº∆À„
 
 void yaw_speed_pid_init(void);
 float yaw_speed_pid_loop(float YAW_6020_ID1_speed_set_loop);
+void yaw_angle_pid_init(void);
+float yaw_angle_pid_loop(float YAW_6020_ID1_angle_set_loop);
 
 void pitch_speed_pid_init(void);
 float pitch_speed_pid_loop(float PITCH_6020_ID2_speed_set_loop);

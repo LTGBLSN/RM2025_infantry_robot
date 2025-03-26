@@ -568,6 +568,9 @@
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/remote_control.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/servo_task.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/shoot_control.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>

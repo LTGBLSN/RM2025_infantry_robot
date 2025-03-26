@@ -295,10 +295,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe"
 		},
 		{
@@ -423,10 +423,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe"
 		},
 		{

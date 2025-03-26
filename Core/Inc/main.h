@@ -132,6 +132,7 @@ extern int16_t chassis_power_state ;
 //gimbal_vx
 extern float YAW_6020_ID1_GIVEN_SPEED ;
 extern int16_t YAW_6020_ID1_GIVEN_CURRENT ;
+extern float YAW_6020_ID1_GIVEN_ANGLE ;
 
 extern float PITCH_6020_ID2_GIVEN_ANGLE ;
 extern float PITCH_6020_ID2_GIVEN_SPEED ;
