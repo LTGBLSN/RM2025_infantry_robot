@@ -68,13 +68,13 @@ void servo_task()
         }
         else
         {
-                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 1935);
-                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_2, 1935);
-                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_3, 1935);
-                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_4, 1935);
-                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_1, 1935);
-                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_2, 1935);
-                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_3, 1935);
+                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 1945);
+                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_2, 1945);
+                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_3, 1945);
+                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_4, 1945);
+                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_1, 1945);
+                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_2, 1945);
+                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_3, 1945);
         }
 
         osDelay(1);
