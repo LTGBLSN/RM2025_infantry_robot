@@ -50,13 +50,7 @@ void servo_task()
             }
         }
 
-
-
-
-
-
-
-        if((servo_state % 2) == 1 )
+        if(rc_s1 == 1)
         {
                     __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 500);
                     __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_2, 500);
@@ -76,6 +70,27 @@ void servo_task()
                     __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_2, 1945);
                     __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_3, 1945);
         }
+
+//        if((servo_state % 2) == 1 )//°´¼üÅÐ¶Ï
+//        {
+//                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 500);
+//                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_2, 500);
+//                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_3, 500);
+//                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_4, 500);
+//                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_1, 500);
+//                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_2, 500);
+//                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_3, 500);
+//        }
+//        else
+//        {
+//                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 1945);
+//                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_2, 1945);
+//                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_3, 1945);
+//                    __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_4, 1945);
+//                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_1, 1945);
+//                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_2, 1945);
+//                    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_3, 1945);
+//        }
 
         osDelay(1);
     }
