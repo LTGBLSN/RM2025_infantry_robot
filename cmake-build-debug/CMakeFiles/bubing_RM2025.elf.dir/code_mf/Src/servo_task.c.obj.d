@@ -1,5 +1,5 @@
-CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj: \
- D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\main.c \
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj: \
+ D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\servo_task.c \
  D:\RoboMaster_git\RM2025_infantry_robot\Core\Inc/main.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Core\Inc/stm32f4xx_hal_conf.h \

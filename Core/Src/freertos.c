@@ -57,6 +57,7 @@ osThreadId chassisMotorTasHandle;
 osThreadId gimbalTaskHandle;
 osThreadId shoot_con_taskHandle;
 osThreadId refereeHandle;
+osThreadId servoHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -73,6 +74,7 @@ void chassis_motor_control(void const * argument);
 void gimbal_motor_control(void const * argument);
 void shoot_control(void const * argument);
 void refree_task(void const * argument);
+void servo_task(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -158,6 +160,10 @@ void MX_FREERTOS_Init(void) {
   /* definition and creation of referee */
   osThreadDef(referee, refree_task, osPriorityIdle, 0, 128);
   refereeHandle = osThreadCreate(osThread(referee), NULL);
+
+  /* definition and creation of servo */
+  osThreadDef(servo, servo_task, osPriorityIdle, 0, 128);
+  servoHandle = osThreadCreate(osThread(servo), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -343,6 +349,24 @@ __weak void refree_task(void const * argument)
     osDelay(1);
   }
   /* USER CODE END refree_task */
+}
+
+/* USER CODE BEGIN Header_servo_task */
+/**
+* @brief Function implementing the servo thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_servo_task */
+__weak void servo_task(void const * argument)
+{
+  /* USER CODE BEGIN servo_task */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END servo_task */
 }
 
 /* Private application code --------------------------------------------------*/

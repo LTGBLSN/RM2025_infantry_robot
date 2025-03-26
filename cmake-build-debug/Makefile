@@ -392,6 +392,30 @@ Core/Src/system_stm32f4xx.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.s
 .PHONY : Core/Src/system_stm32f4xx.c.s
 
+Core/Src/tim.obj: Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.obj
+
+# target to build an object file
+Core/Src/tim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.c.obj
+
+Core/Src/tim.i: Core/Src/tim.c.i
+.PHONY : Core/Src/tim.i
+
+# target to preprocess a source file
+Core/Src/tim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.i
+.PHONY : Core/Src/tim.c.i
+
+Core/Src/tim.s: Core/Src/tim.c.s
+.PHONY : Core/Src/tim.s
+
+# target to generate assembly for a file
+Core/Src/tim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.s
+.PHONY : Core/Src/tim.c.s
+
 Core/Src/usart.obj: Core/Src/usart.c.obj
 .PHONY : Core/Src/usart.obj
 
@@ -1408,6 +1432,30 @@ code_mf/Src/remote_control.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.s
 .PHONY : code_mf/Src/remote_control.c.s
 
+code_mf/Src/servo_task.obj: code_mf/Src/servo_task.c.obj
+.PHONY : code_mf/Src/servo_task.obj
+
+# target to build an object file
+code_mf/Src/servo_task.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj
+.PHONY : code_mf/Src/servo_task.c.obj
+
+code_mf/Src/servo_task.i: code_mf/Src/servo_task.c.i
+.PHONY : code_mf/Src/servo_task.i
+
+# target to preprocess a source file
+code_mf/Src/servo_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.i
+.PHONY : code_mf/Src/servo_task.c.i
+
+code_mf/Src/servo_task.s: code_mf/Src/servo_task.c.s
+.PHONY : code_mf/Src/servo_task.s
+
+# target to generate assembly for a file
+code_mf/Src/servo_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.s
+.PHONY : code_mf/Src/servo_task.c.s
+
 code_mf/Src/shoot_control.obj: code_mf/Src/shoot_control.c.obj
 .PHONY : code_mf/Src/shoot_control.obj
 
@@ -1546,6 +1594,9 @@ help:
 	@echo ... Core/Src/system_stm32f4xx.obj
 	@echo ... Core/Src/system_stm32f4xx.i
 	@echo ... Core/Src/system_stm32f4xx.s
+	@echo ... Core/Src/tim.obj
+	@echo ... Core/Src/tim.i
+	@echo ... Core/Src/tim.s
 	@echo ... Core/Src/usart.obj
 	@echo ... Core/Src/usart.i
 	@echo ... Core/Src/usart.s
@@ -1673,6 +1724,9 @@ help:
 	@echo ... code_mf/Src/remote_control.obj
 	@echo ... code_mf/Src/remote_control.i
 	@echo ... code_mf/Src/remote_control.s
+	@echo ... code_mf/Src/servo_task.obj
+	@echo ... code_mf/Src/servo_task.i
+	@echo ... code_mf/Src/servo_task.s
 	@echo ... code_mf/Src/shoot_control.obj
 	@echo ... code_mf/Src/shoot_control.i
 	@echo ... code_mf/Src/shoot_control.s

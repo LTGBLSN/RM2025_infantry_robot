@@ -133,6 +133,9 @@
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_it.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/tim.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/usart.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
@@ -167,6 +170,9 @@
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/system_stm32f4xx.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/tim.c">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/usart.c">
@@ -362,6 +368,9 @@
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h">
@@ -614,6 +623,9 @@
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/remote_control.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/servo_task.c">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/shoot_control.c">

@@ -159,6 +159,10 @@ extern float robot_max_power ;
 
 extern float send_out_all_speed ;
 
+extern uint32_t servo_time ;
+extern uint32_t servo_rc_time ;
+extern uint32_t servo_state ;
+
 
 /* USER CODE END EC */
 
