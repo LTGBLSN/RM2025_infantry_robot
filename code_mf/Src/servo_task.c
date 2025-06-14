@@ -32,7 +32,6 @@ void servo_task()
     while (1)
     {
 
-
         if( (HAL_GetTick() - servo_time) > KEY_CHECK_MIN_TIME )
         {
             if(key_E == 1)

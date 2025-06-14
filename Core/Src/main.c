@@ -56,7 +56,7 @@ int16_t rc_ch1 ;
 int16_t rc_ch2 ;
 int16_t rc_ch3 ;
 int16_t rc_ch4 ;
-int16_t rc_s0 = 0;
+int16_t rc_s0 ;
 int16_t rc_s1 ;
 int16_t key_W ;
 int16_t key_S ;
@@ -174,8 +174,6 @@ float send_out_all_speed ;
 uint32_t servo_time ;
 uint32_t servo_rc_time ;
 uint32_t servo_state ;
-
-int16_t mouse_control_servo ;
 
 
 

@@ -1279,7 +1279,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_getconf-NOTFOUND"
+			"value" : "C:/ProgramData/anaconda3/Library/usr/bin/getconf.exe"
 		},
 		{
 			"name" : "ProcessorCount_cmd_lsconf",
