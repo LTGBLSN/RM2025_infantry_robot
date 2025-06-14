@@ -164,6 +164,8 @@ extern uint32_t servo_time ;
 extern uint32_t servo_rc_time ;
 extern uint32_t servo_state ;
 
+extern int16_t mouse_control_servo ;
+
 
 /* USER CODE END EC */
 

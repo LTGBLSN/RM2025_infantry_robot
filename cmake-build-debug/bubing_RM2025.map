@@ -236,6 +236,8 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj
+ .bss.mouse_control_servo
+                0x00000000        0x2 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj
  .bss.pitch_motor_speed_last_data
                 0x00000000        0x6 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj
  .bss.pitch_motor_mean_speed
@@ -4291,53 +4293,53 @@ LOAD C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-e
 LOAD C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libm.a
 LOAD C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x00000000    0x23d19
+.debug_info     0x00000000    0x23d32
  .debug_info    0x00000000      0xc9d CMakeFiles/bubing_RM2025.elf.dir/Core/Src/can.c.obj
  .debug_info    0x00000c9d      0x5a1 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/dma.c.obj
  .debug_info    0x0000123e     0x1013 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/freertos.c.obj
  .debug_info    0x00002251      0x4c6 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x00002717     0x1a56 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj
- .debug_info    0x0000416d      0x4e6 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x00004653      0xc90 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
- .debug_info    0x000052e3      0xe8c CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x0000616f      0x789 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.obj
- .debug_info    0x000068f8      0x171 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.obj
- .debug_info    0x00006a69      0x527 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_info    0x00006f90     0x10d7 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj
- .debug_info    0x00008067      0xfbe CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x00009025       0x30 CMakeFiles/bubing_RM2025.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
- .debug_info    0x00009055      0x9e2 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_info    0x00009a37     0x11f7 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
- .debug_info    0x0000ac2e      0xff5 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x0000bc23      0xad9 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_info    0x0000c6fc      0x704 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x0000ce00      0xa6d CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x0000d86d     0x3c53 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_info    0x000114c0     0x1aec CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_info    0x00012fac     0x4000 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_info    0x00016fac     0x2af0 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
- .debug_info    0x00019a9c      0x2bf CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_info    0x00019d5b      0x55a CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
- .debug_info    0x0001a2b5      0x593 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_info    0x0001a848     0x2ff6 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_info    0x0001d83e      0xb5e CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj
- .debug_info    0x0001e39c      0x2b2 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj
- .debug_info    0x0001e64e      0x62c CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj
- .debug_info    0x0001ec7a      0x5bb CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj
- .debug_info    0x0001f235      0x4ce CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj
- .debug_info    0x0001f703      0xa9e CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj
- .debug_info    0x000201a1      0x2e5 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj
- .debug_info    0x00020486      0x3a1 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj
- .debug_info    0x00020827      0xa9b CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj
- .debug_info    0x000212c2      0x284 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj
- .debug_info    0x00021546      0x267 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj
- .debug_info    0x000217ad      0x1e7 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj
- .debug_info    0x00021994      0x838 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj
- .debug_info    0x000221cc      0x786 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj
- .debug_info    0x00022952      0x4d1 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj
- .debug_info    0x00022e23      0x65a CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj
- .debug_info    0x0002347d      0x6e0 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj
- .debug_info    0x00023b5d      0x1bc CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj
+ .debug_info    0x00002717     0x1a6f CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00004186      0x4e6 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x0000466c      0xc90 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
+ .debug_info    0x000052fc      0xe8c CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x00006188      0x789 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.obj
+ .debug_info    0x00006911      0x171 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x00006a82      0x527 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_info    0x00006fa9     0x10d7 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj
+ .debug_info    0x00008080      0xfbe CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x0000903e       0x30 CMakeFiles/bubing_RM2025.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+ .debug_info    0x0000906e      0x9e2 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x00009a50     0x11f7 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+ .debug_info    0x0000ac47      0xff5 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x0000bc3c      0xad9 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_info    0x0000c715      0x704 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x0000ce19      0xa6d CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x0000d886     0x3c53 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_info    0x000114d9     0x1aec CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_info    0x00012fc5     0x4000 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_info    0x00016fc5     0x2af0 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+ .debug_info    0x00019ab5      0x2bf CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_info    0x00019d74      0x55a CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ .debug_info    0x0001a2ce      0x593 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_info    0x0001a861     0x2ff6 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_info    0x0001d857      0xb5e CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj
+ .debug_info    0x0001e3b5      0x2b2 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj
+ .debug_info    0x0001e667      0x62c CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj
+ .debug_info    0x0001ec93      0x5bb CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj
+ .debug_info    0x0001f24e      0x4ce CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj
+ .debug_info    0x0001f71c      0xa9e CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj
+ .debug_info    0x000201ba      0x2e5 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj
+ .debug_info    0x0002049f      0x3a1 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj
+ .debug_info    0x00020840      0xa9b CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj
+ .debug_info    0x000212db      0x284 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj
+ .debug_info    0x0002155f      0x267 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj
+ .debug_info    0x000217c6      0x1e7 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj
+ .debug_info    0x000219ad      0x838 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj
+ .debug_info    0x000221e5      0x786 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj
+ .debug_info    0x0002296b      0x4d1 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj
+ .debug_info    0x00022e3c      0x65a CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj
+ .debug_info    0x00023496      0x6e0 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj
+ .debug_info    0x00023b76      0x1bc CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj
 
 .debug_abbrev   0x00000000     0x5ac8
  .debug_abbrev  0x00000000      0x241 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/can.c.obj
@@ -4645,7 +4647,7 @@ LOAD C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-e
  .debug_rnglists
                 0x00001248       0x13 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj
 
-.debug_line     0x00000000    0x19a6e
+.debug_line     0x00000000    0x19a70
  .debug_line    0x00000000      0x4d5 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/can.c.obj
  .debug_line    0x000004d5      0x205 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/dma.c.obj
  .debug_line    0x000006da      0x553 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/freertos.c.obj
@@ -4687,60 +4689,60 @@ LOAD C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-e
  .debug_line    0x000180a4      0x300 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj
  .debug_line    0x000183a4      0x31d CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj
  .debug_line    0x000186c1      0x4fa CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj
- .debug_line    0x00018bbb      0x37e CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj
- .debug_line    0x00018f39      0x340 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj
- .debug_line    0x00019279      0x2c0 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj
- .debug_line    0x00019539      0x302 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj
- .debug_line    0x0001983b      0x233 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj
+ .debug_line    0x00018bbb      0x380 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj
+ .debug_line    0x00018f3b      0x340 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj
+ .debug_line    0x0001927b      0x2c0 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj
+ .debug_line    0x0001953b      0x302 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj
+ .debug_line    0x0001983d      0x233 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj
 
-.debug_str      0x00000000     0x88ee
- .debug_str     0x00000000     0x88ee CMakeFiles/bubing_RM2025.elf.dir/Core/Src/can.c.obj
+.debug_str      0x00000000     0x8902
+ .debug_str     0x00000000     0x8902 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/can.c.obj
                                 0xbe2 (size before relaxing)
- .debug_str     0x000088ee      0x826 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/dma.c.obj
- .debug_str     0x000088ee      0xb5f CMakeFiles/bubing_RM2025.elf.dir/Core/Src/freertos.c.obj
- .debug_str     0x000088ee      0x3d3 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/gpio.c.obj
- .debug_str     0x000088ee     0x158b CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj
- .debug_str     0x000088ee      0x821 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_str     0x000088ee      0xeb3 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
- .debug_str     0x000088ee      0xd67 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_str     0x000088ee      0x440 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.obj
- .debug_str     0x000088ee      0x26c CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.obj
- .debug_str     0x000088ee      0x3bc CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_str     0x000088ee      0xbda CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj
- .debug_str     0x000088ee      0xe51 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj
- .debug_str     0x000088ee       0xa3 CMakeFiles/bubing_RM2025.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
- .debug_str     0x000088ee      0xbab CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_str     0x000088ee      0xa7c CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
- .debug_str     0x000088ee      0xcbc CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_str     0x000088ee      0x7bd CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_str     0x000088ee      0x527 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_str     0x000088ee      0x74d CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_str     0x000088ee     0x1746 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_str     0x000088ee      0xf52 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_str     0x000088ee      0xde2 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_str     0x000088ee     0x13f0 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
- .debug_str     0x000088ee      0x349 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_str     0x000088ee      0x4c5 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
- .debug_str     0x000088ee      0x562 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_str     0x000088ee     0x13cc CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_str     0x000088ee      0x833 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj
- .debug_str     0x000088ee      0x352 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj
- .debug_str     0x000088ee      0x5cf CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj
- .debug_str     0x000088ee      0x691 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj
- .debug_str     0x000088ee      0x542 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj
- .debug_str     0x000088ee      0xb0c CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj
- .debug_str     0x000088ee      0x455 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj
- .debug_str     0x000088ee      0x41d CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj
- .debug_str     0x000088ee      0xa94 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj
- .debug_str     0x000088ee      0x312 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj
- .debug_str     0x000088ee      0x26c CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj
- .debug_str     0x000088ee      0x366 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj
- .debug_str     0x000088ee      0x746 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj
- .debug_str     0x000088ee      0x87e CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj
- .debug_str     0x000088ee      0x528 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj
- .debug_str     0x000088ee      0x72a CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj
- .debug_str     0x000088ee      0x706 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj
- .debug_str     0x000088ee      0x33a CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj
+ .debug_str     0x00008902      0x826 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/dma.c.obj
+ .debug_str     0x00008902      0xb5f CMakeFiles/bubing_RM2025.elf.dir/Core/Src/freertos.c.obj
+ .debug_str     0x00008902      0x3d3 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/gpio.c.obj
+ .debug_str     0x00008902     0x159f CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj
+ .debug_str     0x00008902      0x821 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x00008902      0xeb3 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
+ .debug_str     0x00008902      0xd67 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x00008902      0x440 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x00008902      0x26c CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x00008902      0x3bc CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_str     0x00008902      0xbda CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj
+ .debug_str     0x00008902      0xe51 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj
+ .debug_str     0x00008902       0xa3 CMakeFiles/bubing_RM2025.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+ .debug_str     0x00008902      0xbab CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x00008902      0xa7c CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+ .debug_str     0x00008902      0xcbc CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x00008902      0x7bd CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_str     0x00008902      0x527 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x00008902      0x74d CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x00008902     0x1746 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_str     0x00008902      0xf52 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_str     0x00008902      0xde2 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x00008902     0x13f0 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+ .debug_str     0x00008902      0x349 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_str     0x00008902      0x4c5 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ .debug_str     0x00008902      0x562 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_str     0x00008902     0x13cc CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_str     0x00008902      0x833 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj
+ .debug_str     0x00008902      0x352 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj
+ .debug_str     0x00008902      0x5cf CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj
+ .debug_str     0x00008902      0x691 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj
+ .debug_str     0x00008902      0x542 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj
+ .debug_str     0x00008902      0xb0c CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj
+ .debug_str     0x00008902      0x455 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj
+ .debug_str     0x00008902      0x41d CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj
+ .debug_str     0x00008902      0xa94 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj
+ .debug_str     0x00008902      0x312 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj
+ .debug_str     0x00008902      0x26c CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj
+ .debug_str     0x00008902      0x366 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj
+ .debug_str     0x00008902      0x746 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj
+ .debug_str     0x00008902      0x87e CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj
+ .debug_str     0x00008902      0x528 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj
+ .debug_str     0x00008902      0x72a CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj
+ .debug_str     0x00008902      0x706 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj
+ .debug_str     0x00008902      0x33a CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj
 
 .comment        0x00000000       0x45
  .comment       0x00000000       0x45 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/can.c.obj
