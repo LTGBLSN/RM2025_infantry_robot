@@ -21,9 +21,8 @@ void uart_sent()
 {
     while (1)
     {
-        usart6_printf("%6.2f,%6.2f \r\n",
-                      YAW_IMU_ANGLE,
-                      YAW_6020_ID1_GIVEN_SPEED);
+        usart6_printf("%f,%d \r\n",
+                      SHOOT_2006_ID3_GIVEN_SPEED,motor_can2_data[2].speed_rpm);
 
 
 

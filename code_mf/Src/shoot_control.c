@@ -21,7 +21,7 @@ void shoot_control()
 
         if(SHOOT_2006_ID3_GIVEN_SPEED == SHOOT_TURN_ON_SPEED)
         {
-            //如果卡住了
+            //如果卡住了//待更新，卡弹检测灵敏度不够，存才缓慢旋转
             if(motor_can2_data[2].speed_rpm == 0)
             {
                 osDelay(SHOOT_SPEED_CHECK_TIME);

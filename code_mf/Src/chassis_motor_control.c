@@ -72,7 +72,7 @@ void rc_to_gimbal_speed_compute()
     }
     else
     {
-        gimbal_vy = (float)(2 * rc_ch1 ) ;
+        gimbal_vy = (float)(4 * rc_ch1 ) ;
     }
 
 
@@ -90,7 +90,7 @@ void rc_to_gimbal_speed_compute()
     }
     else
     {
-        gimbal_vx = (float)(2 * rc_ch0 ) ;
+        gimbal_vx = (float)(4 * rc_ch0 ) ;
     }
 
 

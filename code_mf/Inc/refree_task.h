@@ -6,7 +6,7 @@
 #define BUBING_RM2025_REFREE_TASK_H
 
 
-#define LEVEL_1_MAX_POWER   7500  //小于50w
+#define LEVEL_1_MAX_POWER   15000  //小于50w
 #define LEVEL_2_MAX_POWER   8000
 #define LEVEL_3_MAX_POWER   9000
 #define LEVEL_4_MAX_POWER  10000
