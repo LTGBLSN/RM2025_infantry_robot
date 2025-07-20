@@ -138,10 +138,24 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.s"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\main.c -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\main.c.s
 
+CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
+CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/spi.c
+CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.obj"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Core\Src\spi.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\spi.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\spi.c
+
+CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.i"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\spi.c > CMakeFiles\bubing_RM2025.elf.dir\Core\Src\spi.c.i
+
+CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.s"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\spi.c -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\spi.c.s
+
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/stm32f4xx_hal_msp.c
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\stm32f4xx_hal_msp.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.i: cmake_force
@@ -155,7 +169,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/stm32f4xx_hal_timebase_tim.c
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Core\Src\stm32f4xx_hal_timebase_tim.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\stm32f4xx_hal_timebase_tim.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\stm32f4xx_hal_timebase_tim.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.s: cmake_
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/stm32f4xx_it.c
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Core\Src\stm32f4xx_it.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\stm32f4xx_it.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\stm32f4xx_it.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/syscalls.c
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\syscalls.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\syscalls.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -197,7 +211,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/sysmem.c
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\sysmem.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\sysmem.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -211,7 +225,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/system_stm32f4xx.c
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Core\Src\system_stm32f4xx.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\system_stm32f4xx.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\system_stm32f4xx.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.i: cmake_force
@@ -225,7 +239,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/tim.c
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\tim.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\tim.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.i: cmake_force
@@ -239,7 +253,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/usart.c
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Core\Src\usart.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Core\Src\usart.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.i: cmake_force
@@ -252,7 +266,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.s: cmake_force
 
 CMakeFiles/bubing_RM2025.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Startup/startup_stm32f407ighx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building ASM object CMakeFiles/bubing_RM2025.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building ASM object CMakeFiles/bubing_RM2025.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\bubing_RM2025.elf.dir\Core\Startup\startup_stm32f407ighx.s.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Core\Startup\startup_stm32f407ighx.s
 
 CMakeFiles/bubing_RM2025.elf.dir/Core/Startup/startup_stm32f407ighx.s.i: cmake_force
@@ -266,7 +280,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Startup/startup_stm32f407ighx.s.s: cmake_f
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i: cmake_force
@@ -280,7 +294,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i: cmake_force
@@ -294,7 +308,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i: cmake_force
@@ -308,7 +322,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i: cmake_force
@@ -322,7 +336,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i: cmake_force
@@ -336,7 +350,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i: cmake_force
@@ -350,7 +364,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i: cmake_force
@@ -364,7 +378,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i: cmake_force
@@ -378,7 +392,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i: cmake_force
@@ -392,7 +406,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i: cmake_force
@@ -406,7 +420,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i: cmake_force
@@ -420,7 +434,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i: cmake_force
@@ -434,7 +448,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i: cmake_force
@@ -448,7 +462,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i: cmake_force
@@ -459,10 +473,24 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.s
 
+CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
+CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
+CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c
+
+CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c > CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.i
+
+CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.s
+
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i: cmake_force
@@ -476,7 +504,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i: cmake_force
@@ -490,7 +518,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i: cmake_force
@@ -504,7 +532,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i: cmake_force
@@ -518,7 +546,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_R
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\croutine.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i: cmake_force
@@ -532,7 +560,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutin
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i: cmake_force
@@ -546,7 +574,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_g
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/list.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\list.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i: cmake_force
@@ -560,7 +588,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i: cmake_force
@@ -574,7 +602,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portabl
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
@@ -588,7 +616,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portabl
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/queue.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\queue.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i: cmake_force
@@ -602,7 +630,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i: cmake_force
@@ -616,7 +644,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\tasks.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i: cmake_force
@@ -630,7 +658,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/timers.c
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\timers.c
 
 CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i: cmake_force
@@ -641,10 +669,38 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\RM2025_infantry_robot\Middlewares\Third_Party\FreeRTOS\Source\timers.c -o CMakeFiles\bubing_RM2025.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.s
 
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/BMI088Middleware.c
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.obj"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\BMI088Middleware.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\BMI088Middleware.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\BMI088Middleware.c
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.i"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\BMI088Middleware.c > CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\BMI088Middleware.c.i
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.s"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\BMI088Middleware.c -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\BMI088Middleware.c.s
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/BMI088driver.c
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.obj"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\BMI088driver.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\BMI088driver.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\BMI088driver.c
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.i"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\BMI088driver.c > CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\BMI088driver.c.i
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.s"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\BMI088driver.c -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\BMI088driver.c.s
+
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/CAN_receive.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\CAN_receive.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\CAN_receive.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\CAN_receive.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.i: cmake_force
@@ -655,10 +711,38 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.s"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\CAN_receive.c -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\CAN_receive.c.s
 
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/IMU_DATA_GET.c
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.obj"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\IMU_DATA_GET.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\IMU_DATA_GET.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\IMU_DATA_GET.c
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.i"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\IMU_DATA_GET.c > CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\IMU_DATA_GET.c.i
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.s"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\IMU_DATA_GET.c -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\IMU_DATA_GET.c.s
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/MahonyAHRS.c
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.obj"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\MahonyAHRS.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\MahonyAHRS.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\MahonyAHRS.c
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.i"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\MahonyAHRS.c > CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\MahonyAHRS.c.i
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.s"
+	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\MahonyAHRS.c -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\MahonyAHRS.c.s
+
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/board_LED.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\board_LED.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\board_LED.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\board_LED.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.i: cmake_force
@@ -672,7 +756,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/bsp_can.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\bsp_can.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\bsp_can.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\bsp_can.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.i: cmake_force
@@ -686,7 +770,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/bsp_rc.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\bsp_rc.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\bsp_rc.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\bsp_rc.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.i: cmake_force
@@ -700,7 +784,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/can_sent.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\can_sent.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\can_sent.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\can_sent.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.i: cmake_force
@@ -714,7 +798,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/chassis_motor_control.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\chassis_motor_control.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\chassis_motor_control.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\chassis_motor_control.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.i: cmake_force
@@ -728,7 +812,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.s: cmake_fo
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/error_detection.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\error_detection.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\error_detection.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\error_detection.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.i: cmake_force
@@ -742,7 +826,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/get_rc.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\get_rc.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\get_rc.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\get_rc.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.i: cmake_force
@@ -756,7 +840,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/gimbal_motor_control.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\gimbal_motor_control.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\gimbal_motor_control.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\gimbal_motor_control.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.i: cmake_force
@@ -770,7 +854,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.s: cmake_for
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/jy61p.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\jy61p.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\jy61p.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\jy61p.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.i: cmake_force
@@ -784,7 +868,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/odometer.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/odometer.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/odometer.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/odometer.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/odometer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/odometer.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/odometer.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\odometer.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\odometer.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\odometer.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/odometer.c.i: cmake_force
@@ -798,7 +882,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/odometer.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/pid.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\pid.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\pid.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\pid.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.i: cmake_force
@@ -812,7 +896,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/refree_task.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\refree_task.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\refree_task.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\refree_task.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.i: cmake_force
@@ -826,7 +910,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/remote_control.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\remote_control.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\remote_control.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\remote_control.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.i: cmake_force
@@ -840,7 +924,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/servo_task.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\servo_task.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\servo_task.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\servo_task.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.i: cmake_force
@@ -854,7 +938,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/shoot_control.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\shoot_control.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\shoot_control.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\shoot_control.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.i: cmake_force
@@ -868,7 +952,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/uart_callback.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\uart_callback.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\uart_callback.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\uart_callback.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.i: cmake_force
@@ -882,7 +966,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/uart_printf.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\uart_printf.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\uart_printf.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\uart_printf.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.i: cmake_force
@@ -896,7 +980,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.s: cmake_force
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj: CMakeFiles/bubing_RM2025.elf.dir/flags.make
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/uart_sent.c
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj: CMakeFiles/bubing_RM2025.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj"
 	C:\CLionToolchains\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj -MF CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\uart_sent.c.obj.d -o CMakeFiles\bubing_RM2025.elf.dir\code_mf\Src\uart_sent.c.obj -c D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Src\uart_sent.c
 
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.i: cmake_force
@@ -914,6 +998,7 @@ bubing_RM2025_elf_OBJECTS = \
 "CMakeFiles/bubing_RM2025.elf.dir/Core/Src/freertos.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Core/Src/gpio.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj" \
+"CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj" \
@@ -937,6 +1022,7 @@ bubing_RM2025_elf_OBJECTS = \
 "CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" \
+"CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj" \
@@ -950,7 +1036,11 @@ bubing_RM2025_elf_OBJECTS = \
 "CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" \
+"CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.obj" \
+"CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj" \
+"CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.obj" \
+"CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj" \
 "CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj" \
@@ -978,6 +1068,7 @@ bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Core/Src/dma.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Core/Src/freertos.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Core/Src/gpio.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj
+bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj
@@ -1001,6 +1092,7 @@ bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
@@ -1014,7 +1106,11 @@ bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/Free
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.obj
+bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj
+bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.obj
+bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj
@@ -1036,7 +1132,7 @@ bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/build.make
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/objects1.rsp
 bubing_RM2025.elf: CMakeFiles/bubing_RM2025.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Linking C executable bubing_RM2025.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Linking C executable bubing_RM2025.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\bubing_RM2025.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/bubing_RM2025.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug/bubing_RM2025.bin"

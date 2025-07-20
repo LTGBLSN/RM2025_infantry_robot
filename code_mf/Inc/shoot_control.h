@@ -39,16 +39,17 @@
 
 
 #define SHOOT_TURN_ON_SPEED  5000
-#define SHOOT_TURN_OFF_SPEED (-4000)
+#define SHOOT_TURN_OFF_SPEED (-5000)
 
 #define SHOOT_SPEED_CHECK_TIME 100
-
+#define SHOOT_STOP_CHECK_SPEED 100  //+-500,卡弹检测速度区间，区间内都视为卡弹
 #define SHOOT_TURN_OFF_TIME 100
 
 
 #define SHOOT_MAX_STOP_TIME 500 //ms
 
 void shoot_speed_compute();
+void shoot_stop_check();
 void shoot_pid_control();
 
 void shoot_2006_id3_speed_pid_init(void);

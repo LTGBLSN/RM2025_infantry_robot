@@ -35,6 +35,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj: \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ramfunc.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr_ex.h \
+ D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_spi.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim_ex.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \
@@ -75,6 +76,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj: \
  D:\RoboMaster_git\RM2025_infantry_robot\Core\Inc/can.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Core\Inc/main.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Core\Inc/dma.h \
+ D:\RoboMaster_git\RM2025_infantry_robot\Core\Inc/spi.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Core\Inc/tim.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Core\Inc/usart.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Core\Inc/gpio.h \
@@ -101,4 +103,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj: \
  D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Inc/chassis_motor_control.h \
  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/math.h \
  D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Inc/shoot_control.h \
- D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Inc/gimbal_motor_control.h
+ D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Inc/gimbal_motor_control.h \
+ D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Inc/BMI088driver.h \
+ D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Inc/IMU_DATA_GET.h \
+ D:\RoboMaster_git\RM2025_infantry_robot\code_mf\Inc/MahonyAHRS.h

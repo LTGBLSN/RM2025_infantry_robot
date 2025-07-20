@@ -165,6 +165,23 @@ extern uint32_t servo_rc_time ;
 extern uint32_t servo_state ;
 
 
+extern float gyro[3];
+extern float acce[3];
+extern float temp;
+extern float INS_quat[4] ;
+extern float INS_angle[3] ;
+extern float INS_degree[3] ;
+
+extern float pitch_speed_from_bmi088 ;
+extern float yaw_speed_from_bmi088 ;
+extern float roll_speed_from_bmi088 ;
+
+
+extern float pitch_angle_from_bmi088 ;
+extern float yaw_angle_from_bmi088 ;
+extern float roll_angle_from_bmi088 ;
+
+
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/
@@ -186,6 +203,14 @@ void Error_Handler(void);
 #define LED_G_GPIO_Port GPIOH
 #define LED_B_Pin GPIO_PIN_10
 #define LED_B_GPIO_Port GPIOH
+#define CS1_ACCEL_Pin GPIO_PIN_4
+#define CS1_ACCEL_GPIO_Port GPIOA
+#define INT1_ACCEL_Pin GPIO_PIN_4
+#define INT1_ACCEL_GPIO_Port GPIOC
+#define INT1_GRYO_Pin GPIO_PIN_5
+#define INT1_GRYO_GPIO_Port GPIOC
+#define CS1_GYRO_Pin GPIO_PIN_0
+#define CS1_GYRO_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

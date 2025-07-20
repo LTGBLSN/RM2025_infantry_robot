@@ -240,7 +240,6 @@
 			},
 			"sourceIndexes" : 
 			[
-				9,
 				10,
 				11,
 				12,
@@ -253,10 +252,8 @@
 				19,
 				20,
 				21,
-				90,
-				91,
-				92,
-				93,
+				22,
+				23,
 				94,
 				95,
 				96,
@@ -271,25 +268,20 @@
 				105,
 				106,
 				107,
+				108,
 				109,
 				110,
-				129,
-				130,
-				132,
-				133,
+				111,
+				112,
+				114,
+				115,
 				134,
 				135,
-				136,
-				157,
-				158,
-				159,
-				160,
-				161,
-				162,
-				163,
-				164,
-				165,
-				166,
+				137,
+				138,
+				139,
+				140,
+				141,
 				167,
 				168,
 				169,
@@ -298,7 +290,21 @@
 				172,
 				173,
 				174,
-				175
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189
 			]
 		},
 		{
@@ -433,7 +439,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				22
+				24
 			]
 		}
 	],
@@ -515,11 +521,10 @@
 				6,
 				7,
 				8,
-				23,
-				24,
+				9,
 				25,
+				26,
 				27,
-				28,
 				29,
 				30,
 				31,
@@ -548,8 +553,8 @@
 				54,
 				55,
 				56,
+				57,
 				58,
-				59,
 				60,
 				61,
 				62,
@@ -579,12 +584,11 @@
 				86,
 				87,
 				88,
-				108,
-				111,
-				112,
+				89,
+				90,
+				91,
+				92,
 				113,
-				114,
-				115,
 				116,
 				117,
 				118,
@@ -598,12 +602,12 @@
 				126,
 				127,
 				128,
+				129,
+				130,
 				131,
-				137,
-				138,
-				139,
-				140,
-				141,
+				132,
+				133,
+				136,
 				142,
 				143,
 				144,
@@ -618,14 +622,23 @@
 				153,
 				154,
 				155,
-				156
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				9,
 				10,
 				11,
 				12,
@@ -638,10 +651,8 @@
 				19,
 				20,
 				21,
-				90,
-				91,
-				92,
-				93,
+				22,
+				23,
 				94,
 				95,
 				96,
@@ -656,25 +667,20 @@
 				105,
 				106,
 				107,
+				108,
 				109,
 				110,
-				129,
-				130,
-				132,
-				133,
+				111,
+				112,
+				114,
+				115,
 				134,
 				135,
-				136,
-				157,
-				158,
-				159,
-				160,
-				161,
-				162,
-				163,
-				164,
-				165,
-				166,
+				137,
+				138,
+				139,
+				140,
+				141,
 				167,
 				168,
 				169,
@@ -683,18 +689,32 @@
 				172,
 				173,
 				174,
-				175
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				22,
-				26,
-				57,
-				89,
-				176
+				24,
+				28,
+				59,
+				93,
+				190
 			]
 		}
 	],
@@ -723,6 +743,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Core/Inc/main.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Inc/spi.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -773,6 +798,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/main.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/spi.c",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1091,6 +1122,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"path" : "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h",
 			"sourceGroupIndex" : 0
 		},
@@ -1137,6 +1173,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -1246,6 +1287,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1428,7 +1475,32 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "code_mf/Inc/BMI088Middleware.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "code_mf/Inc/BMI088driver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "code_mf/Inc/BMI088reg.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"path" : "code_mf/Inc/CAN_receive.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "code_mf/Inc/IMU_DATA_GET.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "code_mf/Inc/MahonyAHRS.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -1529,7 +1601,31 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "code_mf/Src/BMI088Middleware.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "code_mf/Src/BMI088driver.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "code_mf/Src/CAN_receive.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "code_mf/Src/IMU_DATA_GET.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "code_mf/Src/MahonyAHRS.c",
 			"sourceGroupIndex" : 1
 		},
 		{

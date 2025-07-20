@@ -241,31 +241,10 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 ProcessorCount_cmd_getconf:FILEPATH=C:/ProgramData/anaconda3/Library/usr/bin/getconf.exe
 
 //Path to a program.
-ProcessorCount_cmd_lsconf:FILEPATH=ProcessorCount_cmd_lsconf-NOTFOUND
-
-//Path to a program.
-ProcessorCount_cmd_machinfo:FILEPATH=ProcessorCount_cmd_machinfo-NOTFOUND
-
-//Path to a program.
-ProcessorCount_cmd_mpsched:FILEPATH=ProcessorCount_cmd_mpsched-NOTFOUND
-
-//Path to a program.
 ProcessorCount_cmd_nproc:FILEPATH=ProcessorCount_cmd_nproc-NOTFOUND
 
 //Path to a program.
-ProcessorCount_cmd_pidin:FILEPATH=ProcessorCount_cmd_pidin-NOTFOUND
-
-//Path to a program.
-ProcessorCount_cmd_psrinfo:FILEPATH=ProcessorCount_cmd_psrinfo-NOTFOUND
-
-//Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=ProcessorCount_cmd_sysctl-NOTFOUND
-
-//Path to a program.
-ProcessorCount_cmd_sysinfo:FILEPATH=ProcessorCount_cmd_sysinfo-NOTFOUND
-
-//Path to a program.
-ProcessorCount_cmd_uname:FILEPATH=ProcessorCount_cmd_uname-NOTFOUND
 
 //Value Computed by CMake
 bubing_RM2025_BINARY_DIR:STATIC=D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug
@@ -437,20 +416,8 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_getconf
 ProcessorCount_cmd_getconf-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: ProcessorCount_cmd_lsconf
-ProcessorCount_cmd_lsconf-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: ProcessorCount_cmd_machinfo
-ProcessorCount_cmd_machinfo-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: ProcessorCount_cmd_mpsched
-ProcessorCount_cmd_mpsched-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_nproc
 ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: ProcessorCount_cmd_pidin
-ProcessorCount_cmd_pidin-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: ProcessorCount_cmd_psrinfo
-ProcessorCount_cmd_psrinfo-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: ProcessorCount_cmd_uname
-ProcessorCount_cmd_uname-ADVANCED:INTERNAL=1
 

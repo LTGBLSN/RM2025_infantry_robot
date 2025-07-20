@@ -37,6 +37,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj: \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_flash_ramfunc.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr_ex.h \
+ D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_spi.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim_ex.h \
  D:\RoboMaster_git\RM2025_infantry_robot\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \

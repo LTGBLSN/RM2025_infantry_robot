@@ -55,8 +55,6 @@ extern motor_measure_t motor_can2_data[7];
 
 void CAN2_cmd_pitch(int16_t pitch, int16_t none0, int16_t none1, int16_t none2);
 
-extern void CAN2_cmd_shoot(int16_t none0, int16_t none1, int16_t shoot, int16_t none2);
-
 extern void CAN2_cmd_friction_wheels(int16_t friction_wheel0, int16_t friction_wheel1, int16_t none0, int16_t none1);
 
 extern void CAN1_cmd_chassis(int16_t motor1, int16_t motor2, int16_t motor3, int16_t motor4);

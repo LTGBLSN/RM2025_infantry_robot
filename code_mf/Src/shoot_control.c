@@ -18,23 +18,10 @@ void shoot_control()
 
 
         shoot_speed_compute();//拨弹盘目标速度控制
-
-        if(SHOOT_2006_ID3_GIVEN_SPEED == SHOOT_TURN_ON_SPEED)
-        {
-            //如果卡住了//待更新，卡弹检测灵敏度不够，存才缓慢旋转
-            if(motor_can2_data[2].speed_rpm == 0)
-            {
-                osDelay(SHOOT_SPEED_CHECK_TIME);
-                if(motor_can2_data[2].speed_rpm == 0)
-                {
-                    SHOOT_2006_ID3_GIVEN_SPEED = SHOOT_TURN_OFF_SPEED ;
-                    osDelay(SHOOT_TURN_OFF_TIME);
-                    SHOOT_2006_ID3_GIVEN_SPEED = SHOOT_TURN_ON_SPEED ;
-                }
-            }
+        shoot_stop_check();//拨弹盘堵转反转（阻塞）
+        //拨弹盘的速度闭环在不阻塞的gimbal_motor_control里面
 
 
-        }
 
         osDelay(1);
     }
@@ -62,6 +49,27 @@ void shoot_speed_compute()
         }
     }
 
+}
+
+void shoot_stop_check()
+{
+    if(SHOOT_2006_ID3_GIVEN_SPEED == SHOOT_TURN_ON_SPEED)
+    {
+
+        //如果卡住了//待更新，卡弹检测灵敏度不够，存才缓慢旋转
+        if(motor_can2_data[2].speed_rpm == 0)
+        {
+            osDelay(SHOOT_SPEED_CHECK_TIME);
+            if(motor_can2_data[2].speed_rpm == 0)
+            {
+                SHOOT_2006_ID3_GIVEN_SPEED = SHOOT_TURN_OFF_SPEED ;
+                osDelay(SHOOT_TURN_OFF_TIME);
+                SHOOT_2006_ID3_GIVEN_SPEED = SHOOT_TURN_ON_SPEED ;
+            }
+        }
+
+
+    }
 }
 
 

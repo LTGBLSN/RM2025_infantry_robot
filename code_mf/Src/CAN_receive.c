@@ -143,27 +143,6 @@ void CAN2_cmd_pitch(int16_t pitch, int16_t none0, int16_t none1, int16_t none2)
 
 
 
-
-
-
-void CAN2_cmd_shoot(int16_t none0, int16_t none1, int16_t shoot, int16_t none2)
-{
-    uint32_t send_mail_box;
-    shoot_tx_message.StdId = CAN_CHASSIS_ALL_ID;
-    shoot_tx_message.IDE = CAN_ID_STD;
-    shoot_tx_message.RTR = CAN_RTR_DATA;
-    shoot_tx_message.DLC = 0x08;
-    shoot_can_send_data[0] = (none1 >> 8);
-    shoot_can_send_data[1] = none1;
-    shoot_can_send_data[2] = (none0 >> 8);
-    shoot_can_send_data[3] = none0;
-    shoot_can_send_data[4] = (shoot >> 8);
-    shoot_can_send_data[5] = shoot;
-    shoot_can_send_data[6] = (none2 >> 8);
-    shoot_can_send_data[7] = none2;
-    HAL_CAN_AddTxMessage(&hcan2, &shoot_tx_message, shoot_can_send_data, &send_mail_box);
-}
-
 //摩擦轮电机电流发送函数
 void CAN2_cmd_friction_wheels(int16_t friction_wheel0, int16_t friction_wheel1, int16_t none0, int16_t none1)
 {

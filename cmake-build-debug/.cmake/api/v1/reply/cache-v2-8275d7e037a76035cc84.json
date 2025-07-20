@@ -1282,54 +1282,6 @@
 			"value" : "C:/ProgramData/anaconda3/Library/usr/bin/getconf.exe"
 		},
 		{
-			"name" : "ProcessorCount_cmd_lsconf",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_lsconf-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_machinfo",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_machinfo-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_mpsched",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_mpsched-NOTFOUND"
-		},
-		{
 			"name" : "ProcessorCount_cmd_nproc",
 			"properties" : 
 			[
@@ -1346,38 +1298,6 @@
 			"value" : "ProcessorCount_cmd_nproc-NOTFOUND"
 		},
 		{
-			"name" : "ProcessorCount_cmd_pidin",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_pidin-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_psrinfo",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_psrinfo-NOTFOUND"
-		},
-		{
 			"name" : "ProcessorCount_cmd_sysctl",
 			"properties" : 
 			[
@@ -1392,34 +1312,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "ProcessorCount_cmd_sysctl-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_sysinfo",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_sysinfo-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_uname",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_uname-NOTFOUND"
 		},
 		{
 			"name" : "bubing_RM2025_BINARY_DIR",

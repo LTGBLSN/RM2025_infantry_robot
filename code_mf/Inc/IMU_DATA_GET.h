@@ -1,0 +1,11 @@
+//
+// Created by 21481 on 2025/7/20.
+//
+
+#ifndef BUBING_RM2025_IMU_DATA_GET_H
+#define BUBING_RM2025_IMU_DATA_GET_H
+
+
+void IMU_DATA_GET();
+
+#endif //BUBING_RM2025_IMU_DATA_GET_H

@@ -127,6 +127,9 @@
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/main.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/spi.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_hal_conf.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
@@ -152,6 +155,9 @@
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/main.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/spi.c">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/stm32f4xx_hal_msp.c">
@@ -337,6 +343,9 @@
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
@@ -365,6 +374,9 @@
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h">
@@ -422,6 +434,9 @@
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
@@ -526,7 +541,22 @@
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/STM32F407IGHX_FLASH.ld">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088Middleware.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088driver.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088reg.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/CAN_receive.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/IMU_DATA_GET.h">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/MahonyAHRS.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/board_LED.h">
@@ -586,7 +616,19 @@
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_sent.h">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/BMI088Middleware.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/BMI088driver.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/CAN_receive.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/IMU_DATA_GET.c">
+			<Option target="bubing_RM2025.elf"/>
+		</Unit>
+		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/MahonyAHRS.c">
 			<Option target="bubing_RM2025.elf"/>
 		</Unit>
 		<Unit filename="D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/board_LED.c">

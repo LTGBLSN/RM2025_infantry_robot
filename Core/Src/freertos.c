@@ -58,6 +58,7 @@ osThreadId gimbalTaskHandle;
 osThreadId shoot_con_taskHandle;
 osThreadId refereeHandle;
 osThreadId servoHandle;
+osThreadId imu_dataHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -75,6 +76,7 @@ void gimbal_motor_control(void const * argument);
 void shoot_control(void const * argument);
 void refree_task(void const * argument);
 void servo_task(void const * argument);
+void IMU_DATA_GET(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -164,6 +166,10 @@ void MX_FREERTOS_Init(void) {
   /* definition and creation of servo */
   osThreadDef(servo, servo_task, osPriorityIdle, 0, 128);
   servoHandle = osThreadCreate(osThread(servo), NULL);
+
+  /* definition and creation of imu_data */
+  osThreadDef(imu_data, IMU_DATA_GET, osPriorityIdle, 0, 128);
+  imu_dataHandle = osThreadCreate(osThread(imu_data), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -367,6 +373,24 @@ __weak void servo_task(void const * argument)
     osDelay(1);
   }
   /* USER CODE END servo_task */
+}
+
+/* USER CODE BEGIN Header_IMU_DATA_GET */
+/**
+* @brief Function implementing the imu_data thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_IMU_DATA_GET */
+__weak void IMU_DATA_GET(void const * argument)
+{
+  /* USER CODE BEGIN IMU_DATA_GET */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END IMU_DATA_GET */
 }
 
 /* Private application code --------------------------------------------------*/

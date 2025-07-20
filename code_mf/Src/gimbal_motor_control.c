@@ -34,7 +34,7 @@ pid_type_def shoot_2006_ID3_speed_pid;
         friction_wheel_speed_control();//摩擦轮目标速度控制
         friction_wheel_pid_control();//摩擦轮pid控制
 
-        motor_gimbal_speed_compute();//pitch目标速度控制
+        motor_gimbal_angle_compute();//目标角度控制
         motor_gimbal_pid_compute();//云台pid控制
 
 
@@ -58,32 +58,40 @@ pid_type_def shoot_2006_ID3_speed_pid;
 
 
 
-void motor_gimbal_speed_compute()
+void motor_gimbal_angle_compute()
 {
      if(mouse_vy == 0 & mouse_vx == 0)
      {
-         if(FRICTION_WHEEL_3510_ID1_GIVEN_SPEED != 0)
+         if((PITCH_RC_IN_KP * (float )rc_ch3) < 0 )
          {
-             PITCH_6020_ID2_GIVEN_SPEED = 0.05f * (float)rc_ch3 - PITCH_ON_FRICTION_STOP_SPEED_COMPENSATE;
+             if(PITCH_6020_ID2_GIVEN_ANGLE < -23.0f )
+             {
+                 PITCH_6020_ID2_GIVEN_ANGLE = -23.0f ;
+             }
+             else
+             {
+                 PITCH_6020_ID2_GIVEN_ANGLE = PITCH_6020_ID2_GIVEN_ANGLE + PITCH_RC_IN_KP * (float )rc_ch3  ;
+             }
          }
          else
          {
-             PITCH_6020_ID2_GIVEN_SPEED = 0.05f * (float)rc_ch3 - PITCH_OFF_FRICTION_STOP_SPEED_COMPENSATE;
+             if(PITCH_6020_ID2_GIVEN_ANGLE > 25.0f )
+             {
+                 PITCH_6020_ID2_GIVEN_ANGLE = 25.0f ;
+             }
+             else
+             {
+                 PITCH_6020_ID2_GIVEN_ANGLE = PITCH_6020_ID2_GIVEN_ANGLE + PITCH_RC_IN_KP * (float )rc_ch3  ;
+             }
          }
+
 
          YAW_6020_ID1_GIVEN_SPEED = -(0.5f * (float)rc_ch2) ;
 
-     } else
+     } else//键盘还没写
      {
-         if(FRICTION_WHEEL_3510_ID1_GIVEN_SPEED != 0)
-         {
-             PITCH_6020_ID2_GIVEN_SPEED = MOUSE_VY_SPEED_SCALING_FACTOR * (float)-mouse_vy - PITCH_ON_FRICTION_STOP_SPEED_COMPENSATE;
-         }
-         else
-         {
-             PITCH_6020_ID2_GIVEN_SPEED = MOUSE_VY_SPEED_SCALING_FACTOR * (float)-mouse_vy - PITCH_OFF_FRICTION_STOP_SPEED_COMPENSATE;
-         }
-         YAW_6020_ID1_GIVEN_SPEED = MOUSE_VX_SPEED_SCALING_FACTOR * (float)-mouse_vx ;
+//         PITCH_6020_ID2_GIVEN_SPEED = MOUSE_VY_SPEED_SCALING_FACTOR * (float)-mouse_vy - PITCH_OFF_FRICTION_STOP_SPEED_COMPENSATE;
+//         YAW_6020_ID1_GIVEN_SPEED = MOUSE_VX_SPEED_SCALING_FACTOR * (float)-mouse_vx ;
 
 
      }
@@ -98,10 +106,8 @@ void motor_gimbal_pid_compute()
     YAW_6020_ID1_GIVEN_CURRENT = (int16_t)yaw_speed_pid_loop(YAW_6020_ID1_GIVEN_SPEED);//速度环
 
 
-
-//    PITCH_6020_ID2_GIVEN_ANGLE = 0 ;
-//    PITCH_6020_ID2_GIVEN_SPEED = pitch_angle_pid_loop(PITCH_6020_ID2_GIVEN_ANGLE);//角度环
-    PITCH_6020_ID2_GIVEN_CURRENT = (int16_t)pitch_speed_pid_loop(PITCH_6020_ID2_GIVEN_SPEED); //速度环
+    PITCH_6020_ID2_GIVEN_SPEED = pitch_angle_from_bmi088_pid_loop(PITCH_6020_ID2_GIVEN_ANGLE);//角度环
+    PITCH_6020_ID2_GIVEN_CURRENT = (int16_t) (- pitch_speed_from_bmi088_pid_loop(PITCH_6020_ID2_GIVEN_SPEED)); //速度环
 
 }
 
@@ -189,16 +195,16 @@ float yaw_speed_pid_loop(float YAW_6020_ID1_speed_set_loop)
 
 
 
-void pitch_speed_pid_init(void)
+void pitch_speed_from_bmi88_pid_init(void)
 {
     static fp32 pitch_6020_id2_speed_kpkikd[3] = {PITCH_6020_ID2_SPEED_PID_KP,PITCH_6020_ID2_SPEED_PID_KI,PITCH_6020_ID2_SPEED_PID_KD};
     PID_init(&pitch_6020_ID2_speed_pid,PID_POSITION,pitch_6020_id2_speed_kpkikd,PITCH_6020_ID2_SPEED_PID_OUT_MAX,PITCH_6020_ID2_SPEED_PID_KI_MAX);
 
 }
 
-float pitch_speed_pid_loop(float PITCH_6020_ID2_speed_set_loop)
+float pitch_speed_from_bmi088_pid_loop(float PITCH_6020_ID2_speed_set_loop)
 {
-    PID_calc(&pitch_6020_ID2_speed_pid, motor_can2_data[5].speed_rpm , PITCH_6020_ID2_speed_set_loop);
+    PID_calc(&pitch_6020_ID2_speed_pid, pitch_speed_from_bmi088 , PITCH_6020_ID2_speed_set_loop);
     int16_t pitch_6020_ID2_given_current_loop = (int16_t)(pitch_6020_ID2_speed_pid.out);
 
     return pitch_6020_ID2_given_current_loop ;
@@ -213,9 +219,9 @@ void pitch_angle_pid_init(void)
 
 }
 
-float pitch_angle_pid_loop(float PITCH_6020_ID2_angle_set_loop)
+float pitch_angle_from_bmi088_pid_loop(float PITCH_6020_ID2_angle_set_loop)
 {
-    PID_calc(&pitch_6020_ID2_angle_pid, PITCH_IMU_ANGLE , PITCH_6020_ID2_angle_set_loop);
+    PID_calc(&pitch_6020_ID2_angle_pid, pitch_angle_from_bmi088 , PITCH_6020_ID2_angle_set_loop);
     float pitch_6020_ID2_given_speed_loop = (float)(pitch_6020_ID2_angle_pid.out);
 
     return pitch_6020_ID2_given_speed_loop ;

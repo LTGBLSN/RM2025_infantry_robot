@@ -46,41 +46,43 @@
 
 
 
-#define PITCH_6020_ID2_SPEED_PID_KP        300.0f
-#define PITCH_6020_ID2_SPEED_PID_KI        20.0f
+#define PITCH_6020_ID2_SPEED_PID_KP        8000.0f
+#define PITCH_6020_ID2_SPEED_PID_KI        0.0f
 #define PITCH_6020_ID2_SPEED_PID_KD        0.0f
 #define PITCH_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
-#define PITCH_6020_ID2_SPEED_PID_KI_MAX    20000.0f
+#define PITCH_6020_ID2_SPEED_PID_KI_MAX    25000.0f
 
 #define PITCH_6020_ID2_ANGLE_PID_KP        0.3f
 #define PITCH_6020_ID2_ANGLE_PID_KI        0.0f
-#define PITCH_6020_ID2_ANGLE_PID_KD        0.1f
-#define PITCH_6020_ID2_ANGLE_PID_OUT_MAX   10.0f
+#define PITCH_6020_ID2_ANGLE_PID_KD        0.0f
+#define PITCH_6020_ID2_ANGLE_PID_OUT_MAX   5.0f
 #define PITCH_6020_ID2_ANGLE_PID_KI_MAX    0.0f
 
 
 
 
 
-#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KP        45.0f
-#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KI        0.01f
+#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KP        5.0f
+#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KI        0.1f
 #define FRICTION_WHEEL_3510_ID1_SPEED_PID_KD        0.0f
 #define FRICTION_WHEEL_3510_ID1_SPEED_PID_OUT_MAX   16000.0f
-#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KI_MAX    10000.0f
+#define FRICTION_WHEEL_3510_ID1_SPEED_PID_KI_MAX    5000.0f
 
-#define FRICTION_WHEEL_3510_ID2_SPEED_PID_KP        45.0f
-#define FRICTION_WHEEL_3510_ID2_SPEED_PID_KI        0.01f
+#define FRICTION_WHEEL_3510_ID2_SPEED_PID_KP        5.0f
+#define FRICTION_WHEEL_3510_ID2_SPEED_PID_KI        0.1f
 #define FRICTION_WHEEL_3510_ID2_SPEED_PID_KD        0.0f
 #define FRICTION_WHEEL_3510_ID2_SPEED_PID_OUT_MAX   16000.0f
-#define FRICTION_WHEEL_3510_ID2_SPEED_PID_KI_MAX    10000.0f
+#define FRICTION_WHEEL_3510_ID2_SPEED_PID_KI_MAX    5000.0f
 
 
 #define FRICTION_WHEEL_SHOOT_SPEED 6500
 
 #define GIMBAL_PID_COMPUTE_FREQUENCY 1000  // Hz
 
-#define PITCH_OFF_FRICTION_STOP_SPEED_COMPENSATE 0.005
-#define PITCH_ON_FRICTION_STOP_SPEED_COMPENSATE  0.015
+#define PITCH_OFF_FRICTION_STOP_SPEED_COMPENSATE 0.0
+#define PITCH_ON_FRICTION_STOP_SPEED_COMPENSATE  0.0
+
+#define PITCH_RC_IN_KP (-0.0005f)
 
 #define MOUSE_VX_SPEED_SCALING_FACTOR 2.0f
 #define MOUSE_VY_SPEED_SCALING_FACTOR 0.1f
@@ -106,7 +108,7 @@ extern pid_type_def shoot_2006_ID3_speed_pid;
 
 
 
-void motor_gimbal_speed_compute();//目标赋值
+void motor_gimbal_angle_compute();//目标赋值
 void motor_gimbal_pid_compute();//pid计算
 
 void friction_wheel_speed_control();//目标赋值
@@ -125,10 +127,10 @@ float yaw_speed_pid_loop(float YAW_6020_ID1_speed_set_loop);
 void yaw_angle_pid_init(void);
 float yaw_angle_pid_loop(float YAW_6020_ID1_angle_set_loop);
 
-void pitch_speed_pid_init(void);
-float pitch_speed_pid_loop(float PITCH_6020_ID2_speed_set_loop);
+void pitch_speed_from_bmi88_pid_init(void);
+float pitch_speed_from_bmi088_pid_loop(float PITCH_6020_ID2_speed_set_loop);
 void pitch_angle_pid_init(void);
-float pitch_angle_pid_loop(float PITCH_6020_ID2_angle_set_loop);//暂不用，pitch速控
+float pitch_angle_from_bmi088_pid_loop(float PITCH_6020_ID2_angle_set_loop);//暂不用，pitch速控
 
 
 

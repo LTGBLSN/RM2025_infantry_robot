@@ -38,6 +38,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/can.c.obj: D:/RoboMaster_git/RM2025_in
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -85,6 +86,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/dma.c.obj: D:/RoboMaster_git/RM2025_in
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -142,6 +144,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/freertos.c.obj: D:/RoboMaster_git/RM20
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -202,6 +205,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/gpio.c.obj: D:/RoboMaster_git/RM2025_i
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -240,6 +244,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj: D:/RoboMaster_git/RM2025_i
   D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/dma.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/gpio.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/main.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_hal_conf.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/usart.h \
@@ -268,6 +273,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj: D:/RoboMaster_git/RM2025_i
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -284,7 +290,10 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj: D:/RoboMaster_git/RM2025_i
   D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088driver.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/CAN_receive.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/IMU_DATA_GET.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/MahonyAHRS.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/board_LED.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/bsp_can.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/bsp_rc.h \
@@ -295,6 +304,54 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.obj: D:/RoboMaster_git/RM2025_i
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/pid.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/remote_control.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/shoot_control.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/struct_typedef.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_printf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_sent.h
+
+CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/spi.c \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/main.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/spi.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_hal_conf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm4.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/mpu_armv7.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/board_LED.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/bsp_rc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/remote_control.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/struct_typedef.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_printf.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_sent.h
@@ -335,6 +392,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: D:/RoboMaster
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -380,6 +438,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj: D:/R
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -421,6 +480,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/stm32f4xx_it.c.obj: D:/RoboMaster_git/
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -534,6 +594,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/system_stm32f4xx.c.obj: D:/RoboMaster_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -575,6 +636,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/tim.c.obj: D:/RoboMaster_git/RM2025_in
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -622,6 +684,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Core/Src/usart.c.obj: D:/RoboMaster_git/RM2025_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -667,6 +730,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -706,6 +770,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -745,6 +810,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -784,6 +850,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -823,6 +890,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -862,6 +930,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -901,6 +970,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -940,6 +1010,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -979,6 +1050,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -1018,6 +1090,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -1057,6 +1130,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -1096,6 +1170,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -1135,6 +1210,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -1174,6 +1250,47 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+
+CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_hal_conf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm4.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/mpu_armv7.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -1213,6 +1330,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -1252,6 +1370,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -1291,6 +1410,7 @@ CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -1633,6 +1753,104 @@ CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.
   D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h
 
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/BMI088Middleware.c \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/main.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_hal_conf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm4.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/mpu_armv7.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088Middleware.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/board_LED.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/bsp_rc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/remote_control.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/struct_typedef.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_printf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_sent.h
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/BMI088driver.c \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/main.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_hal_conf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm4.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/mpu_armv7.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088Middleware.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088driver.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088reg.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/board_LED.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/bsp_rc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/remote_control.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/struct_typedef.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_printf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_sent.h
+
 CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/CAN_receive.c \
   C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
   C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
@@ -1688,6 +1906,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj: D:/RoboMaster_gi
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -1713,6 +1932,139 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.obj: D:/RoboMaster_gi
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/gimbal_motor_control.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/jy61p.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/pid.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/remote_control.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/struct_typedef.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_printf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_sent.h
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/IMU_DATA_GET.c \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/math.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/reent.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/FreeRTOSConfig.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/main.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_hal_conf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm4.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/mpu_armv7.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088driver.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/IMU_DATA_GET.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/MahonyAHRS.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/board_LED.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/bsp_rc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/remote_control.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/struct_typedef.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_printf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_sent.h
+
+CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.obj: D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/MahonyAHRS.c \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/math.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_types.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/cdefs.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/lock.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/main.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_hal_conf.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/core_cm4.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/CMSIS/Include/mpu_armv7.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/MahonyAHRS.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/board_LED.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/bsp_rc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/remote_control.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/struct_typedef.h \
   D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/uart_printf.h \
@@ -1766,6 +2118,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/board_LED.c.obj: D:/RoboMaster_git/
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -1825,6 +2178,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_can.c.obj: D:/RoboMaster_git/RM
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -1872,6 +2226,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/bsp_rc.c.obj: D:/RoboMaster_git/RM2
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -1936,6 +2291,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/can_sent.c.obj: D:/RoboMaster_git/R
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2019,6 +2375,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/chassis_motor_control.c.obj: D:/Rob
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2102,6 +2459,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/error_detection.c.obj: D:/RoboMaste
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2179,6 +2537,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/get_rc.c.obj: D:/RoboMaster_git/RM2
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2258,6 +2617,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/gimbal_motor_control.c.obj: D:/Robo
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2325,6 +2685,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/jy61p.c.obj: D:/RoboMaster_git/RM20
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2374,6 +2735,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/pid.c.obj: D:/RoboMaster_git/RM2025
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2440,6 +2802,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/refree_task.c.obj: D:/RoboMaster_gi
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2508,6 +2871,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/remote_control.c.obj: D:/RoboMaster
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2574,6 +2938,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/servo_task.c.obj: D:/RoboMaster_git
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2660,6 +3025,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/shoot_control.c.obj: D:/RoboMaster_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2745,6 +3111,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_callback.c.obj: D:/RoboMaster_
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2824,6 +3191,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_printf.c.obj: D:/RoboMaster_gi
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -2892,6 +3260,7 @@ CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/uart_sent.c.obj: D:/RoboMaster_git/
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
@@ -3014,6 +3383,8 @@ D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4
 
 D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 
+D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
+
 D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h:
 
 D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/FreeRTOSConfig.h:
@@ -3050,9 +3421,9 @@ D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/freertos.c:
 
 C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h:
 
-C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/reent.h:
-
 D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
+
+C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/reent.h:
 
 C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/config.h:
 
@@ -3100,11 +3471,19 @@ C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/stdi
 
 C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h:
 
+D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/spi.h:
+
 D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/tim.h:
 
 D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/usart.h:
 
+D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088driver.h:
+
 D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/CAN_receive.h:
+
+D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/IMU_DATA_GET.h:
+
+D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/MahonyAHRS.h:
 
 D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/bsp_can.h:
 
@@ -3118,6 +3497,8 @@ D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/pid.h:
 
 D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/shoot_control.h:
 
+D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/spi.c:
+
 D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/stm32f4xx_hal_msp.c:
 
 D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/stm32f4xx_hal_timebase_tim.c:
@@ -3127,6 +3508,8 @@ D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/stm32f4xx_it.c:
 D:/RoboMaster_git/RM2025_infantry_robot/Core/Inc/stm32f4xx_it.h:
 
 D:/RoboMaster_git/RM2025_infantry_robot/Core/Src/syscalls.c:
+
+D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/BMI088Middleware.c:
 
 C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/alloca.h:
 
@@ -3214,6 +3597,8 @@ D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4
 
 D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c:
 
+D:/RoboMaster_git/RM2025_infantry_robot/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c:
+
 D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:
 
 C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/string.h:
@@ -3242,11 +3627,21 @@ D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/
 
 D:/RoboMaster_git/RM2025_infantry_robot/Middlewares/Third_Party/FreeRTOS/Source/timers.c:
 
+D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088Middleware.h:
+
+D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/BMI088driver.c:
+
+D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/BMI088reg.h:
+
+D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/can_sent.c:
+
+D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/IMU_DATA_GET.c:
+
+D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/MahonyAHRS.c:
+
 D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/bsp_can.c:
 
 D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/bsp_rc.c:
-
-D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Src/can_sent.c:
 
 D:/RoboMaster_git/RM2025_infantry_robot/code_mf/Inc/can_sent.h:
 

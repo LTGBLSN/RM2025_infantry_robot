@@ -21,6 +21,7 @@
 #include "cmsis_os.h"
 #include "can.h"
 #include "dma.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -42,7 +43,9 @@
 #include "gimbal_motor_control.h"
 #include "shoot_control.h"
 #include <math.h>
-
+#include "BMI088driver.h"
+#include "IMU_DATA_GET.h"
+#include "MahonyAHRS.h"
 
 
 /* USER CODE END Includes */
@@ -175,6 +178,23 @@ uint32_t servo_time ;
 uint32_t servo_rc_time ;
 uint32_t servo_state ;
 
+float gyro[3];
+float acce[3];
+float temp;
+float INS_quat[4] = {1.0f, 0.0f, 0.0f, 0.0f};
+float INS_angle[3] = {0.0f, 0.0f, 0.0f};
+float INS_degree[3] = {0.0f, 0.0f, 0.0f};
+
+
+float pitch_speed_from_bmi088 ;
+float yaw_speed_from_bmi088 ;
+float roll_speed_from_bmi088 ;
+
+
+float pitch_angle_from_bmi088 ;
+float yaw_angle_from_bmi088 ;
+float roll_angle_from_bmi088 ;
+
 
 
 
@@ -246,6 +266,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM1_Init();
   MX_TIM8_Init();
+  MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
 
     HAL_TIM_Base_Start(&htim1);
@@ -265,6 +286,7 @@ int main(void)
     local_rc_ctrl = get_remote_control_point();//遥控器初始化
 
     can_filter_init();//can通讯初始化
+    BMI088_init();
 
     //底盘电机初始化
     chassis_3508_id1_speed_pid_init();
@@ -277,7 +299,7 @@ int main(void)
     //云台电机初始化
     yaw_speed_pid_init();//yaw速度环pid初始化
     yaw_angle_pid_init();//yaw位置环pid初始化
-    pitch_speed_pid_init();//pitch速度环pid初始化
+    pitch_speed_from_bmi88_pid_init();//pitch速度环pid初始化
     pitch_angle_pid_init();//pitch角度环pid初始化
 
     //摩擦轮电机初始化

@@ -248,6 +248,30 @@ Core/Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
 
+Core/Src/spi.obj: Core/Src/spi.c.obj
+.PHONY : Core/Src/spi.obj
+
+# target to build an object file
+Core/Src/spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.obj
+.PHONY : Core/Src/spi.c.obj
+
+Core/Src/spi.i: Core/Src/spi.c.i
+.PHONY : Core/Src/spi.i
+
+# target to preprocess a source file
+Core/Src/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.i
+.PHONY : Core/Src/spi.c.i
+
+Core/Src/spi.s: Core/Src/spi.c.s
+.PHONY : Core/Src/spi.s
+
+# target to generate assembly for a file
+Core/Src/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Core/Src/spi.c.s
+.PHONY : Core/Src/spi.c.s
+
 Core/Src/stm32f4xx_hal_msp.obj: Core/Src/stm32f4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f4xx_hal_msp.obj
 
@@ -784,6 +808,30 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.s
 
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj
+
+# target to build an object file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i
+
+# target to preprocess a source file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s
+
+# target to generate assembly for a file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s
+
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj
 
@@ -1096,6 +1144,54 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+code_mf/Src/BMI088Middleware.obj: code_mf/Src/BMI088Middleware.c.obj
+.PHONY : code_mf/Src/BMI088Middleware.obj
+
+# target to build an object file
+code_mf/Src/BMI088Middleware.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.obj
+.PHONY : code_mf/Src/BMI088Middleware.c.obj
+
+code_mf/Src/BMI088Middleware.i: code_mf/Src/BMI088Middleware.c.i
+.PHONY : code_mf/Src/BMI088Middleware.i
+
+# target to preprocess a source file
+code_mf/Src/BMI088Middleware.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.i
+.PHONY : code_mf/Src/BMI088Middleware.c.i
+
+code_mf/Src/BMI088Middleware.s: code_mf/Src/BMI088Middleware.c.s
+.PHONY : code_mf/Src/BMI088Middleware.s
+
+# target to generate assembly for a file
+code_mf/Src/BMI088Middleware.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088Middleware.c.s
+.PHONY : code_mf/Src/BMI088Middleware.c.s
+
+code_mf/Src/BMI088driver.obj: code_mf/Src/BMI088driver.c.obj
+.PHONY : code_mf/Src/BMI088driver.obj
+
+# target to build an object file
+code_mf/Src/BMI088driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.obj
+.PHONY : code_mf/Src/BMI088driver.c.obj
+
+code_mf/Src/BMI088driver.i: code_mf/Src/BMI088driver.c.i
+.PHONY : code_mf/Src/BMI088driver.i
+
+# target to preprocess a source file
+code_mf/Src/BMI088driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.i
+.PHONY : code_mf/Src/BMI088driver.c.i
+
+code_mf/Src/BMI088driver.s: code_mf/Src/BMI088driver.c.s
+.PHONY : code_mf/Src/BMI088driver.s
+
+# target to generate assembly for a file
+code_mf/Src/BMI088driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/BMI088driver.c.s
+.PHONY : code_mf/Src/BMI088driver.c.s
+
 code_mf/Src/CAN_receive.obj: code_mf/Src/CAN_receive.c.obj
 .PHONY : code_mf/Src/CAN_receive.obj
 
@@ -1119,6 +1215,54 @@ code_mf/Src/CAN_receive.s: code_mf/Src/CAN_receive.c.s
 code_mf/Src/CAN_receive.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/CAN_receive.c.s
 .PHONY : code_mf/Src/CAN_receive.c.s
+
+code_mf/Src/IMU_DATA_GET.obj: code_mf/Src/IMU_DATA_GET.c.obj
+.PHONY : code_mf/Src/IMU_DATA_GET.obj
+
+# target to build an object file
+code_mf/Src/IMU_DATA_GET.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.obj
+.PHONY : code_mf/Src/IMU_DATA_GET.c.obj
+
+code_mf/Src/IMU_DATA_GET.i: code_mf/Src/IMU_DATA_GET.c.i
+.PHONY : code_mf/Src/IMU_DATA_GET.i
+
+# target to preprocess a source file
+code_mf/Src/IMU_DATA_GET.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.i
+.PHONY : code_mf/Src/IMU_DATA_GET.c.i
+
+code_mf/Src/IMU_DATA_GET.s: code_mf/Src/IMU_DATA_GET.c.s
+.PHONY : code_mf/Src/IMU_DATA_GET.s
+
+# target to generate assembly for a file
+code_mf/Src/IMU_DATA_GET.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/IMU_DATA_GET.c.s
+.PHONY : code_mf/Src/IMU_DATA_GET.c.s
+
+code_mf/Src/MahonyAHRS.obj: code_mf/Src/MahonyAHRS.c.obj
+.PHONY : code_mf/Src/MahonyAHRS.obj
+
+# target to build an object file
+code_mf/Src/MahonyAHRS.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.obj
+.PHONY : code_mf/Src/MahonyAHRS.c.obj
+
+code_mf/Src/MahonyAHRS.i: code_mf/Src/MahonyAHRS.c.i
+.PHONY : code_mf/Src/MahonyAHRS.i
+
+# target to preprocess a source file
+code_mf/Src/MahonyAHRS.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.i
+.PHONY : code_mf/Src/MahonyAHRS.c.i
+
+code_mf/Src/MahonyAHRS.s: code_mf/Src/MahonyAHRS.c.s
+.PHONY : code_mf/Src/MahonyAHRS.s
+
+# target to generate assembly for a file
+code_mf/Src/MahonyAHRS.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bubing_RM2025.elf.dir\build.make CMakeFiles/bubing_RM2025.elf.dir/code_mf/Src/MahonyAHRS.c.s
+.PHONY : code_mf/Src/MahonyAHRS.c.s
 
 code_mf/Src/board_LED.obj: code_mf/Src/board_LED.c.obj
 .PHONY : code_mf/Src/board_LED.obj
@@ -1576,6 +1720,9 @@ help:
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
+	@echo ... Core/Src/spi.obj
+	@echo ... Core/Src/spi.i
+	@echo ... Core/Src/spi.s
 	@echo ... Core/Src/stm32f4xx_hal_msp.obj
 	@echo ... Core/Src/stm32f4xx_hal_msp.i
 	@echo ... Core/Src/stm32f4xx_hal_msp.s
@@ -1643,6 +1790,9 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.s
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.obj
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.i
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.s
@@ -1682,9 +1832,21 @@ help:
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.obj
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.i
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.s
+	@echo ... code_mf/Src/BMI088Middleware.obj
+	@echo ... code_mf/Src/BMI088Middleware.i
+	@echo ... code_mf/Src/BMI088Middleware.s
+	@echo ... code_mf/Src/BMI088driver.obj
+	@echo ... code_mf/Src/BMI088driver.i
+	@echo ... code_mf/Src/BMI088driver.s
 	@echo ... code_mf/Src/CAN_receive.obj
 	@echo ... code_mf/Src/CAN_receive.i
 	@echo ... code_mf/Src/CAN_receive.s
+	@echo ... code_mf/Src/IMU_DATA_GET.obj
+	@echo ... code_mf/Src/IMU_DATA_GET.i
+	@echo ... code_mf/Src/IMU_DATA_GET.s
+	@echo ... code_mf/Src/MahonyAHRS.obj
+	@echo ... code_mf/Src/MahonyAHRS.i
+	@echo ... code_mf/Src/MahonyAHRS.s
 	@echo ... code_mf/Src/board_LED.obj
 	@echo ... code_mf/Src/board_LED.i
 	@echo ... code_mf/Src/board_LED.s
