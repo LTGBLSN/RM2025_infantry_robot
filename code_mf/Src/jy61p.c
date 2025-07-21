@@ -70,7 +70,7 @@ void jy61p_Receive_Angle_Data(uint8_t RxData)
                 ROLL_IMU_ANGLE = ((short)((short)Rx_Angle_Buffer[5] << 8 | Rx_Angle_Buffer[4])) / 32768.0f * 180.0f;
                 YAW_IMU_ANGLE = ((short)((short)Rx_Angle_Buffer[7] << 8 | Rx_Angle_Buffer[6])) / 32768.0f * 180.0f;
 
-                imu_receive_time = HAL_GetTick() ;//更新时间戳
+
 
             }
             AngleRxState = 0;
@@ -126,7 +126,7 @@ void jy61p_Receive_Speed_Data(uint8_t RxData)
                 ROLL_IMU_SPEED = ((short)((short)Rx_Speed_Buffer[5] << 8 | Rx_Speed_Buffer[4])) / 32768.0f * 2000.0f;
                 YAW_IMU_SPEED = ((short)((short)Rx_Speed_Buffer[7] << 8 | Rx_Speed_Buffer[6])) / 32768.0f * 2000.0f;
 
-                imu_receive_time = HAL_GetTick() ;//更新时间戳
+
 
 
             }

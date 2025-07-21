@@ -26,7 +26,6 @@ void error_detection()
     {
 
         rc_connection_status();//遥控器离线判断
-        imu_connection_status();//imu离线判断
         yaw_6020_status();//yaw电机过温判断
         pitch_6020_status();//pitch电机过温判断
 
@@ -51,19 +50,6 @@ void rc_connection_status()
         rc_receive_state = RC_ONLINE ;//遥控器在线
     }
 }
-
-void imu_connection_status()
-{
-    if(HAL_GetTick() - imu_receive_time > IMU_NO_DATA_TIMEOUT)
-    {
-        imu_receive_state = IMU_OFFLINE ;//IMU离线
-    }
-    else
-    {
-        imu_receive_state = IMU_ONLINE ;//IMU在线
-    }
-}
-
 
 
 

@@ -81,9 +81,6 @@ extern int16_t mouse_press_r ;
 extern int16_t rc_receive_state ;//遥控器状态 0为离线，1为在线
 extern uint32_t rc_receive_time ;//遥控器接收到数据的时间戳
 
-extern int16_t imu_receive_state ;//IMU状态 0为离线，1为在线
-extern uint32_t imu_receive_time ;//IMU接收到数据的时间戳
-
 extern uint8_t uart1_receive_data ;//串口当前接收字节
 
 extern int16_t yaw_6020_state ;//6020状态 0为错误，1为正常
@@ -180,6 +177,10 @@ extern float roll_speed_from_bmi088 ;
 extern float pitch_angle_from_bmi088 ;
 extern float yaw_angle_from_bmi088 ;
 extern float roll_angle_from_bmi088 ;
+
+extern float YAW_IMU_LAST_ECD ;
+extern float YAW_IMU_LAPS ;
+extern float YAW_IMU_ABSCISSA ;
 
 
 /* USER CODE END EC */

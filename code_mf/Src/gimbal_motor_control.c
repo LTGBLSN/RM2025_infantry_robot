@@ -34,6 +34,9 @@ pid_type_def shoot_2006_ID3_speed_pid;
         friction_wheel_speed_control();//摩擦轮目标速度控制
         friction_wheel_pid_control();//摩擦轮pid控制
 
+
+        yaw_imu_getAbscissa() ;//更新陀螺仪总角度
+
         motor_gimbal_angle_compute();//目标角度控制
         motor_gimbal_pid_compute();//云台pid控制
 
@@ -86,7 +89,7 @@ void motor_gimbal_angle_compute()
          }
 
 
-         YAW_6020_ID1_GIVEN_SPEED = -(0.5f * (float)rc_ch2) ;
+         YAW_6020_ID1_GIVEN_ANGLE = YAW_6020_ID1_GIVEN_ANGLE + (YAW_RC_IN_KP * (float)rc_ch2) ;
 
      } else//键盘还没写
      {
@@ -98,11 +101,33 @@ void motor_gimbal_angle_compute()
 
 }
 
+
+void yaw_imu_getAbscissa()
+{
+    if((YAW_IMU_LAST_ECD - yaw_angle_from_bmi088) > 180.0f)
+    {
+
+        YAW_IMU_LAPS++ ;
+
+    }
+    if((yaw_angle_from_bmi088 - YAW_IMU_LAST_ECD) > 180.0f)
+    {
+
+        YAW_IMU_LAPS-- ;
+
+    }
+
+    YAW_IMU_LAST_ECD = yaw_angle_from_bmi088 ;
+
+    YAW_IMU_ABSCISSA = 360.0f * YAW_IMU_LAPS + yaw_angle_from_bmi088 ;
+
+
+}
+
+
 void motor_gimbal_pid_compute()
 {
-//     YAW_6020_ID1_GIVEN_ANGLE = 0 ;
-//    YAW_6020_ID1_GIVEN_SPEED = yaw_angle_pid_loop(YAW_6020_ID1_GIVEN_ANGLE) ;
-    //yaw
+    YAW_6020_ID1_GIVEN_SPEED = yaw_angle_pid_loop(YAW_6020_ID1_GIVEN_ANGLE) ;
     YAW_6020_ID1_GIVEN_CURRENT = (int16_t)yaw_speed_pid_loop(YAW_6020_ID1_GIVEN_SPEED);//速度环
 
 
@@ -167,7 +192,7 @@ void yaw_angle_pid_init(void)
 
 float yaw_angle_pid_loop(float YAW_6020_ID1_angle_set_loop)
 {
-    PID_calc(&yaw_6020_ID1_angle_pid, YAW_IMU_ANGLE , YAW_6020_ID1_angle_set_loop);
+    PID_calc(&yaw_6020_ID1_angle_pid, YAW_IMU_ABSCISSA , YAW_6020_ID1_angle_set_loop);
     float yaw_6020_ID1_given_speed_loop = (float)(yaw_6020_ID1_angle_pid.out);
 
     return yaw_6020_ID1_given_speed_loop ;
@@ -184,7 +209,7 @@ void yaw_speed_pid_init(void)
 
 float yaw_speed_pid_loop(float YAW_6020_ID1_speed_set_loop)
 {
-    PID_calc(&yaw_6020_ID1_speed_pid, YAW_IMU_SPEED , YAW_6020_ID1_speed_set_loop);
+    PID_calc(&yaw_6020_ID1_speed_pid, yaw_speed_from_bmi088 , YAW_6020_ID1_speed_set_loop);
     int16_t yaw_6020_ID1_given_current_loop = (int16_t)(yaw_6020_ID1_speed_pid.out);
 
     return yaw_6020_ID1_given_current_loop ;

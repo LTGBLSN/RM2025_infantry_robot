@@ -21,8 +21,8 @@ void uart_sent()
 {
     while (1)
     {
-        usart6_printf("%f,%f,%f,%f \r\n",
-                      pitch_speed_from_bmi088,PITCH_6020_ID2_GIVEN_SPEED,-pitch_angle_from_bmi088,PITCH_6020_ID2_GIVEN_ANGLE);
+        usart6_printf("%f \r\n",
+                      YAW_IMU_ABSCISSA);
 
 
 

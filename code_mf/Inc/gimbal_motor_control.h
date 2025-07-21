@@ -29,16 +29,16 @@
 #include <math.h>
 
 
-#define YAW_6020_ID2_ANGLE_PID_KP        3.0f
+#define YAW_6020_ID2_ANGLE_PID_KP        0.2f
 #define YAW_6020_ID2_ANGLE_PID_KI        0.0f
-#define YAW_6020_ID2_ANGLE_PID_KD        2.0f
-#define YAW_6020_ID2_ANGLE_PID_OUT_MAX   20000.0f
-#define YAW_6020_ID2_ANGLE_PID_KI_MAX    10000.0f
+#define YAW_6020_ID2_ANGLE_PID_KD        0.0f
+#define YAW_6020_ID2_ANGLE_PID_OUT_MAX   10.0f
+#define YAW_6020_ID2_ANGLE_PID_KI_MAX    0.0f
 
-#define YAW_6020_ID2_SPEED_PID_KP        50.0f
-#define YAW_6020_ID2_SPEED_PID_KI        0.1f
+#define YAW_6020_ID2_SPEED_PID_KP        10000.0f
+#define YAW_6020_ID2_SPEED_PID_KI        20.0f
 #define YAW_6020_ID2_SPEED_PID_KD        0.0f
-#define YAW_6020_ID2_SPEED_PID_OUT_MAX   20000.0f
+#define YAW_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
 #define YAW_6020_ID2_SPEED_PID_KI_MAX    10000.0f
 
 
@@ -46,13 +46,13 @@
 
 
 
-#define PITCH_6020_ID2_SPEED_PID_KP        8000.0f
-#define PITCH_6020_ID2_SPEED_PID_KI        0.0f
+#define PITCH_6020_ID2_SPEED_PID_KP        10000.0f
+#define PITCH_6020_ID2_SPEED_PID_KI        20.0f
 #define PITCH_6020_ID2_SPEED_PID_KD        0.0f
 #define PITCH_6020_ID2_SPEED_PID_OUT_MAX   30000.0f
-#define PITCH_6020_ID2_SPEED_PID_KI_MAX    25000.0f
+#define PITCH_6020_ID2_SPEED_PID_KI_MAX    15000.0f
 
-#define PITCH_6020_ID2_ANGLE_PID_KP        0.3f
+#define PITCH_6020_ID2_ANGLE_PID_KP        0.4f
 #define PITCH_6020_ID2_ANGLE_PID_KI        0.0f
 #define PITCH_6020_ID2_ANGLE_PID_KD        0.0f
 #define PITCH_6020_ID2_ANGLE_PID_OUT_MAX   5.0f
@@ -83,6 +83,7 @@
 #define PITCH_ON_FRICTION_STOP_SPEED_COMPENSATE  0.0
 
 #define PITCH_RC_IN_KP (-0.0005f)
+#define YAW_RC_IN_KP (-0.0008f)
 
 #define MOUSE_VX_SPEED_SCALING_FACTOR 2.0f
 #define MOUSE_VY_SPEED_SCALING_FACTOR 0.1f
@@ -107,8 +108,9 @@ extern pid_type_def shoot_2006_ID3_speed_pid;
 
 
 
-
+void yaw_imu_getAbscissa();//YAW里程计
 void motor_gimbal_angle_compute();//目标赋值
+
 void motor_gimbal_pid_compute();//pid计算
 
 void friction_wheel_speed_control();//目标赋值

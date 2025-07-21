@@ -10,10 +10,6 @@
 #define RC_ONLINE 1
 #define RC_OFFLINE 0
 
-//IMU
-#define IMU_NO_DATA_TIMEOUT 100
-#define IMU_ONLINE 1
-#define IMU_OFFLINE 0
 
 //IMU
 #define GM6020_TEMP_MAX 50
