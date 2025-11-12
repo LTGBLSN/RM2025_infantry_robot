@@ -1,14 +1,5 @@
-"C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\RoboMaster_git\RM2025_infantry_robot -B D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug
-CMake Deprecation Warning:
-  Support for "Extra Generators" like
-
-    CodeBlocks
-
-  is deprecated and will be removed from a future version of CMake.  IDEs may
-  use the cmake-file-api(7) to view CMake-generated project build trees.
-
-
+"C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.1/bin/ninja/win/x64/ninja.exe" -DCMAKE_C_COMPILER=C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=C:/CLionToolchains/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe -G Ninja -S D:\RoboMaster_git\RM2025_infantry_robot -B D:\RoboMaster_git\RM2025_infantry_robot\cmake-build-debug
 -- Minimal optimization, debug info included
--- Configuring done (0.1s)
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: D:/RoboMaster_git/RM2025_infantry_robot/cmake-build-debug
